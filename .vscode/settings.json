@@ -1,0 +1,20 @@
+{
+   "java.project.sourcePaths": [
+      "Mathematics/9.All Divisors of a Number/More Efficient",
+      "Mathematics/9.All Divisors of a Number/Efficient Code",
+      "Mathematics/8.Prime Factor/More Efficient",
+      "Mathematics/8.Prime Factor/Efficient",
+      "Mathematics/7.Check for Prime/More Efficient",
+      "Mathematics/7.Check for Prime/Efficient Code",
+      "Mathematics/6.LCM of teo Number",
+      "Mathematics/5.GCD or HCF of two Number/Optimised Euclidean Algo code",
+      "Mathematics/5.GCD or HCF of two Number/Euclidean algo code",
+      "Mathematics/4.Trailing Zeros in factorial",
+      "Mathematics/3.Factorial of a Number/Recursive",
+      "Mathematics/3.Factorial of a Number/Iterative",
+      "Mathematics/2.Palindrome  Number",
+      "Mathematics/11.Computing Power",
+      "Mathematics/1.Count Digits",
+      "Mathematics/10.Sieve of Eratosthenes"
+   ]
+}
