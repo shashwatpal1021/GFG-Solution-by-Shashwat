@@ -31,7 +31,9 @@ Covering All the topic of Data Structure and Algorithms.
 
 
 # Programs
- - Count Digits.
- - 
-
+ ---| Mathematics --|
+ 
+ * Count Digits.
+ * Palindrome Numbers.
+ * Factorial of a number
 
