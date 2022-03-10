@@ -1,4 +1,4 @@
-# GFG-Solution-by-Shashwat
+## GFG-Solution-by-Shashwat
 
 
 Covering All the topic of Data Structure and Algorithms.
@@ -30,7 +30,7 @@ Covering All the topic of Data Structure and Algorithms.
 
 
 
-£ Programs
+# Programs
  - Count Digits.
  - 
 
