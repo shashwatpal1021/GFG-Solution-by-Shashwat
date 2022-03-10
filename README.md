@@ -31,9 +31,18 @@ Covering All the topic of Data Structure and Algorithms.
 
 
 # Programs
- ---| Mathematics --|
+ ---| Mathematics |--
  
  * Count Digits.
  * Palindrome Numbers.
- * Factorial of a number
+ * Factorial of a number.
+ * Trailing Zeros in factorial.
+ * GCD or HCF of two numbers.
+ * LCM of two Numbers.
+ * Check for Prime.
+ * Prime Factors.
+ * All Divisors Of a Number.
+ * Sive of Eratosthenes.
+ * Computing Power.
+ * Iterative Power.
 
