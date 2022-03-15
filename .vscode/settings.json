@@ -1,20 +1,18 @@
 {
    "java.project.sourcePaths": [
-      "Mathematics/9.All Divisors of a Number/More Efficient",
-      "Mathematics/9.All Divisors of a Number/Efficient Code",
-      "Mathematics/8.Prime Factor/More Efficient",
-      "Mathematics/8.Prime Factor/Efficient",
-      "Mathematics/7.Check for Prime/More Efficient",
-      "Mathematics/7.Check for Prime/Efficient Code",
-      "Mathematics/6.LCM of teo Number",
-      "Mathematics/5.GCD or HCF of two Number/Optimised Euclidean Algo code",
-      "Mathematics/5.GCD or HCF of two Number/Euclidean algo code",
-      "Mathematics/4.Trailing Zeros in factorial",
-      "Mathematics/3.Factorial of a Number/Recursive",
-      "Mathematics/3.Factorial of a Number/Iterative",
-      "Mathematics/2.Palindrome  Number",
-      "Mathematics/11.Computing Power",
-      "Mathematics/1.Count Digits",
-      "Mathematics/10.Sieve of Eratosthenes"
+      "3.Arrays/17.Maximum subarray sum/Naive Method",
+      "3.Arrays/17.Maximum subarray sum/Efficient Method/18.Longest Even odd subarray",
+      "3.Arrays/16.Maximum Consecutive 1s/Naive Method",
+      "3.Arrays/16.Maximum Consecutive 1s/Efficient Method",
+      "3.Arrays/15.Trapping Rain Water/Naive Method",
+      "3.Arrays/15.Trapping Rain Water/Efficient Method",
+      "3.Arrays/14.Stock Buy and sell part-2",
+      "3.Arrays/13.Stock Buy and sell part-1",
+      "3.Arrays/12.Frequencies in A sorted Array",
+      "3.Arrays/11.Maximum Difference problem with order/Naive Method",
+      "3.Arrays/11.Maximum Difference problem with order/Efficient Method",
+      "3.Arrays/10.Leader in an array problem/Naive Method",
+      "3.Arrays/10.Leader in an array problem/Efficient Method",
+      "3.Arrays/18.Longest Even odd subarray"
    ]
 }
