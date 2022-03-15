@@ -31,7 +31,7 @@ Covering All the topic of Data Structure and Algorithms.
 
 
 # Programs
- ---| Mathematics |--
+ ### ---| Mathematics |--
  
  * Count Digits.
  * Palindrome Numbers.
