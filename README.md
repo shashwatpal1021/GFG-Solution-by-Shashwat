@@ -49,26 +49,26 @@ Covering All the topic of Data Structure and Algorithms.
 
 ### --| Arrays |--
 
-### --|Recurssion.
-### --|Arrays.
-### --|Searching.
-### --|Sorting.
-### --|Matrix.
-### --|Hashing.
-### --|Strings.
-### --|LinkedList.
-### --|Stack.
-### --|Queue.
-### --|Deque.
-### --|Tree.
-### --|Binary Search Tree.
-### --|Heap.
-### --|Graph.
-### --|Greedy.
-### --|Backtracking.
-### --|Dynamic Programming.
-### --|Trie.
-### --|Segment and Binary Indexed Trees.
-### --|Disjoin Set
+### --| Recurssion. |--
+### --| Arrays. |--
+### --| Searching. |--
+### --| Sorting.|--
+### --| Matrix. |--
+### --| Hashing. |--
+### --| Strings.|--
+### --| LinkedList. |--
+### --| Stack. |--
+### --| Queue. |--
+### --| Deque.|--
+### --| Tree.|--
+### --| Binary Search Tree.|--
+### --| Heap.|--
+### --| Graph.|--
+### --| Greedy.|--
+### --| Backtracking.|--
+### --| Dynamic Programming.|--
+### --| Trie.|--
+### --| Segment and Binary Indexed Trees.|--
+### --| Disjoin Set|--
 
 
