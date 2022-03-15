@@ -47,5 +47,5 @@ Covering All the topic of Data Structure and Algorithms.
  * Iterative Power.
 
 
-###--| Arrays |--
+### --| Arrays |--
 
