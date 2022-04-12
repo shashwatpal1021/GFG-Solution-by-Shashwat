@@ -1,5 +1,6 @@
 {
    "java.project.sourcePaths": [
+      "3.Arrays/18.Longest Even odd subarray",
       "3.Arrays/17.Maximum subarray sum/Naive Method",
       "3.Arrays/17.Maximum subarray sum/Efficient Method/18.Longest Even odd subarray",
       "3.Arrays/16.Maximum Consecutive 1s/Naive Method",
@@ -13,6 +14,6 @@
       "3.Arrays/11.Maximum Difference problem with order/Efficient Method",
       "3.Arrays/10.Leader in an array problem/Naive Method",
       "3.Arrays/10.Leader in an array problem/Efficient Method",
-      "3.Arrays/18.Longest Even odd subarray"
+      ""
    ]
 }
