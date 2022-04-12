@@ -2,7 +2,7 @@ package Arrays.Syntax;
 
 public class SecondLargest {
    public static void main(String[] args) {
-      int[] arr = { 5, 4, 6, 3, 7, 2, 8, 1, 9 };
+      int[] arr = { 5, 4, 6, 3, 7, 2, 10, 1, 9 };
       int n = secondLargest(arr);
       System.out.println(n);
    }
