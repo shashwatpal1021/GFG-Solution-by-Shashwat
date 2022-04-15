@@ -1,5 +1,7 @@
 package Arrays.Left_Rootated_by_d;
 
+import java.util.Scanner;
+
 public class Reversal {
    public static void main(String args[]) {
       int arr[] = { 1, 2, 3, 4, 5 }, n = 5, d = 2;
@@ -38,3 +40,14 @@ public class Reversal {
       }
    }
 }
+
+
+
+
+
+Scanner s= new Scanner(System.in);
+int diff=Math.abs(s.nextInt()*60+s.nextInt()+s.nextInt()*60+s.nextInt());
+
+System.out.println("%02d",((diff/60)%24));
+System.out.println(" ");
+System.out.println("%02d",((diff%60)));
