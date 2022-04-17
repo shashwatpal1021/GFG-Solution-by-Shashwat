@@ -39,7 +39,7 @@ public class BinarySearch {
          return bSearch(arr, mid + 1, high, x);
    }
 
-   // First occrrence in sorted
+   // First occurrence in sorted
 
    // Naive
 
