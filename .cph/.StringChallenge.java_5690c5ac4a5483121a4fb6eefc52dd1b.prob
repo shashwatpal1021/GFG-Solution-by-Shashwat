@@ -1,0 +1,1 @@
+{"name":"Local: StringChallenge","url":"c:\\Users\\shash\\Documents\\GitHub\\gfg\\StringChallenge.java","tests":[{"id":1650266500138,"input":"\"12:30pm\"\n\"12:00am:","output":"690"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\shash\\Documents\\GitHub\\gfg\\StringChallenge.java","group":"local","local":true}
