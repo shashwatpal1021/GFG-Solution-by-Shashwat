@@ -28,7 +28,7 @@ public static void main(String[] args) {
 Things to take away
 
 Every valid Java Application must have a class definition that matches the filename (class name and file name should be same).
-
+ 
 The main method must be inside the class definition.
 
 The compiler executes the codes starting from the main function.
