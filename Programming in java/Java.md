@@ -35,7 +35,7 @@ The compiler executes the codes starting from the main function.
 
 This is a valid Java program that does nothing.
 
-public class HelloWorld {
+  public class HelloWorld {
     public static void main(String[] args) {
         // Write your code here
     }
