@@ -42,11 +42,11 @@ public class HelloWorld {
 }
 
 
-Java JDK, JRE and JVM
+### Java JDK, JRE and JVM
 
 In this tutorial, you will learn about JDK, JRE, and JVM. You will also learn the key differences between them.
 
-What is JVM?
+#### What is JVM?
 
 JVM (Java Virtual Machine) is an abstract machine that enables your computer to run a Java program.
 
@@ -59,12 +59,9 @@ Java is a platform-independent language. It's because when you write Java code, 
 Java      ---------------->  Java ByteCode  ------------>   Machine  ------------> Output
 Program    java Compiler                          JVM         Code       CPU
 
-How does Java program work?
+#### How does Java program work?
 
-Working of Java Program
-If you are interested in learning about JVM Architecture, visit The JVM Architecture Explained.
-
-What is JRE?
+#### What is JRE?
 
 JRE (Java Runtime Environment) is a software package that provides Java class libraries, Java Virtual Machine (JVM), and other components that are required to run Java applications.
 
@@ -74,7 +71,7 @@ JRE = JVM + Class Libraries
 Java runtime environment
 
 
-What is JDK?
+#### What is JDK?
 JDK (Java Development Kit) is a software development kit required to develop applications in Java. When you download JDK, JRE is also downloaded with it.
 
 In addition to JRE, JDK also contains a number of development tools (compilers, JavaDoc, Java Debugger, etc).
@@ -85,7 +82,7 @@ JDK = JRE + Compilers + Debuggers
 Java Development Kit
 
 
-Relationship between JVM, JRE, and JDK.
+##### Relationship between JVM, JRE, and JDK.
 
 JRE contains JVM and class libraries and JDK contains JRE, compilers, debuggers, and JavaDoc
 
@@ -96,14 +93,14 @@ JDK = JRE + Compilers + Debuggers + JavaDocs
 
 
 
-Java Variables and Literals
+### Java Variables and Literals
 
-Java Variables
+#### Java Variables
 A variable is a location in memory (storage area) to hold data.
 
 To indicate the storage area, each variable should be given a unique name (identifier). Learn more about Java identifiers.
 
-Create Variables in Java
+##### Create Variables in Java
 Here's how we create a variable in Java,
 
 int speedLimit = 80;
@@ -129,7 +126,7 @@ Here, initially, the value of speedLimit is 80. Later, we changed it to 90.
 
 However, we cannot change the data type of a variable in Java within the same scope.
 
-What is the variable scope?
+##### What is the variable scope?
 
 Don't worry about it for now. Just remember that we can't do something like this:
 
@@ -138,7 +135,7 @@ int speedLimit = 80;
 float speedLimit;
 To learn more, visit: Can I change declaration type for a variable in Java?
 
-Rules for Naming Variables in Java
+##### Rules for Naming Variables in Java
 Java programming language has its own set of rules and conventions for naming variables. Here's what you need to know:
 
 Java is case sensitive. Hence, age and AGE are two different variables. For example,
@@ -164,7 +161,7 @@ int my age;  // invalid variables
 Here, is we need to use variable names having more than one word, use all lowercase letters for the first word and capitalize the first letter of each subsequent word. For example, myAge.
 When creating variables, choose a name that makes sense. For example, score, number, level makes more sense than variable names such as s, n, and l.
 If you choose one-word variable names, use all lowercase letters. For example, it's better to use speed rather than SPEED, or sPEED.
-There are 4 types of variables in Java programming language:
+##### There are 4 types of variables in Java programming language:
 
 Instance Variables (Non-Static Fields)
 Class Variables (Static Fields)
@@ -172,7 +169,7 @@ Local Variables
 Parameters
 
 
-Java literals
+#### Java literals
 Literals are data used for representing fixed values. They can be used directly in the code. For example,
 
 int a = 1;
@@ -182,14 +179,14 @@ Here, 1, 2.5, and 'F' are literals.
 
 Here are different types of literals in Java.
 
-1. Boolean Literals
+##### 1. Boolean Literals
 In Java, boolean literals are used to initialize boolean data types. They can store two values: true and false. For example,
 
 boolean flag1 = false;
 boolean flag2 = true;
 Here, false and true are two boolean literals.
 
-2. Integer Literals
+##### 2. Integer Literals
 An integer literal is a numeric value(associated with numbers) without any fractional or exponential part. There are 4 types of integer literals in Java:
 
 binary (base 2)
@@ -212,9 +209,9 @@ int hexNumber = 0x2F; // 0x represents hexadecimal
 int binNumber = 0b10010; // 0b represents binary
 In Java, binary starts with 0b, octal starts with 0, and hexadecimal starts with 0x.
 
-Note: Integer literals are used to initialize variables of integer types like byte, short, int, and long.
+###### Note: Integer literals are used to initialize variables of integer types like byte, short, int, and long.
 
-3. Floating-point Literals
+##### 3. Floating-point Literals
 A floating-point literal is a numeric literal that has either a fractional form or an exponential form. For example,
 
 class Main {
@@ -234,7 +231,7 @@ class Main {
 Run Code
 Note: The floating-point literals are used to initialize float and double type variables.
 
-4. Character Literals
+##### 4. Character Literals
 Character literals are unicode character enclosed inside single quotes. For example,
 
 char letter = 'a';
@@ -242,7 +239,7 @@ Here, a is the character literal.
 
 We can also use escape sequences as character literals. For example, \b (backspace), \t (tab), \n (new line), etc.
 
-5. String literals
+##### 5. String literals
 A string literal is a sequence of characters enclosed inside double-quotes. For example,
 
 String str1 = "Java Programming";
@@ -250,7 +247,7 @@ String str2 = "Programiz";
 Here, Java Programming and Programiz are two string literals.
 
 
-Java Data Types (Primitive)
+### Java Data Types (Primitive)
 In this tutorial, we will learn about all 8 primitive data types in Java with the help of examples.
 
 Java Data Types
@@ -267,8 +264,8 @@ There are 8 data types predefined in Java, known as primitive data types.
 
 Note: In addition to primitive data types, there are also referenced types (object type).
 
-8 Primitive Data Types
-1. boolean type
+#### 8 Primitive Data Types
+##### 1. boolean type
 The boolean data type has two possible values, either true or false.
 Default value: false.
 They are usually used for true/false conditions.
@@ -281,7 +278,7 @@ class Main {
   }
 }
 Run Code
-2. byte type
+##### 2. byte type
 The byte data type can have values from -128 to 127 (8-bit signed two's complement integer).
 If it's certain that the value of a variable will be within -128 to 127, then it is used instead of int to save memory.
 Default value: 0
@@ -295,7 +292,7 @@ class Main {
   }
 }
 Run Code
-3. short type
+##### 3. short type
 The short data type in Java can have values from -32768 to 32767 (16-bit signed two's complement integer).
 If it's certain that the value of a variable will be within -32768 and 32767, then it is used instead of other integer data types (int, long).
 Default value: 0
@@ -309,7 +306,7 @@ class Main {
   }
 }
 Run Code
-4. int type
+##### 4. int type
 The int data type can have values from -231 to 231-1 (32-bit signed two's complement integer).
 If you are using Java 8 or later, you can use an unsigned 32-bit integer. This will have a minimum value of 0 and a maximum value of 232-1. To learn more, visit How to use the unsigned integer in java 8?
 Default value: 0
@@ -322,7 +319,7 @@ class Main {
   }
 }
 Run Code
-5. long type
+##### 5. long type
 The long data type can have values from -263 to 263-1 (64-bit signed two's complement integer).
 If you are using Java 8 or later, you can use an unsigned 64-bit integer with a minimum value of 0 and a maximum value of 264-1.
 Default value: 0
@@ -337,7 +334,7 @@ class LongExample {
 Run Code
 Notice, the use of L at the end of -42332200000. This represents that it's an integer of the long type.
 
-6. double type
+##### 6. double type
 The double data type is a double-precision 64-bit floating-point.
 It should never be used for precise values such as currency.
 Default value: 0.0 (0.0d)
@@ -350,7 +347,7 @@ class Main {
   }
 }
 Run Code
-7. float type
+##### 7. float type
 The float data type is a single-precision 32-bit floating-point. Learn more about single-precision and double-precision floating-point if you are interested.
 It should never be used for precise values such as currency.
 Default value: 0.0 (0.0f)
@@ -370,7 +367,7 @@ To tell the compiler to treat -42.3 as float rather than double, you need to use
 
 If you want to know about single-precision and double-precision, visit Java single-precision and double-precision floating-point.
 
-8. char type
+##### 8. char type
 It's a 16-bit Unicode character.
 The minimum value of the char data type is '\u0000' (0) and the maximum value of the is '\uffff'.
 Default value: '\u0000'
@@ -403,14 +400,14 @@ Here, we have assigned 9 as a character (specified by single quotes) to the lett
 
 Hence, A is printed to the output. It is because Java treats characters as an integer and the ASCII value of A is 65. To learn more about ASCII, visit What is ASCII Code?.
 
-String type
+### String type
 Java also provides support for character strings via java.lang.String class. Strings in Java are not primitive types. Instead, they are objects. For example,
 
 String myString = "Java Programming";
 Here, myString is an object of the String class. To learn more, visit Java Strings.
 
 
-Java Operators
+#### Java Operators
 In this tutorial, you'll learn about different types of operators in Java, their syntax and how to use them with the help of examples.
 
 Operators are symbols that perform operations on variables and values. For example, + is an operator used for addition, while * is also an operator used for multiplication.
@@ -423,7 +420,7 @@ Relational Operators
 Logical Operators
 Unary Operators
 Bitwise Operators
-1. Java Arithmetic Operators
+##### 1. Java Arithmetic Operators
 Arithmetic operators are used to perform arithmetic operations on variables and data. For example,
 
 a + b;
@@ -486,7 +483,7 @@ The modulo operator % computes the remainder. When a = 7 is divided by b = 4, th
 
 Note: The % operator is mainly used with integers.
 
-2. Java Assignment Operators
+#### 2. Java Assignment Operators
 Assignment operators are used in Java to assign values to variables. For example,
 
 int age;
@@ -529,7 +526,7 @@ Output
 var using =: 4
 var using +=: 8 
 var using *=: 32
-3. Java Relational Operators
+#### 3. Java Relational Operators
 Relational operators are used to check the relationship between two operands. For example,
 
 // check if a is less than b
@@ -577,7 +574,7 @@ class Main {
 Run Code
 Note: Relational operators are used in decision making and loops.
 
-4. Java Logical Operators
+#### 4. Java Logical Operators
 Logical operators are used to check whether an expression is true or false. They are used in decision making.
 
 Operator	Example	Meaning
@@ -613,12 +610,12 @@ Working of Program
 (5 > 3) && (8 > 5) returns false because both (5 < 3) and (8 < 5) are false.
 !(5 == 3) returns true because 5 == 3 is false.
 !(5 > 3) returns false because 5 > 3 is true.
-5. Java Unary Operators
+#### 5. Java Unary Operators
 Unary operators are used with only one operand. For example, ++ is a unary operator that increases the value of a variable by 1. That is, ++5 will return 6.
 
 Different types of unary operators are:
 
-Operator	Meaning
+###### Operator	Meaning
 +	Unary plus: not necessary to use since numbers are positive without using it
 -	Unary minus: inverts the sign of an expression
 ++	Increment operator: increments value by 1
@@ -668,7 +665,7 @@ There is a slight difference when these operators are used as prefix versus when
 
 To learn more about these operators, visit increment and decrement operators.
 
-6. Java Bitwise Operators
+#### 6. Java Bitwise Operators
 Bitwise operators in Java are used to perform operations on individual bits. For example,
 
 Bitwise complement Operation of 35
@@ -694,7 +691,7 @@ These operators are not generally used in Java. To learn more, visit Java Bitwis
 Other operators
 Besides these operators, there are other additional operators in Java.
 
-Java instanceof Operator
+#### Java instanceof Operator
 The instanceof operator checks whether an object is an instanceof a particular class. For example,
 
 class Main {
@@ -715,7 +712,7 @@ Output
 Is str an object of String? true
 Here, str is an instance of the String class. Hence, the instanceof operator returns true. To learn more, visit Java instanceof.
 
-Java Ternary Operator
+#### Java Ternary Operator
 The ternary operator (conditional operator) is shorthand for the if-then-else statement. For example,
 
 variable = Expression ? expression1 : expression2
@@ -739,7 +736,7 @@ class Java {
 Run Code
 Output
 
-Leap year
+#### Leap year
 In the above example, we have used the ternary operator to check if the year is a leap year or not. To learn more, visit the Java ternary operator.
 
 Now that you know about Java operators, it's time to know about the order in which operators are evaluated. To learn more, visit Java Operator Precedence.
@@ -747,7 +744,7 @@ Now that you know about Java operators, it's time to know about the order in whi
 
 
 
-Java Basic Input and Output
+### Java Basic Input and Output
 In this tutorial, you will learn simple ways to display output to users and take input from users in Java.
 
 Java Output
@@ -780,7 +777,7 @@ Output:
 Java programming is interesting.
 Here, we have used the println() method to display the string.
 
-Difference between println(), print() and printf()
+##### Difference between println(), print() and printf()
 print() - It prints string inside the quotes.
 println() - It prints string inside the quotes similar like print() method. Then the cursor moves to the beginning of the next line.
 printf() - It provides string formatting (similar to printf in C/C++ programming).
@@ -846,7 +843,7 @@ And also, the line,
 System.out.println("Number = " + number);
 Here, first the value of variable number is evaluated. Then, the value is concatenated to the string: "Number = ".
 
-Java Input
+#### Java Input
 Java provides different ways to get input from the user. However, in this tutorial, you will learn to get input from user using the object of Scanner class.
 
 In order to use the object of Scanner, we need to import java.util.Scanner package.
@@ -928,12 +925,12 @@ As mentioned, there are other several ways to get input from the user. To learn 
 
 
 
-Java Expressions, Statements and Blocks
+### Java Expressions, Statements and Blocks
 In this tutorial, you will learn about Java expressions, Java statements, difference between expression and statement, and Java blocks with the help of examples.
 
 In previous chapters, we have used expressions, statements, and blocks without much explaining about them. Now that you know about variables, operators, and literals, it will be easier to understand these concepts.
 
-Java Expressions
+#### Java Expressions
 A Java expression consists of variables, operators, literals, and method calls. To know more about method calls, visit Java methods. For example,
 
 int score; 
@@ -948,7 +945,7 @@ if (number1 == number2)
     System.out.println("Number 1 is larger than number 2");
 Here, number1 == number2 is an expression that returns a boolean value. Similarly, "Number 1 is larger than number 2" is a string expression.
 
-Java Statements
+#### Java Statements
 In Java, each statement is a complete unit of execution. For example,
 
 int score = 9*5;
@@ -956,7 +953,7 @@ Here, we have a statement. The complete execution of this statement involves mul
 
 In the above statement, we have an expression 9 * 5. In Java, expressions are part of statements.
 
-Expression statements
+#### Expression statements
 We can convert an expression into a statement by terminating the expression with a ;. These are known as expression statements. For example,
 
 // expression
@@ -974,7 +971,7 @@ Consider another example,
 
 Similarly, ++number is an expression whereas ++number; is a statement.
 
-Declaration Statements
+#### Declaration Statements
 In Java, declaration statements are used for declaring variables. For example,
 
 Double tax = 9.5;
@@ -982,7 +979,7 @@ The statement above declares a variable tax which is initialized to 9.5.
 
 Note: There are control flow statements that are used in decision making and looping in Java. You will learn about control flow statements in later chapters.
 
-Java Blocks
+#### Java Blocks
 A block is a group of statements (zero or more) that is enclosed in curly braces { }. For example,
 
 class Main {
@@ -1030,7 +1027,7 @@ Here, we have block public static void main() {...}. However, similar to the abo
 
 
 
-Java Comments
+##### Java Comments
 In this tutorial, you will learn about Java comments, why we use them, and how to use comments in right way.
 
 In computer programming, comments are a portion of the program that are completely ignored by Java compilers. They are mainly used to help programmers to understand the code. For example,
@@ -1102,11 +1099,11 @@ One thing you should always consider that comments shouldn't be the substitute f
 
 Some believe that code should be self-describing and comments should be rarely used. However, in my personal opinion, there is nothing wrong with using comments. We can use comments to explain complex algorithms, regex or scenarios where we have to choose one technique among different technique to solve problems.
 
-Note: In most cases, always use comments to explain 'why' rather than 'how' and you are good to go.
+###### Note: In most cases, always use comments to explain 'why' rather than 'how' and you are good to go.
 
 
 
-Java if...else Statement
+### Java if...else Statement
 In this tutorial, you will learn about control flow statements using Java if and if...else statements with the help of examples.
 
 In programming, we use the if..else statement to run a block of code among more than one alternatives.
@@ -1116,7 +1113,7 @@ For example, assigning grades (A, B, C) based on the percentage obtained by a st
 if the percentage is above 90, assign grade A
 if the percentage is above 75, assign grade B
 if the percentage is above 65, assign grade C
-1. Java if (if-then) Statement
+##### 1. Java if (if-then) Statement
 The syntax of an if-then statement is:
 
 if (condition) {
@@ -1171,7 +1168,7 @@ Output
 Best Programming Language
 In the above example, we are comparing two strings in the if block.
 
-2. Java if...else (if-then-else) Statement
+##### 2. Java if...else (if-then-else) Statement
 The if statement executes a certain section of code if the test expression is evaluated to true. However, if the test expression is evaluated to false, it does nothing.
 
 In this case, we can use an optional else block. Statements inside the body of else block are executed if the test expression is evaluated to false. This is known as the if-...else statement in Java.
@@ -1227,7 +1224,7 @@ The number is not positive.
 Statement outside if...else block
 Here, the value of number is -5. So the test expression evaluates to false. Hence code inside the body of else is executed.
 
-3. Java if...else...if Statement
+##### 3. Java if...else...if Statement
 In Java, we have an if...else...if ladder, that can be used to execute one block of code among multiple other blocks.
 
 if (condition1) {
@@ -1285,7 +1282,7 @@ Here, the value of number is 0. So both the conditions evaluate to false. Hence 
 
 Note: Java provides a special operator called ternary operator, which is a kind of shorthand notation of if...else...if statement. To learn about the ternary operator, visit Java Ternary Operator.
 
-4. Java Nested if..else Statement
+##### 4. Java Nested if..else Statement
 In Java, it is also possible to use if..else statements inside an if...else statement. It's called the nested if...else statement.
 
 Here's a program to find the largest of 3 numbers using the nested if...else statement.
@@ -1334,7 +1331,7 @@ In the above programs, we have assigned the value of variables ourselves to make
 However, in real-world applications, these values may come from user input data, log files, form submission, etc.
 
 
-Java switch Statement
+### Java switch Statement
 In this tutorial, you will learn to use the switch statement in Java to control the flow of your program’s execution with the help of examples.
 
 The switch statement allows us to execute a block of code among many alternatives.
@@ -1501,7 +1498,7 @@ default:
   System.out.println("Unknown Size);
 Note: The Java switch statement only works with:
 
-Primitive data types: byte, short, char, and int
+#### Primitive data types: byte, short, char, and int
 Enumerated types
 String Class
 Wrapper Classes: Character, Byte, Short, and Integer.
@@ -1509,7 +1506,7 @@ Wrapper Classes: Character, Byte, Short, and Integer.
 
 
 
-Java for Loop
+### Java for Loop
 In this tutorial, we will learn how to use for loop in Java with the help of examples and we will also learn about the working of Loop in computer programming.
 
 In computer programming, loops are used to repeat a block of code. For example, if you want to show a message 100 times, then rather than typing the same code 100 times, you can use a loop.
@@ -1698,7 +1695,7 @@ In the first iteration of the loop, number will be 3, number will be 7 in second
 
 To learn more, visit Java for-each Loop.
 
-Java Infinite for Loop
+###### Java Infinite for Loop
 If we set the test expression in such a way that it never evaluates to false, the for loop will run forever. This is called infinite for loop. For example,
 
 // Infinite for Loop
@@ -1805,7 +1802,7 @@ As we can see, we have added each element of the numbers array to the sum variab
 for loop Vs for-each loop
 Let's see how a for-each loop is different from a regular Java for loop.
 
-1. Using for loop
+##### 1. Using for loop
 class Main {
  public static void main(String[] args) {
     
@@ -1825,7 +1822,7 @@ e
 i
 o
 u
-2. Using for-each Loop
+##### 2. Using for-each Loop
 class Main {
  public static void main(String[] args) {
 
@@ -1853,14 +1850,14 @@ This is why the for-each loop is preferred over the for loop when working with a
 
 
 
-Java while and do...while Loop
+##### Java while and do...while Loop
 In this tutorial, we will learn how to use while and do while loop in Java with the help of examples.
 
 In computer programming, loops are used to repeat a block of code. For example, if you want to show a message 100 times, then you can use a loop. It's just a simple example; you can achieve much more with loops.
 
 In the previous tutorial, you learned about Java for loop. Here, you are going to learn about while and do...while loops.
 
-Java while loop
+###### Java while loop
 Java while loop is used to run a specific code until a certain condition is met. The syntax of the while loop is:
 
 while (testExpression) {
@@ -2083,7 +2080,7 @@ Enter a number
 Sum is 0
 Here, the user enters a negative number. The test condition will be false but the code inside of the loop executes once.
 
-Infinite while loop
+###### Infinite while loop
 If the condition of a loop is always true, the loop runs for infinite times (until the memory is full). For example,
 
 // infinite while loop
@@ -2114,7 +2111,7 @@ while (condition) {
 
 
 
-Java break Statement
+##### Java break Statement
 In this tutorial, you will learn about the break statement, labeled break statement in Java with the help of examples.
 
 While working with loops, it is sometimes desirable to skip some statements inside the loop or terminate the loop immediately without checking the test expression.
@@ -2215,7 +2212,7 @@ The break statement terminates the innermost while loop in case of nested loops.
 Working of break Statement with Nested Loops
 Here, the break statement terminates the innermost while loop, and control jumps to the outer loop.
 
-Labeled break Statement
+###### Labeled break Statement
 Till now, we have used the unlabeled break statement. It terminates the innermost loop and switch statement. However, there is another form of break statement in Java known as the labeled break.
 
 We can use the labeled break statement to terminate the outermost loop as well.
@@ -2308,7 +2305,7 @@ Note: The break statement is also used to terminate cases inside the switch stat
 
 
 
-Java continue Statement
+##### Java continue Statement
 In this tutorial, you will learn about the continue statement and labeled continue statement in Java with the help of examples.
 
 While working with loops, sometimes you might want to skip some statements or terminate the loop. In such cases, break and continue statements are used.
@@ -2407,7 +2404,7 @@ Here, when the user enters a negative number, the continue statement is executed
 
 Note: To take input from the user, we have used the Scanner object. To learn more, visit Java Scanner.
 
-Java continue with Nested Loop
+##### Java continue with Nested Loop
 In the case of nested loops in Java, the continue statement skips the current iteration of the innermost loop.
 
 The continue statement skips the innermost loop while working with the nested loop in Java. 
@@ -2462,7 +2459,7 @@ Till now, we have used the unlabeled continue statement. However, there is anoth
 
 It includes the label of the loop along with the continue keyword. For example,
 
-continue label;
+###### continue label;
 Here, the continue statement skips the current iteration of the loop specified by label.
 
 The labeled continue statement skips the current iteration of the loop specified by the label.
@@ -2512,7 +2509,7 @@ Note: The use of labeled continue is often discouraged as it makes your code har
 
 
 
-Java Arrays
+### Java Arrays
 In this tutorial, we will learn to work with arrays in Java. We will learn to declare, initialize, and access array elements with the help of examples.
 
 An array is a collection of similar types of data.
@@ -2598,7 +2595,7 @@ class Main {
 Run Code
 Output
 
-Accessing Elements of Array:
+##### Accessing Elements of Array:
 First Element: 12
 Second Element: 4
 Third Element: 5
@@ -2609,7 +2606,7 @@ In the above example, notice that we are using the index number to access each e
 
 We can use loops to access all the elements of the array at once.
 
-Looping Through Array Elements
+##### Looping Through Array Elements
 In Java, we can also loop through each element of the array. For example,
 
 Example: Using For Loop
@@ -2703,7 +2700,7 @@ Here, we are using the length attribute of the array to calculate the size of th
 average = ((double)sum / (double)arrayLength);
 As you can see, we are converting the int value into double. This is called type casting in Java. To learn more about typecasting, visit Java Type Casting.
 
-Multidimensional Arrays
+#### Multidimensional Arrays
 Arrays we have mentioned till now are called one-dimensional arrays. However, we can declare multidimensional arrays in Java.
 
 A multidimensional array is an array of arrays. That is, each element of a multidimensional array is an array itself. For example,
@@ -2723,7 +2720,7 @@ Java Dynamic Array
 
 
 
-Java Multidimensional Arrays
+### Java Multidimensional Arrays
 In this tutorial, we will learn about the Java multidimensional array using 2-dimensional arrays and 3-dimensional arrays with the help of examples.
 
 Before we learn about the multidimensional array, make sure you know about Java array.
@@ -2910,12 +2907,12 @@ Output:
 
 
 
-Java Copy Arrays
+### Java Copy Arrays
 In this tutorial, you will learn about different ways you can use to copy arrays (both one dimensional and two-dimensional) in Java with the help of examples.
 
 In Java, we can copy one array into another. There are several techniques you can use to copy arrays in Java.
 
-1. Copying Arrays Using Assignment Operator
+##### 1. Copying Arrays Using Assignment Operator
 Let's take an example,
 
 class Main {
@@ -2962,7 +2959,7 @@ It's because both arrays refer to the same array object. This is because of the 
 
 Now, to make new array objects while copying the arrays, we need deep copy rather than a shallow copy.
 
-2. Using Looping Construct to Copy Arrays
+#### 2. Using Looping Construct to Copy Arrays
 Let's take an example:
 
 import java.util.Arrays;
@@ -2995,7 +2992,7 @@ Notice the statement,
 System.out.println(Arrays.toString(destination));
 Here, the toString() method is used to convert an array into a string. To learn more, visit the toString() method (official Java documentation).
 
-3. Copying Arrays Using arraycopy() method
+#### 3. Copying Arrays Using arraycopy() method
 In Java, the System class contains a method named arraycopy() to copy arrays. This method is a better approach to copy arrays than the above two.
 
 The arraycopy() method allows you to copy a specified portion of the source array to the destination array. For example,
@@ -3045,7 +3042,7 @@ System.arraycopy(n1, 0, n2, 0, n1.length) - entire elements from the n1 array ar
 System.arraycopy(n1, 2, n3, 1, 2) - 2 elements of the n1 array starting from index 2 are copied to the index starting from 1 of the n3 array
 As you can see, the default initial value of elements of an int type array is 0.
 
-4. Copying Arrays Using copyOfRange() method
+#### 4. Copying Arrays Using copyOfRange() method
 We can also use the copyOfRange() method defined in Java Arrays class to copy arrays. For example,
 
 // To use toString() and copyOfRange() method
@@ -3075,7 +3072,7 @@ In the above example, notice the line,
 int[] destination1 = Arrays.copyOfRange(source, 0, source.length);
 Here, we can see that we are creating the destination1 array and copying the source array to it at the same time. We are not creating the destination1 array before calling the copyOfRange() method. To learn more about the method, visit Java copyOfRange.
 
-5. Copying 2d Arrays Using Loop
+#### 5. Copying 2d Arrays Using Loop
 Similar to the single-dimensional array, we can also copy the 2-dimensional array using the for loop. For example,
 
 import java.util.Arrays;
@@ -3151,7 +3148,7 @@ Here, we can see that we get the same output by replacing the inner for loop wit
 
 
 
-Java Class and Objects
+### Java Class and Objects
 In this tutorial, you will learn about the concept of classes and objects in Java with the help of examples.
 
 Java is an object-oriented programming language. The core concept of the object-oriented approach is to break complex problems into smaller objects.
@@ -3162,7 +3159,7 @@ States: idle, first gear, etc
 Behaviors: braking, accelerating, etc.
 Before we learn about objects, let's first know about classes in Java.
 
-Java Class
+#### Java Class
 A class is a blueprint for the object. Before we create an object, we first need to define the class.
 
 We can think of the class as a sketch (prototype) of a house. It contains all the details about the floors, doors, windows, etc. Based on these descriptions we build the house. House is the object.
@@ -3198,7 +3195,7 @@ Here, Bicycle is a prototype. Now, we can create any number of bicycles using th
 
 Note: We have used keywords private and public. These are known as access modifiers. To learn more, visit Java access modifiers.
 
-Java Objects
+#### Java Objects
 An object is called an instance of a class. For example, suppose Bicycle is a class then MountainBicycle, SportsBicycle, TouringBicycle, etc can be considered as objects of the class.
 
 Creating an Object in Java
@@ -3341,7 +3338,7 @@ Here, we are creating the object inside the main() method of the same class.
 
 
 
-Java Methods
+### Java Methods
 In this tutorial, we will learn about Java methods, how to define methods, and how to use methods in Java programs with the help of examples.
 
 Java Methods
@@ -3355,8 +3352,8 @@ Dividing a complex problem into smaller chunks makes your program easy to unders
 
 In Java, there are two types of methods:
 
-User-defined Methods: We can create our own method based on our requirements.
-Standard Library Methods: These are built-in methods in Java that are available to use.
+###### User-defined Methods: We can create our own method based on our requirements.
+###### Standard Library Methods: These are built-in methods in Java that are available to use.
 Let's first learn about user-defined methods.
 
 Declaring a Java Method
@@ -3433,7 +3430,7 @@ Here, we have called the method by passing two arguments num1 and num2. Since th
 
 Note: The method is not static. Hence, we are calling the method using the object of the class.
 
-Java Method Return Type
+##### Java Method Return Type
 A Java method may or may not return a value to the function call. We use the return statement to return any value. For example,
 
 int addNumbers() {
@@ -3526,7 +3523,8 @@ class Main {
 Run Code
 Output
 
-Method without parameter
+##### Method without parameter
+
 Method with a single parameter: 24
 Here, the parameter of the method is int. Hence, if we pass any other data type instead of int, the compiler will throw an error. It is because Java is a strongly typed language.
 
@@ -3534,7 +3532,7 @@ Note: The argument 24 passed to the display2() method during the method call is 
 
 The parameter num accepted by the method definition is known as a formal argument. We need to specify the type of formal arguments. And, the type of actual arguments and formal arguments should always match.
 
-Standard Library Methods
+##### Standard Library Methods
 The standard library methods are built-in methods in Java that are readily available for use. These standard libraries come along with the Java Class Library (JCL) in a Java archive (*.jar) file with JVM and JRE.
 
 For example,
@@ -3557,7 +3555,7 @@ Output:
 Square root of 4 is: 2.0
 To learn more about standard library methods, visit Java Library Methods.
 
-What are the advantages of using methods?
+###### What are the advantages of using methods?
 1. The main advantage is code reusability. We can write a method once, and use it multiple times. We do not have to rewrite the entire code each time. Think of it as, "write once, reuse multiple times".
 
 Example 5: Java Method for Code Reusability
@@ -3593,7 +3591,7 @@ Hence, the same method is used again and again.
 
 
 
-Java Constructors
+### Java Constructors
 In this tutorial, we will learn about Java constructors, their types, and how to use them with the help of examples.
 
 What is a Constructor?
@@ -3648,7 +3646,7 @@ In Java, constructors can be divided into 3 types:
 No-Arg Constructor
 Parameterized Constructor
 Default Constructor
-1. Java No-Arg Constructors
+###### 1. Java No-Arg Constructors
 Similar to methods, a Java constructor may or may not have any parameters (arguments).
 
 If a constructor does not accept any parameters, it is known as a no-argument constructor. For example,
@@ -3714,7 +3712,7 @@ Output:
 Company name = Programiz
 Recommended Reading: Java Access Modifier
 
-2. Java Parameterized Constructor
+###### 2. Java Parameterized Constructor
 A Java constructor can also accept one or more parameters. Such constructors are known as parameterized constructors (constructor with parameters).
 
 Example 4: Parameterized constructor
@@ -3747,7 +3745,7 @@ In the above example, we have created a constructor named Main(). Here, the cons
 Main obj1 = new Main("Java");
 Here, we are passing the single value to the constructor. Based on the argument passed, the language variable is initialized inside the constructor.
 
-3. Java Default Constructor
+###### 3. Java Default Constructor
 If we do not create any constructor, the Java compiler automatically create a no-arg constructor during the execution of the program. This constructor is called default constructor.
 
 Example 5: Default Constructor
@@ -3811,7 +3809,7 @@ class Main {
 Run Code
 The output of the program is the same as Example 5.
 
-Important Notes on Java Constructors
+###### Important Notes on Java Constructors
 Constructors are invoked implicitly when you instantiate objects.
 The two rules for creating a constructor are:
 The name of the constructor should be the same as the class.
@@ -3873,7 +3871,7 @@ Note: We have used this keyword to specify the variable of the class. To know mo
 
 
 
-Java Strings
+#### Java Strings
 In this tutorial, we will learn about Java strings, how to create them, and various methods of the String class with the help of examples.
 
 In Java, a string is a sequence of characters. For example, "hello" is a string containing a sequence of characters 'h', 'e', 'l', 'l', and 'o'.
@@ -3911,7 +3909,7 @@ And, all string variables are instances of the String class.
 Java String Operations
 Java String provides various methods to perform different operations on strings. We will look into some of the commonly used string operations.
 
-1. Get length of a String
+##### 1. Get length of a String
 To find the length of a string, we use the length() method of the String. For example,
 
 class Main {
@@ -3933,7 +3931,7 @@ String: Hello! World
 Length: 12
 In the above example, the length() method calculates the total number of characters in the string and returns it. To learn more, visit Java String length().
 
-2. Join Two Java Strings
+##### 2. Join Two Java Strings
 We can join two strings in Java using the concat() method. For example,
 
 class Main {
@@ -3965,7 +3963,7 @@ Here, the concat() method joins the second string to the first string and assign
 
 We can also join two strings using the + operator in Java. To learn more, visit Java String concat().
 
-3. Compare two Strings
+##### 3. Compare two Strings
 In Java, we can make comparisons between two strings using the equals() method. For example,
 
 class Main {
@@ -4065,19 +4063,19 @@ Now that we know how strings are created using string literals and the new keywo
 
 In Java, the JVM maintains a string pool to store all of its strings inside the memory. The string pool helps in reusing the strings.
 
-1. While creating strings using string literals,
+###### 1. While creating strings using string literals,
 
 String example = "Java";
 Here, we are directly providing the value of the string (Java). Hence, the compiler first checks the string pool to see if the string already exists.
 
 If the string already exists, the new string is not created. Instead, the new reference, example points to the already existed string (Java).
 If the string doesn't exist, the new string (Java is created.
-2. While creating strings using the new keyword,
+###### 2. While creating strings using the new keyword,
 
 String example = new String("Java");
 Here, the value of the string is not directly provided. Hence, a new "Java" string is created even though "Java" is already present inside the memory pool.
 
-Methods of Java String
+#### Methods of Java String
 Besides those mentioned above, there are various string methods present in Java. Here are some of those methods:
 
 Methods	Description
@@ -4112,7 +4110,7 @@ subSequence()	returns a subsequence from the string
 
 
 
-Java Access Modifiers
+### Java Access Modifiers
 In this tutorial, we will learn about the Java Access Modifier, its types, and how to use them with the help of examples.
 
 What are Access Modifiers?
@@ -4125,8 +4123,8 @@ class Animal {
 }
 In the above example, we have declared 2 methods: method1() and method2(). Here,
 
-method1 is public - This means it can be accessed by other classes.
-method2 is private - This means it can not be accessed by other classes.
+##### method1 is public - This means it can be accessed by other classes.
+##### method2 is private - This means it can not be accessed by other classes.
 Note the keyword public and private. These are access modifiers in Java. They are also known as visibility modifiers.
 
 Note: You cannot set the access modifier of getters methods.
@@ -4136,12 +4134,12 @@ Before you learn about types of access modifiers, make sure you know about Java 
 
 There are four access modifiers keywords in Java and they are:
 
-Modifier	Description
+##### Modifier	Description
 Default	declarations are visible only within the package (package private)
 Private	declarations are visible within the class only
 Protected	declarations are visible within the package or all subclasses
 Public	declarations are visible everywhere
-Default Access Modifier
+###### Default Access Modifier
 If we do not explicitly specify any access modifier for classes, methods, variables, etc, then by default the default access modifier is considered. For example,
 
 package defaultPackage;
@@ -4153,7 +4151,7 @@ class Logger {
 Run Code
 Here, the Logger class has the default access modifier. And the class is visible to all the classes that belong to the defaultPackage package. However, if we try to use the Logger class in another class outside of defaultPackage, we will get a compilation error.
 
-Private Access Modifier
+###### Private Access Modifier
 When variables and methods are declared private, they cannot be accessed outside of the class. For example,
 
 class Data {
@@ -4215,7 +4213,7 @@ We have used this keyword inside the setName() to refer to the variable of the c
 
 Note: We cannot declare classes and interfaces private in Java. However, the nested classes can be declared private. To learn more, visit Java Nested and Inner Class.
 
-Protected Access Modifier
+###### Protected Access Modifier
 When methods and data members are declared protected, we can access them within the same package as well as from subclasses. For example,
 
 class Animal {
@@ -4246,7 +4244,7 @@ Since protected methods can be accessed from the child classes, we are able to a
 
 Note: We cannot declare classes or interfaces protected in Java.
 
-Public Access Modifier
+###### Public Access Modifier
 When methods, variables, classes, and so on are declared public, then we can access them from anywhere. The public access modifier has no scope restriction. For example,
 
 // Animal.java file
@@ -4284,7 +4282,7 @@ Here,
 The public class Animal is accessed from the Main class.
 The public variable legCount is accessed from the Main class.
 The public method display() is accessed from the Main class.
-Access Modifiers Summarized in one figure
+##### Access Modifiers Summarized in one figure
 Accessibility of all Access Modifiers in Java
 Accessibility of all Access Modifiers in Java
 Access modifiers are mainly used for encapsulation. It can help us to control what part of a program can access the members of a class. So that misuse of data can be prevented. To learn more about encapsulation, visit Java Encapsulation.
@@ -4292,7 +4290,7 @@ Access modifiers are mainly used for encapsulation. It can help us to control wh
 
 
 
-Java this Keyword
+#### Java this Keyword
 In this article, we will learn about this keyword in Java, how and where to use them with the help of examples.
 
 this Keyword
@@ -4554,7 +4552,7 @@ Here, we are calling the add() method by passing this as an argument. Since this
 
 
 
-Java final keyword
+#### Java final keyword
 In this tutorial, we will learn about Java final variables, methods and classes with examples.
 
 In Java, the final keyword is used to denote constants. It can be used with variables, methods, and classes.
@@ -4564,7 +4562,7 @@ Once any entity (variable, method or class) is declared final, it can be assigne
 the final variable cannot be reinitialized with another value
 the final method cannot be overridden
 the final class cannot be extended
-1. Java final Variable
+##### 1. Java final Variable
 In Java, we cannot change the value of a final variable. For example,
 
 class Main {
@@ -4588,7 +4586,7 @@ cannot assign a value to final variable AGE
     ^
 Note: It is recommended to use uppercase to declare final variables in Java.
 
-2. Java final Method
+##### 2. Java final Method
 Before you learn about final methods and final classes, make sure you know about the Java Inheritance.
 
 In Java, the final method cannot be overridden by the child class. For example,
@@ -4621,7 +4619,7 @@ We have tried to override the final method in the Main class. When we run the pr
   public final void display() {
                     ^
   overridden method is final
-3. Java final Class
+##### 3. Java final Class
 In Java, the final class cannot be inherited by another class. For example,
 
 // create a final class
@@ -4655,7 +4653,7 @@ class Main extends FinalClass {
 
 
 
-Java Recursion
+### Java Recursion
 In this tutorial, you will learn about Java recursive function, its advantages and disadvantages.
 
 In Java, a method that calls itself is known as a recursive method. And, this process is known as recursion.
@@ -4718,7 +4716,7 @@ Recommended Reading: What are the advantages and disadvantages of recursion?
 
 
 
-Java instanceof Operator
+### Java instanceof Operator
 In this tutorial, you will learn about Java instanceof operator in detail with the help of examples.
 
 The instanceof operator in Java is used to check whether an object is an instance of a particular class or not.
@@ -4836,7 +4834,7 @@ The result will be true.
 
 
 
-Java Inheritance
+### Java Inheritance
 In this tutorial, we will learn about Java inheritance and its types with the help of example.
 
 Inheritance is one of the key features of OOP that allows us to create a new class from an existing class.
@@ -5080,35 +5078,35 @@ labrador.name = "Rocky";
 labrador.display();
 Here, we are able to access the protected field and method of the superclass using the labrador object of the subclass.
 
-Why use inheritance?
+#### Why use inheritance?
 The most important use of inheritance in Java is code reusability. The code that is present in the parent class can be directly used by the child class.
 Method overriding is also known as runtime polymorphism. Hence, we can achieve Polymorphism in Java with the help of inheritance.
 Types of inheritance
 There are five types of inheritance.
 
-1. Single Inheritance
+##### 1. Single Inheritance
 In single inheritance, a single subclass extends from a single superclass. For example,
 
 Class A inherits from class B.
 Java Single Inheritance
-2. Multilevel Inheritance
+##### 2. Multilevel Inheritance
 In multilevel inheritance, a subclass extends from a superclass and then the same subclass acts as a superclass for another class. For example,
 
 Class B inherits from class A and class C inherits from class B.
 Java Multilevel Inheritance
-3. Hierarchical Inheritance
+##### 3. Hierarchical Inheritance
 In hierarchical inheritance, multiple subclasses extend from a single superclass. For example,
 
 Both classes B and C inherit from the single class A.
 Java Hierarchical Inheritance
-4. Multiple Inheritance
+##### 4. Multiple Inheritance
 In multiple inheritance, a single subclass extends from multiple superclasses. For example,
 
 Class C inherits from both classes A and B.
 Java Multiple Inheritance
 Note: Java doesn't support multiple inheritance. However, we can achieve multiple inheritance using interfaces. To learn more, visit Java implements multiple inheritance.
 
-5. Hybrid Inheritance
+##### 5. Hybrid Inheritance
 Hybrid inheritance is a combination of two or more types of inheritance. For example,
 
 Class B and C inherit from a single class A and class D inherits from both the class B and C.
@@ -5120,7 +5118,7 @@ Here, we have combined hierarchical and multiple inheritance to form a hybrid in
 
 
 
-Java Method Overriding
+### Java Method Overriding
 In this tutorial, we will learn about method overriding in Java with the help of examples.
 
 In the last tutorial, we learned about inheritance. Inheritance is an OOP property that allows us to derive a new class (subclass) from an existing class (superclass). The subclass inherits the attributes and methods of the superclass.
@@ -5155,7 +5153,7 @@ In the above program, the displayInfo() method is present in both the Animal sup
 
 When we call displayInfo() using the d1 object (object of the subclass), the method inside the subclass Dog is called. The displayInfo() method of the subclass overrides the same method of the superclass.
 
-Working of method overriding in Java.
+###### Working of method overriding in Java.
 
 Notice the use of the @Override annotation in our example. In Java, annotations are the metadata that we used to provide information to the compiler. Here, the @Override annotation specifies the compiler that the method after this annotation overrides the method of the superclass.
 
@@ -5254,7 +5252,7 @@ We will learn more about abstract classes and overriding of abstract methods in 
 
 
 
-Java super
+### Java super
 In this tutorial, we will learn about the super keyword in Java with the help of examples.
 
 The super keyword in Java is used in subclasses to access superclass members (attributes, constructors and methods).
@@ -5267,7 +5265,7 @@ To access attributes (fields) of the superclass if both superclass and subclass 
 To explicitly call superclass no-arg (default) or parameterized constructor from the subclass constructor.
 Let’s understand each of these uses.
 
-1. Access Overridden Methods of the superclass
+##### 1. Access Overridden Methods of the superclass
 If methods with the same name are defined in both superclass and subclass, the method in the subclass overrides the method in the superclass. This is called method overriding.
 
 Example 1: Method overriding
@@ -5354,7 +5352,7 @@ Here, how the above program works.
 
 Working of super in Java
 
-2. Access Attributes of the Superclass
+##### 2. Access Attributes of the Superclass
 The superclass and subclass can have attributes with the same name. We use the super keyword to access the attribute of the superclass.
 
 Example 3: Access superclass attribute
@@ -5393,7 +5391,7 @@ super.type refers to the attribute of the superclass Animal.
 
 Hence, System.out.println("I am a " + type); prints I am a mammal. And, System.out.println("I am an " + super.type); prints I am an animal.
 
-3. Use of super() to access superclass constructor
+##### 3. Use of super() to access superclass constructor
 As we know, when an object of a class is created, its default constructor is automatically called.
 
 To explicitly call the superclass constructor from the subclass constructor, we use super(). It's a special form of the super keyword.
@@ -5497,7 +5495,7 @@ Note that in the above example, we explicitly called the parameterized construct
 
 
 
-Java Abstract Class and Abstract Methods
+### Java Abstract Class and Abstract Methods
 In this tutorial, we will learn about Java abstract classes and methods with the help of examples. We will also learn about abstraction in Java.
 
 Java Abstract Class
@@ -5526,7 +5524,7 @@ abstract class Language {
 }
 To know about the non-abstract methods, visit Java methods. Here, we will learn about abstract methods.
 
-Java Abstract Method
+##### Java Abstract Method
 A method that doesn't have its body is known as an abstract method. We use the same abstract keyword to create abstract methods. For example,
 
 abstract void display();
@@ -5616,9 +5614,9 @@ We have inherited a subclass Dog from the superclass Animal. Here, the subclass 
 
 We then used the object d1 of the Dog class to call methods makeSound() and eat().
 
-Note: If the Dog class doesn't provide the implementation of the abstract method makeSound(), Dog should also be declared as abstract. This is because the subclass Dog inherits makeSound() from Animal.
+###### Note: If the Dog class doesn't provide the implementation of the abstract method makeSound(), Dog should also be declared as abstract. This is because the subclass Dog inherits makeSound() from Animal.
 
-Accesses Constructor of Abstract Classes
+##### Accesses Constructor of Abstract Classes
 An abstract class can have constructors like the regular class. And, we can access the constructor of an abstract class from the subclass using the super keyword. For example,
 
 abstract class Animal {
@@ -5637,7 +5635,7 @@ Here, we have used the super() inside the constructor of Dog to access the const
 
 Note that the super should always be the first statement of the subclass constructor. Visit Java super keyword to learn more.
 
-Java Abstraction
+### Java Abstraction
 The major use of abstract classes and methods is to achieve abstraction in Java.
 
 Abstraction is an important concept of object-oriented programming that allows us to hide unnecessary details and only show the needed information.
@@ -5694,7 +5692,7 @@ Here, MountainBike makes its own implementation of brake() and SportsBike makes 
 
 Note: We can also use interfaces to achieve abstraction in Java. To learn more, visit Java Interface.
 
-Key Points to Remember
+###### Key Points to Remember
 We use the abstract keyword to create abstract classes and methods.
 An abstract method doesn't have any implementation (method body).
 A class containing abstract methods should also be abstract.
@@ -5711,7 +5709,7 @@ Animal.staticMethod();
 
 
 
-Java Interface
+### Java Interface
 In this tutorial, we will learn about Java interfaces. We will learn how to implement interfaces and when to use them in detail with the help of examples.
 
 An interface is a fully abstract class. It includes a group of abstract methods (methods without a body).
@@ -6040,7 +6038,7 @@ Any class that implements Polygon must provide an implementation of getArea().
 
 
 
-Java Polymorphism
+### Java Polymorphism
 In this tutorial, we will learn about Java polymorphism and its implementation with the help of examples.
 
 Polymorphism is an important concept of object-oriented programming. It simply means more than one form.
@@ -6095,7 +6093,7 @@ The main purpose of the render() method is to render the shape. However, the pro
 
 Hence, the render() method behaves differently in different classes. Or, we can say render() is polymorphic.
 
-Why Polymorphism?
+##### Why Polymorphism?
 Polymorphism allows us to create consistent code. In the previous example, we can also create different methods: renderSquare() and renderCircle() to render Square and Circle, respectively.
 
 This will work perfectly. However, for every shape, we need to create different methods. It will make our code inconsistent.
@@ -6104,7 +6102,7 @@ To solve this, polymorphism in Java allows us to create a single method render()
 
 Note: The print() method is also an example of polymorphism. It is used to print values of different types like char, int, string, etc.
 
-We can achieve polymorphism in Java using the following ways:
+##### We can achieve polymorphism in Java using the following ways:
 
 Method Overriding
 Method Overloading
@@ -6143,7 +6141,7 @@ class Main {
 Run Code
 Output:
 
-Java Programming Language
+#### Java Programming Language
 Common English Language
 In the above example, we have created a superclass named Language and a subclass named Java. Here, the method displayInfo() is present in both Language and Java.
 
@@ -6155,7 +6153,7 @@ displayInfo() method prints Common English Language when called using l1 object 
 Working of Java Polymorphism
 Note: The method that is called is determined during the execution of the program. Hence, method overriding is a run-time polymorphism.
 
-2. Java Method Overloading
+##### 2. Java Method Overloading
 In a Java class, we can create methods with the same name if they differ in parameters. For example,
 
 void func() { ... }
@@ -6214,7 +6212,7 @@ prints a pattern of *, if no argument is passed or
 prints pattern of the parameter, if a single char type argument is passed.
 Note: The method that is called is determined by the compiler. Hence, it is also known as compile-time polymorphism.
 
-3. Java Operator Overloading
+##### 3. Java Operator Overloading
 Some operators in Java behave differently with different operands. For example,
 
 + operator is overloaded to perform numeric addition as well as string concatenation, and
@@ -6223,14 +6221,14 @@ Let's see how we can achieve polymorphism using operator overloading.
 
 The + operator is used to add two entities. However, in Java, the + operator performs two operations.
 
-1. When + is used with numbers (integers and floating-point numbers), it performs mathematical addition. For example,
+###### 1. When + is used with numbers (integers and floating-point numbers), it performs mathematical addition. For example,
 
 int a = 5;
 int b = 6;
 
 // + with numbers
 int sum = a + b;  // Output = 11
-2. When we use the + operator with strings, it will perform string concatenation (join two strings). For example,
+###### 2. When we use the + operator with strings, it will perform string concatenation (join two strings). For example,
 
 String first = "Java ";
 String second = "Programming";
@@ -6289,7 +6287,7 @@ This is an example of upcasting in Java.
 
 
 
-Java Encapsulation
+### Java Encapsulation
 In this tutorial, you will learn about encapsulation and data hiding in Java with the help of examples.
 
 Java Encapsulation
@@ -6342,7 +6340,7 @@ Note: People often consider encapsulation as data hiding, but that's not entirel
 
 Encapsulation refers to the bundling of related fields and methods together. This can be used to achieve data hiding. Encapsulation in itself is not data hiding.
 
-Why Encapsulation?
+##### Why Encapsulation?
 In Java, encapsulation helps us to keep related fields and methods together, which makes our code cleaner and easy to read.
 It helps to control the values of our data fields. For example,
 class Person {
@@ -6422,7 +6420,7 @@ p1.age = 24;
 
 
 
-Java Nested and Inner Class
+### Java Nested and Inner Class
 In this tutorial, you will learn about the nested class in Java and its types with the help of examples.
 
 In Java, you can define a class within another class. Such class is known as nested class. For example,
@@ -6666,7 +6664,7 @@ When we try to run the program, we will get an error:
 error: non-static variable this cannot be referenced from a static context
 This is because we are not using the object of the outer class to create an object of the inner class. Hence, there is no reference to the outer class Motherboard stored in Motherboard.this.
 
-Key Points to Remember
+##### Key Points to Remember
 Java treats the inner class as a regular member of a class. They are just like methods and variables declared inside a class.
 Since inner classes are members of the outer class, you can apply any access modifiers like private, protected to your inner class which is not possible in normal classes.
 Since the nested class is a member of its enclosing outer class, you can use the dot (.) notation to access the nested class and its members.
@@ -6680,7 +6678,7 @@ Non-static nested classes (inner classes) have access to other members of the ou
 
 
 
-Java Nested Static Class
+### Java Nested Static Class
 In this tutorial, you will learn about nested static class with the help of examples. You will also learn about how static classes differs from inner classes.
 
 As learned in previous tutorials, we can have a class inside another class in Java. Such classes are known as nested classes. In Java, nested classes are of two types:
