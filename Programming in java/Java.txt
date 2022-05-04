@@ -1,4 +1,4 @@
-# Java 
+Java 
 
 Java "Hello, World!" Program
 
@@ -42,11 +42,11 @@ public class HelloWorld {
 }
 
 
-## Java JDK, JRE and JVM
+Java JDK, JRE and JVM
 
 In this tutorial, you will learn about JDK, JRE, and JVM. You will also learn the key differences between them.
 
-### What is JVM?
+What is JVM?
 
 JVM (Java Virtual Machine) is an abstract machine that enables your computer to run a Java program.
 
@@ -59,12 +59,12 @@ Java is a platform-independent language. It's because when you write Java code, 
 Java      ---------------->  Java ByteCode  ------------>   Machine  ------------> Output
 Program    java Compiler                          JVM         Code       CPU
 
-### How does Java program work?
+How does Java program work?
 
 Working of Java Program
 If you are interested in learning about JVM Architecture, visit The JVM Architecture Explained.
 
-### What is JRE?
+What is JRE?
 
 JRE (Java Runtime Environment) is a software package that provides Java class libraries, Java Virtual Machine (JVM), and other components that are required to run Java applications.
 
@@ -74,7 +74,7 @@ JRE = JVM + Class Libraries
 Java runtime environment
 
 
-### What is JDK?
+What is JDK?
 JDK (Java Development Kit) is a software development kit required to develop applications in Java. When you download JDK, JRE is also downloaded with it.
 
 In addition to JRE, JDK also contains a number of development tools (compilers, JavaDoc, Java Debugger, etc).
@@ -85,7 +85,7 @@ JDK = JRE + Compilers + Debuggers
 Java Development Kit
 
 
-#### Relationship between JVM, JRE, and JDK.
+Relationship between JVM, JRE, and JDK.
 
 JRE contains JVM and class libraries and JDK contains JRE, compilers, debuggers, and JavaDoc
 
@@ -96,9 +96,9 @@ JDK = JRE + Compilers + Debuggers + JavaDocs
 
 
 
-## Java Variables and Literals
+Java Variables and Literals
 
-### Java Variables
+Java Variables
 A variable is a location in memory (storage area) to hold data.
 
 To indicate the storage area, each variable should be given a unique name (identifier). Learn more about Java identifiers.
@@ -129,7 +129,7 @@ Here, initially, the value of speedLimit is 80. Later, we changed it to 90.
 
 However, we cannot change the data type of a variable in Java within the same scope.
 
-### What is the variable scope?
+What is the variable scope?
 
 Don't worry about it for now. Just remember that we can't do something like this:
 
@@ -164,7 +164,7 @@ int my age;  // invalid variables
 Here, is we need to use variable names having more than one word, use all lowercase letters for the first word and capitalize the first letter of each subsequent word. For example, myAge.
 When creating variables, choose a name that makes sense. For example, score, number, level makes more sense than variable names such as s, n, and l.
 If you choose one-word variable names, use all lowercase letters. For example, it's better to use speed rather than SPEED, or sPEED.
-#### There are 4 types of variables in Java programming language:
+There are 4 types of variables in Java programming language:
 
 Instance Variables (Non-Static Fields)
 Class Variables (Static Fields)
@@ -172,7 +172,7 @@ Local Variables
 Parameters
 
 
-#### Java literals
+Java literals
 Literals are data used for representing fixed values. They can be used directly in the code. For example,
 
 int a = 1;
@@ -182,14 +182,14 @@ Here, 1, 2.5, and 'F' are literals.
 
 Here are different types of literals in Java.
 
-##### 1. Boolean Literals
+1. Boolean Literals
 In Java, boolean literals are used to initialize boolean data types. They can store two values: true and false. For example,
 
 boolean flag1 = false;
 boolean flag2 = true;
 Here, false and true are two boolean literals.
 
-##### 2. Integer Literals
+2. Integer Literals
 An integer literal is a numeric value(associated with numbers) without any fractional or exponential part. There are 4 types of integer literals in Java:
 
 binary (base 2)
@@ -214,7 +214,7 @@ In Java, binary starts with 0b, octal starts with 0, and hexadecimal starts with
 
 Note: Integer literals are used to initialize variables of integer types like byte, short, int, and long.
 
-##### 3. Floating-point Literals
+3. Floating-point Literals
 A floating-point literal is a numeric literal that has either a fractional form or an exponential form. For example,
 
 class Main {
@@ -234,7 +234,7 @@ class Main {
 Run Code
 Note: The floating-point literals are used to initialize float and double type variables.
 
-##### 4. Character Literals
+4. Character Literals
 Character literals are unicode character enclosed inside single quotes. For example,
 
 char letter = 'a';
@@ -242,7 +242,7 @@ Here, a is the character literal.
 
 We can also use escape sequences as character literals. For example, \b (backspace), \t (tab), \n (new line), etc.
 
-##### 5. String literals
+5. String literals
 A string literal is a sequence of characters enclosed inside double-quotes. For example,
 
 String str1 = "Java Programming";
@@ -250,10 +250,10 @@ String str2 = "Programiz";
 Here, Java Programming and Programiz are two string literals.
 
 
-#### Java Data Types (Primitive)
+Java Data Types (Primitive)
 In this tutorial, we will learn about all 8 primitive data types in Java with the help of examples.
 
-#### Java Data Types
+Java Data Types
 As the name suggests, data types specify the type of data that can be stored inside variables in Java.
 
 Java is a statically-typed language. This means that all variables must be declared before they can be used.
@@ -267,8 +267,8 @@ There are 8 data types predefined in Java, known as primitive data types.
 
 Note: In addition to primitive data types, there are also referenced types (object type).
 
-### 8 Primitive Data Types
-##### 1. boolean type
+8 Primitive Data Types
+1. boolean type
 The boolean data type has two possible values, either true or false.
 Default value: false.
 They are usually used for true/false conditions.
@@ -281,7 +281,7 @@ class Main {
   }
 }
 Run Code
-##### 2. byte type
+2. byte type
 The byte data type can have values from -128 to 127 (8-bit signed two's complement integer).
 If it's certain that the value of a variable will be within -128 to 127, then it is used instead of int to save memory.
 Default value: 0
@@ -295,7 +295,7 @@ class Main {
   }
 }
 Run Code
-##### 3. short type
+3. short type
 The short data type in Java can have values from -32768 to 32767 (16-bit signed two's complement integer).
 If it's certain that the value of a variable will be within -32768 and 32767, then it is used instead of other integer data types (int, long).
 Default value: 0
@@ -309,7 +309,7 @@ class Main {
   }
 }
 Run Code
-##### 4. int type
+4. int type
 The int data type can have values from -231 to 231-1 (32-bit signed two's complement integer).
 If you are using Java 8 or later, you can use an unsigned 32-bit integer. This will have a minimum value of 0 and a maximum value of 232-1. To learn more, visit How to use the unsigned integer in java 8?
 Default value: 0
@@ -322,7 +322,7 @@ class Main {
   }
 }
 Run Code
-##### 5. long type
+5. long type
 The long data type can have values from -263 to 263-1 (64-bit signed two's complement integer).
 If you are using Java 8 or later, you can use an unsigned 64-bit integer with a minimum value of 0 and a maximum value of 264-1.
 Default value: 0
@@ -337,7 +337,7 @@ class LongExample {
 Run Code
 Notice, the use of L at the end of -42332200000. This represents that it's an integer of the long type.
 
-##### 6. double type
+6. double type
 The double data type is a double-precision 64-bit floating-point.
 It should never be used for precise values such as currency.
 Default value: 0.0 (0.0d)
@@ -350,7 +350,7 @@ class Main {
   }
 }
 Run Code
-##### 7. float type
+7. float type
 The float data type is a single-precision 32-bit floating-point. Learn more about single-precision and double-precision floating-point if you are interested.
 It should never be used for precise values such as currency.
 Default value: 0.0 (0.0f)
@@ -370,7 +370,7 @@ To tell the compiler to treat -42.3 as float rather than double, you need to use
 
 If you want to know about single-precision and double-precision, visit Java single-precision and double-precision floating-point.
 
-##### 8. char type
+8. char type
 It's a 16-bit Unicode character.
 The minimum value of the char data type is '\u0000' (0) and the maximum value of the is '\uffff'.
 Default value: '\u0000'
