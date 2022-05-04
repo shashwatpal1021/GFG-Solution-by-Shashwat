@@ -1,3 +1,4 @@
+/*
 # Java 
 
 Java "Hello, World!" Program
@@ -1097,6 +1098,7 @@ When we want to write comments in multiple lines, we can use the multi-line comm
 /* This is an example of  multi-line comment.
  * The program prints "Hello, World!" to the standard output.
  */
+/*
 
 class HelloWorld {
     public static void main(String[] args) {    	
@@ -1113,8 +1115,9 @@ Here, we have used the multi-line comment:
 /* This is an example of multi-line comment.
 * The program prints "Hello, World!" to the standard output.
 */
+/*
 This type of comment is also known as Traditional Comment. In this type of comment, the Java compiler ignores everything from /* to */.
-
+/*
 Use Comments the Right Way
 One thing you should always consider that comments shouldn't be the substitute for a way to explain poorly written code in English. You should always write well structured and self explaining code. And, then use comments.
 
@@ -8999,6 +9002,7 @@ We use Javadoc @deprecated tag for documenting the deprecated element.
  * @deprecated
  * why it was deprecated
  */
+/*
 @Deprecated
 accessModifier returnType deprecatedMethodName() { ... }
 Example 1: 
@@ -9008,6 +9012,7 @@ class Main {
    * @deprecated
    * This method is deprecated and has been replaced by newMethod()
    */
+  /*
   @Deprecated
   public static void deprecatedMethod() { 
     System.out.println("Deprecated method"); 
@@ -21578,44 +21583,4 @@ Note: Primitive types are more efficient than corresponding objects. Hence, when
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+*/
