@@ -1,13 +1,14 @@
 # Java 
 
 Java "Hello, World!" Program
-/*
+
   class HelloWorld {
       public static void main(String[] args) {
           System.out.println("Hello, World!"); 
       }
   }
-  */
+
+
 
 Output
 
@@ -35,13 +36,13 @@ The main method must be inside the class definition.
 The compiler executes the codes starting from the main function.
 
 This is a valid Java program that does nothing.
-/*
+
   public class HelloWorld {
     public static void main(String[] args) {
         // Write your code here
     }
 }
-*/
+
 
 
 ### Java JDK, JRE and JVM
