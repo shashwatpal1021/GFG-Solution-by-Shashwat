@@ -282,7 +282,8 @@ Run Code
 The byte data type can have values from -128 to 127 (8-bit signed two's complement integer).
 If it's certain that the value of a variable will be within -128 to 127, then it is used instead of int to save memory.
 Default value: 0
-Example 2: Java byte data type
+Example 2: 
+Java byte data type
 class Main {
   public static void main(String[] args) {
 
@@ -296,7 +297,8 @@ Run Code
 The short data type in Java can have values from -32768 to 32767 (16-bit signed two's complement integer).
 If it's certain that the value of a variable will be within -32768 and 32767, then it is used instead of other integer data types (int, long).
 Default value: 0
-Example 3: Java short data type
+Example 3:
+ Java short data type
 class Main {
   public static void main(String[] args) {
     	
@@ -310,7 +312,8 @@ Run Code
 The int data type can have values from -231 to 231-1 (32-bit signed two's complement integer).
 If you are using Java 8 or later, you can use an unsigned 32-bit integer. This will have a minimum value of 0 and a maximum value of 232-1. To learn more, visit How to use the unsigned integer in java 8?
 Default value: 0
-Example 4: Java int data type
+Example 4: 
+Java int data type
 class Main {
   public static void main(String[] args) {
     	
@@ -323,7 +326,8 @@ Run Code
 The long data type can have values from -263 to 263-1 (64-bit signed two's complement integer).
 If you are using Java 8 or later, you can use an unsigned 64-bit integer with a minimum value of 0 and a maximum value of 264-1.
 Default value: 0
-Example 5: Java long data type
+Example 5:
+ Java long data type
 class LongExample {
   public static void main(String[] args) {
     	
@@ -338,7 +342,8 @@ Notice, the use of L at the end of -42332200000. This represents that it's an in
 The double data type is a double-precision 64-bit floating-point.
 It should never be used for precise values such as currency.
 Default value: 0.0 (0.0d)
-Example 6: Java double data type
+Example 6:
+ Java double data type
 class Main {
   public static void main(String[] args) {
     	
@@ -351,7 +356,8 @@ Run Code
 The float data type is a single-precision 32-bit floating-point. Learn more about single-precision and double-precision floating-point if you are interested.
 It should never be used for precise values such as currency.
 Default value: 0.0 (0.0f)
-Example 7: Java float data type
+Example 7: 
+Java float data type
 class Main {
   public static void main(String[] args) {
     	
@@ -371,7 +377,8 @@ If you want to know about single-precision and double-precision, visit Java sing
 It's a 16-bit Unicode character.
 The minimum value of the char data type is '\u0000' (0) and the maximum value of the is '\uffff'.
 Default value: '\u0000'
-Example 8: Java char data type
+Example 8: 
+Java char data type
 class Main {
   public static void main(String[] args) {
     	
@@ -432,7 +439,8 @@ Operator	Operation
 *	Multiplication
 /	Division
 %	Modulo Operation (Remainder after division)
-Example 1: Arithmetic Operators
+Example 1: 
+Arithmetic Operators
 class Main {
   public static void main(String[] args) {
     
@@ -492,14 +500,16 @@ Here, = is the assignment operator. It assigns the value on its right to the var
 
 Let's see some more assignment operators available in Java.
 
-Operator	Example	Equivalent to
+Operator	Example	
+Equivalent to
 =	a = b;	a = b;
 +=	a += b;	a = a + b;
 -=	a -= b;	a = a - b;
 *=	a *= b;	a = a * b;
 /=	a /= b;	a = a / b;
 %=	a %= b;	a = a % b;
-Example 2: Assignment Operators
+Example 2: 
+Assignment Operators
 class Main {
   public static void main(String[] args) {
     
@@ -542,7 +552,8 @@ Operator	Description	Example
 <	Less Than	3 < 5 returns true
 >=	Greater Than or Equal To	3 >= 5 returns false
 <=	Less Than or Equal To	3 <= 5 returns true
-Example 3: Relational Operators
+Example 3: 
+Relational Operators
 class Main {
   public static void main(String[] args) {
     
@@ -581,7 +592,8 @@ Operator	Example	Meaning
 && (Logical AND)	expression1 && expression2	true only if both expression1 and expression2 are true
 || (Logical OR)	expression1 || expression2	true if either expression1 or expression2 is true
 ! (Logical NOT)	!expression	true if expression is false and vice versa
-Example 4: Logical Operators
+Example 4: 
+Logical Operators
 class Main {
   public static void main(String[] args) {
 
@@ -630,7 +642,8 @@ int num = 5;
 ++num;
 Here, the value of num gets increased to 6 from its initial value of 5.
 
-Example 5: Increment and Decrement Operators
+Example 5: 
+Increment and Decrement Operators
 class Main {
   public static void main(String[] args) {
     
@@ -781,7 +794,8 @@ Here, we have used the println() method to display the string.
 print() - It prints string inside the quotes.
 println() - It prints string inside the quotes similar like print() method. Then the cursor moves to the beginning of the next line.
 printf() - It provides string formatting (similar to printf in C/C++ programming).
-Example: print() and println()
+Example: 
+print() and println()
 class Output {
     public static void main(String[] args) {
     	
@@ -800,7 +814,8 @@ Output:
 1. print 2. print
 In the above example, we have shown the working of the print() and println() methods. To learn about the printf() method, visit Java printf().
 
-Example: Printing Variables and Literals
+Example: 
+Printing Variables and Literals
 class Variables {
     public static void main(String[] args) {
     	
@@ -817,7 +832,8 @@ When you run the program, the output will be:
 -10.6
 Here, you can see that we have not used the quotation marks. It is because to display integers, variables and so on, we don't use quotation marks.
 
-Example: Print Concatenated Strings
+Example:
+ Print Concatenated Strings
 class PrintVariables {
     public static void main(String[] args) {
     	
@@ -860,7 +876,8 @@ Scanner input = new Scanner(System.in);
 
 // take input from the user
 int number = input.nextInt();
-Example: Get Integer Input From the User
+Example: 
+Get Integer Input From the User
 import java.util.Scanner;
 
 class Input {
@@ -887,7 +904,8 @@ Similarly, we can use nextLong(), nextFloat(), nextDouble(), and next() methods 
 
 Note: We have used the close() method to close the object. It is recommended to close the scanner object once the input is taken.
 
-Example: Get float, double and String Input
+Example: 
+Get float, double and String Input
 import java.util.Scanner;
 
 class Input {
@@ -1126,7 +1144,8 @@ if condition evaluates to false, statements are skipped
 Working of if Statement
 if the number is greater than 0, code inside if block is executed, otherwise code inside if block is skipped
 Working of Java if statement
-Example 1: Java if Statement
+Example 1: 
+Java if Statement
 class IfStatement {
   public static void main(String[] args) {
 
@@ -1150,7 +1169,8 @@ Note: If you want to learn more about about test conditions, visit Java Relation
 
 We can also use Java Strings as the test condition.
 
-Example 2: Java if with String
+Example 2: 
+Java if with String
 class Main {
   public static void main(String[] args) {
     // create a string variable
@@ -1186,7 +1206,8 @@ Here, the program will do one task (codes inside if block) if the condition is t
 How the if...else statement works?
 If the condition is true, the code inside the if block is executed, otherwise, code inside the else block is executed
 Working of Java if-else statements
-Example 3: Java if...else Statement
+Example 3: 
+Java if...else Statement
 class Main {
   public static void main(String[] args) {
     int number = 10;
@@ -1248,7 +1269,8 @@ If all test expressions are false, codes inside the body of else are executed.
 How the if...else...if ladder works?
 If the first test condition if true, code inside first if block is executed, if the second condition is true, block inside second if is executed, and if all conditions are false, the else block is executed
 Working of if...else...if ladder
-Example 4: Java if...else...if Statement
+Example 4: 
+Java if...else...if Statement
 class Main {
   public static void main(String[] args) {
 
@@ -1287,7 +1309,8 @@ In Java, it is also possible to use if..else statements inside an if...else stat
 
 Here's a program to find the largest of 3 numbers using the nested if...else statement.
 
-Example 5: Nested if...else Statement
+Example 5: 
+Nested if...else Statement
 class Main {
   public static void main(String[] args) {
 
@@ -1362,7 +1385,8 @@ If expression matches with value1, the code of case value1 are executed. Similar
 If there is no match, the code of the default case is executed.
 Note: The working of the switch-case statement is similar to the Java if...else...if ladder. However, the syntax of the switch statement is cleaner and much easier to read and write.
 
-Example: Java switch Statement
+Example: 
+Java switch Statement
 // Java Program to check the size
 // using the switch...case statement
 
@@ -1534,7 +1558,8 @@ To learn more about the conditions, visit Java relational and logical operators.
 
 Working of for loop in Java with flowchart
 Flowchart of Java for loop
-Example 1: Display a Text Five Times
+Example 1: 
+Display a Text Five Times
 // Program to print a text 5 times
 
 class Main {
@@ -1575,7 +1600,8 @@ n = 5	true	Java is fun is printed.
 i is increased to 6.
 6th	i = 6
 n = 5	false	The loop is terminated.
-Example 2: Display numbers from 1 to 5
+Example 2: 
+Display numbers from 1 to 5
 // Program to print numbers from 1 to 5
 
 class Main {
@@ -1617,7 +1643,8 @@ n = 5	true	5 is printed.
 i is increased to 6.
 6th	i = 6
 n = 5	false	The loop is terminated.
-Example 3: Display Sum of n Natural Numbers
+Example 3: 
+Display Sum of n Natural Numbers
 // Program to find the sum of natural numbers from 1 to 1000.
 
 class Main {
@@ -1731,7 +1758,8 @@ Here,
 array - an array or a collection
 item - each item of array/collection is assigned to this variable
 dataType - the data type of the array/collection
-Example 1: Print Array Elements
+Example 1: 
+Print Array Elements
 // print array elements 
 
 class Main {
@@ -1759,7 +1787,8 @@ In the first iteration, item will be 3.
 In the second iteration, item will be 9.
 In the third iteration, item will be 5.
 In the fourth iteration, item will be -5.
-Example 2: Sum of Array Elements
+Example 2: 
+Sum of Array Elements
 // Calculate the sum of all elements of an array
 
 class Main {
@@ -1875,7 +1904,8 @@ To learn more about the conditions, visit Java relational and logical operators.
 Flowchart of while loop
 Flowchart of while loop in Java
 Flowchart of Java while loop
-Example 1: Display Numbers from 1 to 5
+Example 1: 
+Display Numbers from 1 to 5
 // Program to display numbers from 1 to 5
 
 class Main {
@@ -1919,7 +1949,8 @@ n = 5	true	5 is printed.
 i is increased to 6.
 6th	i = 6
 n = 5	false	The loop is terminated
-Example 2: Sum of Positive Numbers Only
+Example 2: 
+Sum of Positive Numbers Only
 // Java program to find the sum of positive numbers
 import java.util.Scanner;
 
@@ -1986,7 +2017,8 @@ Flowchart of Java do while loop
 
 Let's see the working of do...while loop.
 
-Example 3: Display Numbers from 1 to 5
+Example 3: 
+Display Numbers from 1 to 5
 // Java Program to display numbers from 1 to 5
 
 import java.util.Scanner;
@@ -2033,7 +2065,8 @@ n = 5	true	6 is printed.
 i is increased to 6.
 5th	i = 6
 n = 5	false	The loop is terminated
-Example 4: Sum of Positive Numbers
+Example 4: 
+Sum of Positive Numbers
 // Java program to find the sum of positive numbers
 import java.util.Scanner;
 
@@ -2128,7 +2161,8 @@ break;
 How break statement works?
 How break statement works in Java programming?
 Working of Java break Statement
-Example 1: Java break statement
+Example 1: 
+Java break statement
 class Test {
     public static void main(String[] args) {
       
@@ -2157,7 +2191,8 @@ if (i == 5) {
 }
 This means when the value of i is equal to 5, the loop terminates. Hence we get the output with values less than 5 only.
 
-Example 2: Java break statement
+Example 2: 
+Java break statement
 The program below calculates the sum of numbers entered by the user until user enters a negative number.
 
 To take input from the user, we have used the Scanner object. To learn more about Scanner, visit Java Scanner.
@@ -2239,7 +2274,8 @@ while (testExpression) {
 }
 In the above example, when the statement break second; is executed, the while loop labeled as second is terminated. And, the control of the program moves to the statement after the second while loop.
 
-Example 3: labeled break Statement
+Example 3: 
+labeled break Statement
 class LabeledBreak {
     public static void main(String[] args) {
    
@@ -2325,7 +2361,8 @@ Note: The continue statement is almost always used in decision-making statements
 Working of Java continue statement
 The working of continue statement with Java while, do...while, and for loop.
 Working of Java continue Statement
-Example 1: Java continue statement
+Example 1: 
+Java continue statement
 class Main {
   public static void main(String[] args) {
 
@@ -2359,7 +2396,8 @@ Here, the continue statement is executed when the value of i becomes more than 4
 
 It then skips the print statement for those values. Hence, the output skips the values 5, 6, 7, and 8.
 
-Example 2: Compute the sum of 5 positive numbers
+Example 2: 
+Compute the sum of 5 positive numbers
 import java.util.Scanner;
 
 class Main {
@@ -2409,7 +2447,8 @@ In the case of nested loops in Java, the continue statement skips the current it
 
 The continue statement skips the innermost loop while working with the nested loop in Java. 
 Working of Java continue statement with Nested Loops
-Example 3: continue with Nested Loop
+Example 3: 
+continue with Nested Loop
 class Main {
   public static void main(String[] args) {
 
@@ -2468,7 +2507,8 @@ We can see that the label identifier specifies the outer loop. Notice the use of
 
 Here, the continue statement is skipping the current iteration of the labeled statement (i.e. outer loop). Then, the program control goes to the next iteration of the labeled statement.
 
-Example 4: labeled continue Statement
+Example 4: 
+labeled continue Statement
 class Main {
   public static void main(String[] args) {
 
@@ -2576,7 +2616,8 @@ We can access the element of an array using the index number. Here is the syntax
 array[index]
 Let's see an example of accessing array elements using index numbers.
 
-Example: Access Array Elements
+Example: 
+Access Array Elements
 class Main {
  public static void main(String[] args) {
   
@@ -2609,7 +2650,8 @@ We can use loops to access all the elements of the array at once.
 ##### Looping Through Array Elements
 In Java, we can also loop through each element of the array. For example,
 
-Example: Using For Loop
+Example: 
+Using For Loop
 class Main {
  public static void main(String[] args) {
   
@@ -2638,7 +2680,8 @@ Here, we are using the length property of the array to get the size of the array
 
 We can also use the for-each loop to iterate through the elements of an array. For example,
 
-Example: Using the for-each Loop
+Example: 
+Using the for-each Loop
 class Main {
  public static void main(String[] args) {
   
@@ -2660,7 +2703,8 @@ Using for-each Loop:
 12
 4
 5
-Example: Compute Sum and Average of Array Elements
+Example: 
+Compute Sum and Average of Array Elements
 class Main {
  public static void main(String[] args) {
 
@@ -2751,7 +2795,8 @@ As we can see, each element of the multidimensional array is an array itself. An
 
 2d array example in Java with variable length
 Initialization of 2-dimensional Array
-Example: 2-dimensional Array
+Example: 
+2-dimensional Array
 class MultidimensionalArray {
     public static void main(String[] args) {
 
@@ -2779,7 +2824,8 @@ In the above example, we are creating a multidimensional array named a. Since ea
 
 Here, we are using the length attribute to calculate the length of each row.
 
-Example: Print all elements of 2d array Using Loop
+Example: 
+Print all elements of 2d array Using Loop
 class MultidimensionalArray {
     public static void main(String[] args) {
 
@@ -2859,7 +2905,8 @@ int[][][] test = {
 };
 Basically, a 3d array is an array of 2d arrays. The rows of a 3d array can also vary in length just like in a 2d array.
 
-Example: 3-dimensional Array
+Example: 
+3-dimensional Array
 class ThreeArray {
     public static void main(String[] args) {
 
@@ -3247,7 +3294,8 @@ We have mentioned the word method quite a few times. You will learn about Java m
 
 Now that we understand what is class and object. Let's see a fully working example.
 
-Example: Java Class and Objects
+Example: 
+Java Class and Objects
 class Lamp {
   
   // stores the value for light
@@ -3397,7 +3445,8 @@ Here's is how we can call the addNumbers() method.
 addNumbers();
 Call a method in Java using the name the method followed by a parenthesis
 Working of Java Method Call
-Example 1: Java Methods
+Example 1: 
+Java Methods
 class Main {
 
   // create a method
@@ -3439,7 +3488,8 @@ return sum;
 }
 Here, we are returning the variable sum. Since the return type of the function is int. The sum variable should be of int type. Otherwise, it will generate an error.
 
-Example 2: Method Return Type
+Example 2: 
+Method Return Type
 class Main {
 
 // create a method
@@ -3495,7 +3545,8 @@ addNumbers(25, 15);
 
 // calling the method with no parameters
 addNumbers()
-Example 3: Method Parameters
+Example 3: 
+Method Parameters
 class Main {
 
   // method with no parameter
@@ -3541,7 +3592,8 @@ print() is a method of java.io.PrintSteam. The print("...") method prints the st
 sqrt() is a method of Math class. It returns the square root of a number.
 Here's a working example:
 
-Example 4: Java Standard Library Method
+Example 4: 
+Java Standard Library Method
 public class Main {
   public static void main(String[] args) {
     
@@ -3558,7 +3610,8 @@ To learn more about standard library methods, visit Java Library Methods.
 ###### What are the advantages of using methods?
 1. The main advantage is code reusability. We can write a method once, and use it multiple times. We do not have to rewrite the entire code each time. Think of it as, "write once, reuse multiple times".
 
-Example 5: Java Method for Code Reusability
+Example 5: 
+Java Method for Code Reusability
 public class Main {
 
   // method defined
@@ -3608,7 +3661,8 @@ Here, Test() is a constructor. It has the same name as that of the class and doe
 
 Recommended Reading: Why do constructors not return values
 
-Example 1: Java Constructor
+Example 1: 
+Java Constructor
 class Main {
   private String name;
 
@@ -3654,7 +3708,8 @@ If a constructor does not accept any parameters, it is known as a no-argument co
 private Constructor() {
    // body of the constructor
 }
-Example 2: Java private no-arg constructor
+Example 2: 
+Java private no-arg constructor
 class Main {
 
   int i;
@@ -3687,7 +3742,8 @@ Here, we are creating the object inside the same class. Hence, the program is ab
 
 However, if we want to create objects outside the class, then we need to declare the constructor as public.
 
-Example 3: Java public no-arg constructors
+Example 3: 
+Java public no-arg constructors
 class Company {
   String name;
 
@@ -3715,7 +3771,8 @@ Recommended Reading: Java Access Modifier
 ###### 2. Java Parameterized Constructor
 A Java constructor can also accept one or more parameters. Such constructors are known as parameterized constructors (constructor with parameters).
 
-Example 4: Parameterized constructor
+Example 4: 
+Parameterized constructor
 class Main {
 
   String languages;
@@ -3748,7 +3805,8 @@ Here, we are passing the single value to the constructor. Based on the argument 
 ###### 3. Java Default Constructor
 If we do not create any constructor, the Java compiler automatically create a no-arg constructor during the execution of the program. This constructor is called default constructor.
 
-Example 5: Default Constructor
+Example 5: 
+Default Constructor
 class Main {
 
   int a;
@@ -3824,7 +3882,8 @@ A constructor can be overloaded but can not be overridden.
 Constructors Overloading in Java
 Similar to Java method overloading, we can also create two or more constructors with different parameters. This is called constructors overloading.
 
-Example 6: Java Constructor Overloading
+Example 6: 
+Java Constructor Overloading
 class Main {
 
   String language;
@@ -3882,7 +3941,8 @@ We use double quotes to represent a string in Java. For example,
 String type = "Java programming";
 Here, we have created a string variable named type. The variable is initialized with the string Java Programming.
 
-Example: Create a String in Java
+Example: 
+Create a String in Java
 class Main {
   public static void main(String[] args) {
     
@@ -4047,7 +4107,8 @@ Here, when we create a string object, the String() constructor is invoked. To le
 
 Note: The String class provides various other constructors to create strings. To learn more, visit Java String (official Java documentation).
 
-Example: Create Java Strings using the new keyword
+Example: 
+Create Java Strings using the new keyword
 class Main {
   public static void main(String[] args) {
 
@@ -4669,7 +4730,8 @@ In order to stop the recursive call, we need to provide some conditions inside t
 
 Hence, we use the if...else statement (or similar approach) to terminate the recursive call inside the method.
 
-Example: Factorial of a Number Using Recursion
+Example: 
+Factorial of a Number Using Recursion
 class Factorial {
 
     static int factorial( int n ) {
@@ -4726,7 +4788,8 @@ Its syntax is
 objectName instanceOf className;
 Here, if objectName is an instance of className, the operator returns true. Otherwise, it returns false.
 
-Example: Java instanceof
+Example: 
+Java instanceof
 class Main {
 
   public static void main(String[] args) {
@@ -4858,7 +4921,8 @@ In the above example, the Dog class is created by inheriting the methods and fie
 
 Here, Dog is the subclass and Animal is the superclass.
 
-Example 1: Java Inheritance
+Example 1: 
+Java Inheritance
 class Animal {
 
   // field and method of the parent class
@@ -4925,7 +4989,8 @@ However, if the same method is present in both the superclass and subclass, what
 
 In this case, the method in the subclass overrides the method in the superclass. This concept is known as method overriding in Java.
 
-Example 2: Method overriding in Java Inheritance
+Example 2: 
+Method overriding in Java Inheritance
 class Animal {
 
   // method in the superclass
@@ -4981,7 +5046,8 @@ Previously we saw that the same method in the subclass overrides the method in s
 
 In such a situation, the super keyword is used to call the method of the parent class from the method of the child class.
 
-Example 3: super Keyword in Inheritance
+Example 3: 
+super Keyword in Inheritance
 class Animal {
 
   // method in the superclass
@@ -5035,7 +5101,8 @@ We can also use the super keyword to call the constructor of the superclass from
 protected Members in Inheritance
 In Java, if a class includes protected fields and methods, then these fields and methods are accessible from the subclass of the class.
 
-Example 4: protected Members in Inheritance
+Example 4: 
+protected Members in Inheritance
 class Animal {
   protected String name;
 
@@ -5125,7 +5192,8 @@ In the last tutorial, we learned about inheritance. Inheritance is an OOP proper
 
 Now, if the same method is defined in both the superclass and the subclass, then the method of the subclass class overrides the method of the superclass. This is known as method overriding.
 
-Example 1: Method Overriding
+Example 1: 
+Method Overriding
 class Animal {
    public void displayInfo() {
       System.out.println("I am an animal.");
@@ -5170,7 +5238,8 @@ Can we access the method of the superclass after overriding?
 
 Well, the answer is Yes. To access the method of the superclass from the subclass, we use the super keyword.
 
-Example 2: Use of super Keyword
+Example 2: 
+Use of super Keyword
 class Animal {
    public void displayInfo() {
       System.out.println("I am an animal.");
@@ -5213,7 +5282,8 @@ We can only use those access specifiers in subclasses that provide larger access
 
 Suppose, a method myClass() in the superclass is declared protected. Then, the same method myClass() in the subclass can be either public or protected, but not private.
 
-Example 3: Access Specifier in Overriding
+Example 3: 
+Access Specifier in Overriding
 class Animal {
    protected void displayInfo() {
       System.out.println("I am an animal.");
@@ -5268,7 +5338,8 @@ Let’s understand each of these uses.
 ##### 1. Access Overridden Methods of the superclass
 If methods with the same name are defined in both superclass and subclass, the method in the subclass overrides the method in the superclass. This is called method overriding.
 
-Example 1: Method overriding
+Example 1: 
+Method overriding
 class Animal {
 
   // overridden method
@@ -5310,7 +5381,8 @@ What if the overridden method of the superclass has to be called?
 
 We use super.display() if the overridden method display() of superclass Animal needs to be called.
 
-Example 2: super to Call Superclass Method
+Example 2: 
+super to Call Superclass Method
 class Animal {
 
   // overridden method
@@ -5355,7 +5427,8 @@ Working of super in Java
 ##### 2. Access Attributes of the Superclass
 The superclass and subclass can have attributes with the same name. We use the super keyword to access the attribute of the superclass.
 
-Example 3: Access superclass attribute
+Example 3: 
+Access superclass attribute
 class Animal {
   protected String type="animal";
 }
@@ -5398,7 +5471,8 @@ To explicitly call the superclass constructor from the subclass constructor, we 
 
 super() can be used only inside the subclass constructor and must be the first statement.
 
-Example 4: Use of super()
+Example 4: 
+Use of super()
 class Animal {
 
   // default or no-arg constructor of class Animal
@@ -5445,7 +5519,8 @@ It is required if the parameterized constructor (a constructor that takes argume
 
 The parameterized super() must always be the first statement in the body of the constructor of the subclass, otherwise, we get a compilation error.
 
-Example 5: Call Parameterized Constructor Using super()
+Example 5: 
+Call Parameterized Constructor Using super()
 class Animal {
 
   // default or no-arg constructor
@@ -5539,7 +5614,8 @@ class Language {
   // abstract method
   abstract void method1();
 }
-Example: Java Abstract Class and Method
+Example: 
+Java Abstract Class and Method
 Though abstract classes cannot be instantiated, we can create subclasses from it. We can then access members of the abstract class using the object of the subclass. For example,
 
 abstract class Language {
@@ -5648,7 +5724,8 @@ The major advantage of hiding the working of the brake is that now the manufactu
 
 Let's take an example that helps us to better understand Java abstraction.
 
-Example 3: Java Abstraction
+Example 3: 
+Java Abstraction
 abstract class MotorBike {
   abstract void brake();
 }
@@ -5730,7 +5807,8 @@ Like abstract classes, we cannot create objects of interfaces.
 
 To use an interface, other classes must implement it. We use the implements keyword to implement an interface.
 
-Example 1: Java Interface
+Example 1: 
+Java Interface
 interface Polygon {
   void getArea(int length, int breadth);
 }
@@ -5758,7 +5836,8 @@ In the above example, we have created an interface named Polygon. The interface 
 
 Here, the Rectangle class implements Polygon. And, provides the implementation of the getArea() method.
 
-Example 2: Java Interface
+Example 2: 
+Java Interface
 // create an interface
 interface Language {
   void getName(String name);
@@ -5888,7 +5967,8 @@ To resolve this, Java introduced default methods. Default methods are inherited 
 
 Let's take an example to have a better understanding of default methods.
 
-Example: Default Method in Java Interface
+Example: 
+Default Method in Java Interface
 interface Polygon {
   void getArea();
 
@@ -6045,7 +6125,8 @@ Polymorphism is an important concept of object-oriented programming. It simply m
 
 That is, the same entity (method or operator or object) can perform different operations in different scenarios.
 
-Example: Java Polymorphism
+Example: 
+Java Polymorphism
 class Polygon {
 
   // method to render a shape
@@ -6112,7 +6193,8 @@ During inheritance in Java, if the same method is present in both the superclass
 
 In this case, the same method will perform one operation in the superclass and another operation in the subclass. For example,
 
-Example 1: Polymorphism using method overriding
+Example 1: 
+Polymorphism using method overriding
 class Language {
   public void displayInfo() {
     System.out.println("Common English Language");
@@ -6163,7 +6245,8 @@ float func(int a, float b) { ... }
 
 This is known as method overloading in Java. Here, the same method will perform different operations based on the parameter.
 
-Example 3: Polymorphism using method overloading
+Example 3: 
+Polymorphism using method overloading
 class Pattern {
 
   // method without parameter
@@ -6244,7 +6327,8 @@ A variable is called polymorphic if it refers to different values under differen
 
 Object variables (instance variables) represent the behavior of polymorphic variables in Java. It is because object variables of a class can refer to objects of its class as well as objects of its subclasses.
 
-Example: Polymorphic Variables
+Example: 
+Polymorphic Variables
 class ProgrammingLanguage {
   public void display() {
     System.out.println("I am Programming Language.");
@@ -6295,7 +6379,8 @@ Encapsulation is one of the key features of object-oriented programming. Encapsu
 
 It prevents outer classes from accessing and changing fields and methods of a class. This also helps to achieve data hiding.
 
-Example 1: Java Encapsulation
+Example 1: 
+Java Encapsulation
 class Area {
 
   // fields to calculate area
@@ -6369,7 +6454,8 @@ Data hiding is a way of restricting the access of our data members by hiding the
 
 We can use access modifiers to achieve data hiding. For example,
 
-Example 2: Data hiding using the private specifier
+Example 2: 
+Data hiding using the private specifier
 class Person {
 
   // private field
@@ -6448,7 +6534,8 @@ Since the inner class exists within the outer class, you must instantiate the ou
 
 Here's an example of how you can declare inner classes in Java.
 
-Example 1: Inner class
+Example 1: 
+Inner class
 class CPU {
     double price;
     // nested class
@@ -6511,7 +6598,8 @@ Note: We use the dot (.) operator to create an instance of the inner class using
 Accessing Members of Outer Class within Inner Class
 We can access the members of the outer class by using this keyword. If you want to learn about this keyword, visit Java this keyword. 
 
-Example 2: Accessing Members
+Example 2: 
+Accessing Members
 class Car {
     String carName;
     String carType;
@@ -6595,7 +6683,8 @@ Unlike inner class, a static nested class cannot access the member variables of 
 OuterClass.NestedClass obj = new OuterClass.NestedClass();
 Here, we are creating an object of the static nested class by simply using the class name of the outer class. Hence, the outer class cannot be referenced using OuterClass.this.
 
-Example 3: Static Inner Class
+Example 3: 
+Static Inner Class
 class MotherBoard {
 
    // static nested class
@@ -6628,7 +6717,8 @@ Here, we are creating an object of USB using the name of the outer class.
 
 Now, let's see what would happen if you try to access the members of the outer class:
 
-Example 4: Accessing members of Outer class inside Static Inner Class
+Example 4: 
+Accessing members of Outer class inside Static Inner Class
 class MotherBoard {
    String model;
    public MotherBoard(String model) {
@@ -6706,7 +6796,8 @@ Static nested classes are associated with the outer class.
 
 To access the static nested class, we don’t need objects of the outer class.
 
-Example: Static Nested Class
+Example: 
+Static Nested Class
 class Animal {
 
 // inner class
@@ -6758,7 +6849,8 @@ In Java, static nested classes are associated with the outer class. This is why 
 
 Let’s see what will happen if we try to access non-static fields and methods of the outer class.
 
-Example: Accessing Non-static members
+Example: 
+Accessing Non-static members
 class Animal {
   static class Mammal {
    public void displayInfo() {
@@ -6839,7 +6931,7 @@ In the above example, we have tried to create a static class Animal. Since Java 
 
 
 
-Java Anonymous Class
+#### Java Anonymous Class
 In this tutorial, you will learn about anonymous classes in Java with the help of examples.
 
 In Java, a class can contain another class known as nested class. It's possible to create a nested class without giving any name.
@@ -6865,7 +6957,8 @@ The above code creates an object, object1, of an anonymous class at runtime.
 
 Note: Anonymous classes are defined inside an expression. So, the semicolon is used at the end of anonymous classes to indicate the end of the expression.
 
-Example 1: Anonymous Class Extending a Class
+Example 1: 
+Anonymous Class Extending a Class
 class Polygon {
    public void display() {
       System.out.println("Inside the Polygon class");
@@ -6902,7 +6995,8 @@ We then created an anonymous class that extends the class Polygon and overrides 
 
 When we run the program, an object p1 of the anonymous class is created. The object then calls the display() method of the anonymous class.
 
-Example 2: Anonymous Class Implementing an Interface
+Example 2: 
+Anonymous Class Implementing an Interface
 interface Polygon {
    public void display();
 }
@@ -6948,7 +7042,7 @@ Anonymous classes also help us to make our code concise.
 
 
 
-Java Singleton Class
+#### Java Singleton Class
 In this tutorial, we will learn to implement Singleton Design Pattern in Java with the help of examples.
 
 In Java, Singleton is a design pattern that ensures that a class can only have one object.
@@ -6958,7 +7052,8 @@ To create a singleton class, a class must implement the following properties:
 Create a private constructor of the class to restrict object creation outside of the class.
 Create a private attribute of the class type that refers to the single object.
 Create a public static method that allows us to create and access the object we created. Inside the method, we will create a condition that restricts us from creating more than one object.
-Example: Java Singleton Class Syntax
+Example: 
+Java Singleton Class Syntax
 class SingletonExample {
 
    // private field that refers to the object
@@ -7037,7 +7132,7 @@ It's important to note that, there are only a few scenarios (like logging) where
 
 
 
-Java enums
+### Java enums
 In this tutorial, we will learn about enums in Java. We will learn to create and use enums and enum classes with the help of examples.
 
 In Java, an enum (short for enumeration) is a type that has a fixed set of constant values. We use the enum keyword to declare enums. For example,
@@ -7051,7 +7146,8 @@ These values inside the braces are called enum constants (values).
 
 Note: The enum constants are usually represented in uppercase.
 
-Example 1: Java Enum
+Example 1: 
+Java Enum
 enum Size {
    SMALL, MEDIUM, LARGE, EXTRALARGE
 }
@@ -7078,7 +7174,8 @@ pizzaSize = Size.SMALL;
 pizzaSize = Size.MEDIUM;
 pizzaSize = Size.LARGE;
 pizzaSize = Size.EXTRALARGE;
-Example 2: Java Enum with the switch statement
+Example 2: 
+Java Enum with the switch statement
 enum Size {
  SMALL, MEDIUM, LARGE, EXTRALARGE
 }
@@ -7124,7 +7221,7 @@ It will call the Test() constructor inside the Test class. Now, the variable piz
 
 Based on the value, one of the cases of the switch case statement is executed.
 
-Enum Class in Java
+##### Enum Class in Java
 In Java, enum types are considered to be a special type of class. It was introduced with the release of Java 5.
 
 An enum class can include methods and fields just like regular classes.
@@ -7136,7 +7233,8 @@ enum Size {
 }
 When we create an enum class, the compiler will create instances (objects) of each enum constants. Also, all enum constant is always public static final by default.
 
-Example 3: Java Enum Class
+Example 3: 
+Java Enum Class
 enum Size{
   SMALL, MEDIUM, LARGE, EXTRALARGE;
 
@@ -7184,32 +7282,32 @@ Note: Like regular classes, an enum class also may include constructors. To lear
 Methods of Java Enum Class
 There are some predefined methods in enum classes that are readily available for use.
 
-1. Java Enum ordinal()
+###### 1. Java Enum ordinal()
 The ordinal() method returns the position of an enum constant. For example,
 
 ordinal(SMALL) 
 // returns 0
-2. Enum compareTo()
+###### 2. Enum compareTo()
 The compareTo() method compares the enum constants based on their ordinal value. For example,
 
 Size.SMALL.compareTo(Size.MEDIUM)
  // returns ordinal(SMALL) - ordinal(MEDIUM)
-3. Enum toString()
+###### 3. Enum toString()
 The toString() method returns the string representation of the enum constants. For example,
 
 SMALL.toString()
 // returns "SMALL"
-4. Enum name()
+###### 4. Enum name()
 The name() method returns the defined name of an enum constant in string form. The returned value from the name() method is final. For example,
 
 name(SMALL)
 // returns "SMALL"
-5. Java Enum valueOf()
+###### 5. Java Enum valueOf()
 The valueOf() method takes a string and returns an enum constant having the same string name. For example,
 
 Size.valueOf("SMALL")
 // returns constant SMALL.
-6. Enum values()
+###### 6. Enum values()
 The values() method returns an array of enum type containing all the enum constants. For example,
 
 Size[] enumArray = Size.value();
@@ -7245,7 +7343,7 @@ Here, it is guaranteed that the variable will hold one of the four values. Now, 
 
 
 
-Java enum Constructor
+### Java enum Constructor
 In this Java tutorial, you can learn about enum constructors with the help of a working example.
 
 Before you learn about enum constructors, make sure to know about Java enums.
@@ -7255,7 +7353,8 @@ In Java, an enum class may include a constructor like a regular class. These enu
 private - accessible within the class
 or
 package-private - accessible within the package
-Example: enum Constructor
+Example: 
+enum Constructor
 enum Size {
 
    // enum constants calling the enum constructors 
@@ -7297,8 +7396,7 @@ Finally, we called getSize() using size.
 
 
 
-
-Java enum Strings
+#### Java enum Strings
 In this tutorial, we will learn to learn about string values for enum constants. We will also learn to override default string value for enum constants with the help of examples.
 
 Java enum Strings
@@ -7369,7 +7467,7 @@ To learn more, visit best ways to create enum String.
 
 
 
-Java Reflection
+### Java Reflection
 In this tutorial, we will learn reflection, a feature in Java programming that allows us to inspect and modify classes, methods, etc.
 
 In Java, reflection allows us to inspect and manipulate classes, interfaces, constructors, methods, and fields at run time.
@@ -7383,7 +7481,7 @@ And, using the object we can call various methods to get information about metho
 
 There exists three ways to create objects of Class:
 
-1. Using forName() method
+###### 1. Using forName() method
 
 class Dog {...}
 
@@ -7392,7 +7490,7 @@ class Dog {...}
 Class a = Class.forName("Dog");
 Here, the forName() method takes the name of the class to be reflected as its argument.
 
-2. Using getClass() method
+###### 2. Using getClass() method
 
 // create an object of Dog class
 Dog d1 = new Dog();
@@ -7402,14 +7500,15 @@ Dog d1 = new Dog();
 Class b = d1.getClass();
 Here, we are using the object of the Dog class to create an object of Class.
 
-3. Using .class extension
+###### 3. Using .class extension
 
 // create an object of Class
 // to reflect the Dog class
 Class c = Dog.class;
 Now that we know how we can create objects of the Class. We can use this object to get information about the corresponding class at runtime.
 
-Example: Java Class Reflection
+Example: 
+Java Class Reflection
 import java.lang.Class;
 import java.lang.reflect.*;
 
@@ -7473,15 +7572,15 @@ obj.getModifiers() - returns the access modifier of the class
 obj.getSuperclass() - returns the super class of the class
 To learn more about Class, visit Java Class (official Java documentation).
 
-Note: We are using the Modifier class to convert the integer access modifier to a string.
+###### Note: We are using the Modifier class to convert the integer access modifier to a string.
 
-Reflecting Fields, Methods, and Constructors
+##### Reflecting Fields, Methods, and Constructors
 The package java.lang.reflect provides classes that can be used for manipulating class members. For example,
 
 Method class - provides information about methods in a class
 Field class - provides information about fields in a class
 Constructor class - provides information about constructors in a class
-1. Reflection of Java Methods
+###### 1. Reflection of Java Methods
 The Method class provides various methods that can be used to get information about the methods present in a class. For example,
 
 import java.lang.Class;
@@ -7559,7 +7658,7 @@ m.getModifiers() - returns the access modifier of methods in integer form
 m.getReturnType() - returns the return type of methods
 The Method class also provides various other methods that can be used to inspect methods at run time. To learn more, visit the Java Method class (official Java documentation).
 
-2. Reflection of Java Fields
+##### 2. Reflection of Java Fields
 Like methods, we can also inspect and modify different fields of a class using the methods of the Field class. For example,
 
 import java.lang.Class;
@@ -7677,7 +7776,7 @@ We then used field1 to perform various operations on the private field color.
 
 To learn more about the different methods of Field, visit Java Field Class (official Java documentation).
 
-3. Reflection of Java Constructor
+##### 3. Reflection of Java Constructor
 We can also inspect different constructors of a class using various methods provided by the Constructor class. For example,
 
 import java.lang.Class;
@@ -7759,7 +7858,7 @@ To learn about more methods of the Constructor class, visit Constructor class
 
 
 
-Java Exceptions
+#### Java Exceptions
 In this tutorial, we will learn about exceptions in Java. We will cover errors, exceptions and different types of exceptions in Java.
 
 An exception is an unexpected event that occurs during program execution. It affects the flow of the program instructions which can cause the program to terminate abnormally.
@@ -7796,10 +7895,10 @@ It contains information about the exception such as the name and description of 
 
 We will learn how to handle these exceptions in the next tutorial. In this tutorial, we will now focus on different types of exceptions in Java.
 
-Java Exception Types
+#### Java Exception Types
 The exception hierarchy also has two branches: RuntimeException and IOException.
 
-1. RuntimeException
+##### 1. RuntimeException
 A runtime exception happens due to a programming error. They are also known as unchecked exceptions.
 
 These exceptions are not checked at compile-time but run-time. Some of the common runtime exceptions are:
@@ -7814,7 +7913,7 @@ The NullPointerException would not have occurred if you had checked whether the 
 
 An ArrayIndexOutOfBoundsException would not have occurred if you tested the array index against the array bounds.
 
-2. IOException
+##### 2. IOException
 An IOException is also known as a checked exception. They are checked by the compiler at the compile-time and the programmer is prompted to handle these exceptions.
 
 Some of the examples of checked exceptions are:
@@ -7829,7 +7928,7 @@ Now we know about exceptions, we will learn about handling exceptions in the nex
 
 
 
-Java Exception Handling
+### Java Exception Handling
 In the tutorial, we will learn about different approaches of exception handling in Java with the help of examples.
 
 In the last tutorial, we learned about Java exceptions. We know that exceptions abnormally terminate the execution of a program.
@@ -7839,7 +7938,7 @@ This is why it is important to handle exceptions. Here's a list of different app
 try...catch block
 finally block
 throw and throws keyword
-1. Java try...catch block
+##### 1. Java try...catch block
 The try-catch block is used to handle exceptions in Java. Here's the syntax of try...catch block:
 
 try {
@@ -7852,7 +7951,8 @@ Here, we have placed the code that might generate an exception inside the try bl
 
 When an exception occurs, it is caught by the catch block. The catch block cannot be used without the try block.
 
-Example: Exception handling using try...catch
+Example: 
+Exception handling using try...catch
 class Main {
   public static void main(String[] args) {
 
@@ -7880,7 +7980,7 @@ The catch block catches the exception and statements inside the catch block is e
 
 If none of the statements in the try block generates an exception, the catch block is skipped.
 
-2. Java finally block
+##### 2. Java finally block
 In Java, the finally block is always executed no matter whether there is an exception or not.
 
 The finally block is optional. And, for each try block, there can be only one finally block.
@@ -7898,7 +7998,8 @@ finally {
 }
 If an exception occurs, the finally block is executed after the try...catch block. Otherwise, it is executed after the try block. For each try block, there can be only one finally block.
 
-Example: Java Exception Handling using finally block
+Example: 
+Java Exception Handling using finally block
 class Main {
   public static void main(String[] args) {
     try {
@@ -7925,16 +8026,17 @@ In the above example, we are dividing a number by 0 inside the try block. Here, 
 
 The exception is caught by the catch block. And, then the finally block is executed.
 
-Note: It is a good practice to use the finally block. It is because it can include important cleanup codes like,
+###### Note: It is a good practice to use the finally block. It is because it can include important cleanup codes like,
 
 code that might be accidentally skipped by return, continue or break
 closing a file or connection
-3. Java throw and throws keyword
+##### 3. Java throw and throws keyword
 The Java throw keyword is used to explicitly throw a single exception.
 
 When we throw an exception, the flow of the program moves from the try block to the catch block.
 
-Example: Exception handling using Java throw
+Example:
+ Exception handling using Java throw
 class Main {
   public static void divideByZero() {
 
@@ -7956,7 +8058,8 @@ In the above example, we are explicitly throwing the ArithmeticException using t
 
 Similarly, the throws keyword is used to declare the type of exceptions that might occur within the method. It is used in the method declaration.
 
-Example: Java throws keyword
+Example: 
+Java throws keyword
 import java.io.*;
 
 class Main {
@@ -7994,7 +8097,7 @@ To learn more, visit Java throw and throws.
 
 
 
-Java try...catch
+#### Java try...catch
 In this tutorial, we will learn about the try catch statement in Java with the help of examples.
 
 The try...catch block in Java is used to handle exceptions and prevents the abnormal termination of the program.
@@ -8011,7 +8114,8 @@ The try block includes the code that might generate an exception.
 
 The catch block includes the code that is executed when there occurs an exception inside the try block.
 
-Example: Java try...catch block
+Example: 
+Java try...catch block
 class Main {
   public static void main(String[] args) {
 
@@ -8045,7 +8149,8 @@ We can also use the try block along with a finally block.
 
 In this case, the finally block is always executed whether there is an exception inside the try block or not.
 
-Example: Java try...finally block
+Example: 
+Java try...finally block
 class Main {
   public static void main(String[] args) {
     try {
@@ -8236,7 +8341,7 @@ To learn more, visit the java try-with-resources statement.
 
 
 
-Java throw and throws
+### Java throw and throws
 In this tutorial, we will learn to use throw and throws keyword for exception handling with the help of examples.
 
 In Java, exceptions can be categorized into two types:
@@ -8259,7 +8364,8 @@ accessModifier returnType methodName() throws ExceptionType1, ExceptionType2 …
 }
 As you can see from the above syntax, we can use throws to declare multiple exceptions.
 
-Example 1: Java throws Keyword
+Example 1: 
+Java throws Keyword
 import java.io.*;
 class Main {
   public static void findFile() throws IOException {
@@ -8323,7 +8429,7 @@ There might be several methods that can cause exceptions. Writing try...catch fo
 
 throws is also useful when you have checked exception (an exception that must be handled) that you don't want to catch in your current method.
 
-Java throw keyword
+#### Java throw keyword
 The throw keyword is used to explicitly throw a single exception.
 
 When an exception is thrown, the flow of program execution transfers from the try block to the catch block. We use the throw keyword within a method.
@@ -8333,7 +8439,8 @@ Its syntax is:
 throw throwableObject;
 A throwable object is an instance of class Throwable or subclass of the Throwable class.
 
-Example 2: Java throw keyword
+Example 2: 
+Java throw keyword
 class Main {
   public static void divideByZero() {
     throw new ArithmeticException("Trying to divide by 0");
@@ -8355,7 +8462,8 @@ In this example, we are explicitly throwing an ArithmeticException.
 
 Note: ArithmeticException is an unchecked exception. It's usually not necessary to handle unchecked exceptions.
 
-Example 3: Throwing checked exception
+Example 3: 
+Throwing checked exception
 import java.io.*;
 class Main {
   public static void findFile() throws IOException {
@@ -8389,14 +8497,15 @@ We have handled this exception in the main() method. The flow of program executi
 
 
 
-Java catch Multiple Exceptions
+### Java catch Multiple Exceptions
 In this tutorial, we will learn to handle multiple exceptions in Java with the help of examples.
 
 Before Java 7, we had to write multiple exception handling codes for different types of exceptions even if there was code redundancy.
 
 Let’s take an example.
 
-Example 1: Multiple catch blocks
+Example 1: 
+Multiple catch blocks
 class Main {
   public static void main(String[] args) {
     try {
@@ -8433,7 +8542,8 @@ try {
 } catch (ExceptionType1 | Exceptiontype2 ex) { 
   // catch block
 }
-Example 2: Multi-catch block
+Example 2: 
+Multi-catch block
 class Main {
   public static void main(String[] args) {
     try {
@@ -8453,7 +8563,7 @@ Catching multiple exceptions in a single catch block reduces code duplication an
 The bytecode generated while compiling this program will be smaller than the program having multiple catch blocks as there is no code redundancy.
 
 
-Note: If a catch block handles multiple exceptions, the catch parameter is implicitly final. This means we cannot assign any values to catch parameters.
+###### Note: If a catch block handles multiple exceptions, the catch parameter is implicitly final. This means we cannot assign any values to catch parameters.
 
 Catching base Exception
 When catching multiple exceptions in a single catch block, the rule is generalized to specialized.
@@ -8462,7 +8572,8 @@ This means that if there is a hierarchy of exceptions in the catch block, we can
 
 Let’s take an example.
 
-Example 3: Catching base exception class only
+Example 3: 
+Catching base exception class only
 class Main {
   public static void main(String[] args) {
     try {
@@ -8483,7 +8594,8 @@ If the base exception class has already been specified in the catch block, do no
 
 Let’s take an example.
 
-Example 4: Catching base and child exception classes
+Example 4: 
+Catching base and child exception classes
 class Main {
   public static void main(String[] args) {
     try {
@@ -8506,7 +8618,7 @@ In this example, ArithmeticException and ArrayIndexOutOfBoundsException are both
 
 
 
-Java try-with-resources
+### Java try-with-resources
 In this tutorial, we will learn about the try-with-resources statement to close resources automatically.
 
 The try-with-resources statement automatically closes all the resources at the end of the statement. A resource is an object to be closed at the end of the program.
@@ -8526,7 +8638,8 @@ Note: The try-with-resources statement closes all the resources that implement t
 
 Let us take an example that implements the try-with-resources statement.
 
-Example 1: try-with-resources
+Example 1: 
+try-with-resources
 import java.io.*;
 
 class Main {
@@ -8580,12 +8693,13 @@ Advantages of using try-with-resources
 
 Here are the advantages of using try-with-resources:
 
-1. finally block not required to close the resource
+##### 1. finally block not required to close the resource
 Before Java 7 introduced this feature, we had to use the finally block to ensure that the resource is closed to avoid resource leaks.
 
 Here's a program that is similar to Example 1. However, in this program, we have used finally block to close resources.
 
-Example 2: Close resource using finally block
+Example 2: 
+Close resource using finally block
 import java.io.*;
 
 class Main {
@@ -8622,14 +8736,15 @@ Line =>line from test.txt file
 Entering finally block 
 As we can see from the above example, the use of finally block to clean up resources makes the code more complex.
 
-Notice the try...catch block in the finally block as well? This is because an IOException can also occur while closing the BufferedReader instance inside this finally block so it is also caught and handled.
+###### Notice the try...catch block in the finally block as well? This is because an IOException can also occur while closing the BufferedReader instance inside this finally block so it is also caught and handled.
 
 The try-with-resources statement does automatic resource management. We need not explicitly close the resources as JVM automatically closes them. This makes the code more readable and easier to write.
 
-2. try-with-resources with multiple resources
+##### 2. try-with-resources with multiple resources
 We can declare more than one resource in the try-with-resources statement by separating them with a semicolon ;
 
-Example 3: try with multiple resources
+Example 3: 
+try with multiple resources
 import java.io.*;
 import java.util.*;
 class Main {
@@ -8646,7 +8761,7 @@ If this program executes without generating any exceptions, Scanner object reads
 
 When multiple declarations are made, the try-with-resources statement closes these resources in reverse order. In this example, the PrintWriter object is closed first and then the Scanner object is closed.
 
-Java 9 try-with-resources enhancement
+#### Java 9 try-with-resources enhancement
 In Java 7, there is a restriction to the try-with-resources statement. The resource needs to be declared locally within its block.
 
 try (Scanner scanner = new Scanner(new File("testRead.txt"))) {
@@ -8666,7 +8781,7 @@ To deal with this error, Java 9 improved the try-with-resources statement so tha
 
 
 
-Java Annotations
+### Java Annotations
 In this tutorial, we will learn what annotations are, different Java annotations and how to use them with the help of examples.
 
 Java annotations are metadata (data about data) for our program source code.
@@ -8682,7 +8797,8 @@ The @Override annotation specifies that the method that has been marked with thi
 
 It is not mandatory to use @Override when overriding a method. However, if we use it, the compiler gives an error if something is wrong (such as wrong parameter type) while overriding the method.
 
-Example 1: @Override Annotation Example
+Example 1: 
+@Override Annotation Example
 class Animal {
   public void displayInfo() {
     System.out.println("I am an animal.");
@@ -8711,7 +8827,7 @@ In this example, the method displayInfo() is present in both the superclass Anim
 Annotation formats
 Annotations may also include elements (members/attributes/parameters).
 
-1. Marker Annotations
+##### 1. Marker Annotations
 Marker annotations do not contain members/elements. It is only used for marking a declaration.
 
 Its syntax is:
@@ -8720,7 +8836,7 @@ Its syntax is:
 Since these annotations do not contain elements, parentheses can be excluded. For example,
 
 @Override
-2. Single element Annotations
+##### 2. Single element Annotations
 A single element annotation contains only one element.
 
 Its syntax is:
@@ -8732,19 +8848,19 @@ If there is only one element, it is a convention to name that element as value.
 In this case, the element name can be excluded as well. The element name will be value by default.
 
 @AnnotationName("elementValue")
-3. Multiple element Annotations
+##### 3. Multiple element Annotations
 These annotations contain multiple elements separated by commas.
-
-Its syntax is:
+ Its syntax is:
 
 @AnnotationName(element1 = "value1", element2 = "value2")
-Annotation placement
+#### Annotation placement
 Any declaration can be marked with annotation by placing it above that declaration. As of Java 8, annotations can also be placed before a type.
 
-1. Above declarations
+##### 1. Above declarations
 As mentioned above, Java annotations can be placed above class, method, interface, field, and other program element declarations.
 
-Example 2: @SuppressWarnings Annotation Example
+Example 2: 
+@SuppressWarnings Annotation Example
 import java.util.*;
 
 class Main {
@@ -8780,7 +8896,7 @@ ArrayList wordList = new ArrayList<>();
 This is because we haven't defined the generic type of the array list. We can fix this warning by specifying generics inside angle brackets <>.
 
 ArrayList<String> wordList = new ArrayList<>();
-2. Type annotations
+##### 2. Type annotations
 Before Java 8, annotations could be applied to declarations only. Now, type annotations can be used as well. This means that we can place annotations wherever we use a type.
 
 Constructor invocations
@@ -8809,21 +8925,21 @@ public String readMethod() throws @Localized IOException
 Type annotations enable Java code to be analyzed better and provide even stronger type checks.
 
 Types of Annotations
-1. Predefined annotations
+##### 1. Predefined annotations
 
 @Deprecated
 @Override
 @SuppressWarnings
 @SafeVarargs
 @FunctionalInterface
-2. Meta-annotations
+##### 2. Meta-annotations
 
 @Retention
 @Documented
 @Target
 @Inherited
 @Repeatable
-3. Custom annotations
+##### 3. Custom annotations
 
 These annotation types are described in detail in the Java Annotation Types tutorial.
 
@@ -8839,7 +8955,7 @@ Runtime instructions - Some annotations can be defined to give instructions to t
 
 
 
-Java Annotation Types
+### Java Annotation Types
 In this tutorial, we will learn about different types of Java annotation with the help of examples.
 
 Java annotations are metadata (data about data) for our program source code. There are several predefined annotations provided by the Java SE. Moreover, we can also create custom annotations as per our needs.
@@ -8848,16 +8964,16 @@ If you do not know what annotations are, visit the Java annotations tutorial.
 
 These annotations can be categorized as:
 
-1. Predefined annotations
+##### 1. Predefined annotations
 
 @Deprecated
 @Override
 @SuppressWarnings
 @SafeVarargs
 @FunctionalInterface
-2. Custom annotations
+##### 2. Custom annotations
 
-3. Meta-annotations
+##### 3. Meta-annotations
 
 @Retention
 @Documented
@@ -8865,7 +8981,7 @@ These annotations can be categorized as:
 @Inherited
 @Repeatable
 Predefined Annotation Types
-1. @Deprecated
+###### 1. @Deprecated
 The@Deprecated annotation is a marker annotation that indicates the element (class, method, field, etc) is deprecated and has been replaced by a newer element.
 
 Its syntax is:
@@ -8882,7 +8998,8 @@ We use Javadoc @deprecated tag for documenting the deprecated element.
  */
 @Deprecated
 accessModifier returnType deprecatedMethodName() { ... }
-Example 1: @Deprecated annotation example
+Example 1: 
+@Deprecated annotation example
 class Main {
   /**
    * @deprecated
@@ -8901,7 +9018,7 @@ Run Code
 Output
 
 Deprecated method
-2. @Override
+###### 2. @Override
 The @Override annotation specifies that a method of a subclass overrides the method of the superclass with the same method name, return type, and parameter list.
 
 It is not mandatory to use @Override when overriding a method. However, if we use it, the compiler gives an error if something is wrong (such as wrong parameter type) while overriding the method.
@@ -8942,7 +9059,7 @@ In this example, by making an object dog1 of Dog class, we can call its method p
 
 Since display() is defined in both the classes, the method of subclass Dog overrides the method of superclass Animal. Hence, the display() of the subclass is called.
 
-3. @SuppressWarnings
+###### 3. @SuppressWarnings
 As the name suggests, the @SuppressWarnings annotation instructs the compiler to suppress warnings that are generated while the program executes.
 
 We can specify the type of warnings to be suppressed. The warnings that can be suppressed are compiler-specific but there are two categories of warnings: deprecation and unchecked.
@@ -8966,7 +9083,8 @@ Category unchecked instructs the compiler to suppress warnings when we use raw t
 And, undefined warnings are ignored. For example,
 
 @SuppressWarnings("someundefinedwarning")
-Example 3: @SuppressWarnings annotation example
+Example 3: 
+@SuppressWarnings annotation example
 class Main {
   @Deprecated
   public static void deprecatedMethod() { 
@@ -8985,14 +9103,15 @@ Output
 Deprecated method
 Here, deprecatedMethod() has been marked as deprecated and will give compiler warnings when used. By using the @SuppressWarnings("deprecated") annotation, we can avoid compiler warnings.
 
-4. @SafeVarargs
+###### 4. @SafeVarargs
 The @SafeVarargs annotation asserts that the annotated method or constructor does not perform unsafe operations on its varargs (variable number of arguments).
 
 We can only use this annotation on methods or constructors that cannot be overridden. This is because the methods that override them might perform unsafe operations.
 
 Before Java 9, we could use this annotation only on final or static methods because they cannot be overridden. We can now use this annotation for private methods as well.
 
-Example 4: @SafeVarargs annotation example
+Example 4: 
+@SafeVarargs annotation example
 import java.util.*;
 
 class Main {
@@ -9022,7 +9141,7 @@ Type safety: A generic array of List<String> is created for a varargs
  parameter
 Output
 
-Note: Main.java uses unchecked or unsafe operations.
+###### Note: Main.java uses unchecked or unsafe operations.
 [Tribhuvan University, Kathmandu University]
 [Tribhuvan University, Kathmandu University]
 [Java, C]
@@ -9037,10 +9156,11 @@ When we use @SafeVarargs annotation in the above example,
  private void displayList(List<String>... lists) { ... }
 We get the same output but without any warnings. Unchecked warnings are also suppressed when we use this annotation.
 
-5. @FunctionalInterface
+###### 5. @FunctionalInterface
 Java 8 first introduced this @FunctionalInterface annotation. This annotation indicates that the type declaration on which it is used is a functional interface. A functional interface can have only one abstract method.
 
-Example 5: @FunctionalInterface annotation example
+Example 5: 
+@FunctionalInterface annotation example
 @FunctionalInterface
 public interface MyFuncInterface{
   public void firstMethod(); // this is an abstract method
@@ -9083,7 +9203,8 @@ Annotations can be created by using @interface followed by the annotation name.
 The annotation can have elements that look like methods but they do not have an implementation.
 The default value is optional. The parameters cannot have a null value.
 The return type of the method can be primitive, enum, string, class name or array of these types.
-Example 6: Custom annotation example
+Example 6: 
+Custom annotation example
 @interface MyCustomAnnotation {
   String value() default "default value";
 }
@@ -9107,7 +9228,7 @@ Test method 1
 Meta Annotations
 Meta-annotations are annotations that are applied to other annotations.
 
-1. @Retention
+###### 1. @Retention
 The @Retention annotation specifies the level up to which the annotation will be available.
 
 Its syntax is:
@@ -9122,14 +9243,14 @@ For example,
 
 @Retention(RetentionPolicy.RUNTIME)
 public @interface MyCustomAnnotation{ ... }
-2. @Documented
+###### 2. @Documented
 By default, custom annotations are not included in the official Java documentation. To include our annotation in the Javadoc documentation, we use the @Documented annotation.
 
 For example,
 
 @Documented
 public @interface MyCustomAnnotation{ ... }
-3. @Target
+###### 3. @Target
 We can restrict an annotation to be applied to specific targets using the @Target annotation.
 
 Its syntax is:
@@ -9154,7 +9275,7 @@ In this example, we have restricted the use of this annotation to methods only.
 
 Note: If the target type is not defined, the annotation can be used for any element.
 
-4. @Inherited
+###### 4. @Inherited
 By default, an annotation type cannot be inherited from a superclass. However, if we need to inherit an annotation from a superclass to a subclass, we use the @Inherited annotation.
 
 Its syntax is:
@@ -9169,7 +9290,7 @@ public @interface MyCustomAnnotation { ... }
 public class ParentClass{ ... }
 
 public class ChildClass extends ParentClass { ... }
-5. @Repeatable
+###### 5. @Repeatable
 An annotation that has been marked by @Repeatable can be applied multiple times to the same declaration.
 
 @Repeatable(Universities.class)
@@ -9196,7 +9317,7 @@ To retrieve annotation values, we use getAnnotationsByType() or getAnnotations()
 
 
 
-Java Logging
+#### Java Logging
 In this tutorial, we will learn about Java Logging and its various components with the help of examples.
 
 Java allows us to create and capture log messages and files through the process of logging.
@@ -9210,7 +9331,7 @@ The figure below represents the core components and the flow of control of the J
 
 The flow of control of Java Logging API
 Java Logging
-1. Logger
+##### 1. Logger
 The Logger class provides methods for logging. We can instantiate objects from the Logger class and call its methods for logging purposes.
 
 Let's take an example.
@@ -9262,7 +9383,7 @@ All log requests that have passed the set log level are then forwarded to the Lo
 
 Note: If a logger's level is set to null, its level is inherited from its parent and so on up the tree.
 
-2. Filters
+##### 2. Filters
 
 A filter (if it is present) determines whether the LogRecord should be forwarded or not. As the name suggests, it filters the log messages according to specific criteria.
 
@@ -9273,7 +9394,7 @@ logger.setFilter(filter);
 
 // get a filter
 Filter filter = logger.getFilter();
-3. Handlers(Appenders)
+##### 3. Handlers(Appenders)
 The log handler or the appenders receive the LogRecord and exports it to various targets.
 
 Java SE provides 5 built-in handlers:
@@ -9304,7 +9425,7 @@ logger.removeHandler(handler);
 A logger can have multiple handlers. To get all the handlers, we use the following code:
 
 Handler[] handlers = logger.getHandlers();
-4. Formatters
+##### 4. Formatters
 A handler can also use a Formatter to format the LogRecord object into a string before exporting it to external systems.
 
 Java SE has two built-in Formatters:
@@ -9340,7 +9461,7 @@ provides support for problem diagnosis and debugging
 
 
 
-Java Assertions
+### Java Assertions
 In this tutorial, we will learn about the Java assert statement (Java assertions) with the help of examples.
 
 Assertions in Java help to detect bugs by testing code we assume to be true.
@@ -9365,7 +9486,8 @@ When assertions are enabled and the condition is true, the program executes norm
 
 But if the condition evaluates to false while assertions are enabled, JVM throws an AssertionError, and the program stops immediately.
 
-Example 1: Java assertion
+Example 1: 
+Java assertion
 class Main {
   public static void main(String args[]) {
     String[] weekends = {"Friday", "Saturday", "Sunday"};
@@ -9388,7 +9510,8 @@ In this form of assertion statement, an expression is passed to the constructor 
 
 The detailed message is used to capture and transmit the information of the assertion failure to help in debugging the problem.
 
-Example 2: Java assertion with expression example
+Example 2: 
+Java assertion with expression example
 class Main {
   public static void main(String args[]) {
     String[] weekends = {"Friday", "Saturday", "Sunday"};
@@ -9459,13 +9582,13 @@ OR
 java -disablesystemassertions:arguments
 The arguments that can be passed while disabling assertions are the same as while enabling them.
 
-Advantages of Assertion
+###### Advantages of Assertion
 Quick and efficient for detecting and correcting bugs.
 Assertion checks are done only during development and testing. They are automatically removed in the production code at runtime so that it won’t slow the execution of the program.
 It helps remove boilerplate code and make code more readable.
 Refactors and optimizes code with increased confidence that it functions correctly.
 When to use Assertions
-1. Unreachable codes
+###### 1. Unreachable codes
 Unreachable codes are codes that do not execute when we try to run the program. Use assertions to make sure unreachable codes are actually unreachable.
 
 Let’s take an example.
@@ -9512,7 +9635,7 @@ default:
     assert false: dayofWeek + " is invalid day";
 If dayOfWeek has a value other than the valid days, an AssertionError is thrown.
 
-2. Documenting assumptions
+###### 2. Documenting assumptions
 To document their underlying assumptions, many programmers use comments. Let’s take an example.
 
 if (i % 2 == 0) {
@@ -9530,15 +9653,15 @@ if (i % 2 == 0) {
     assert i % 2 == 1 : i;
     ...
 }
-When not to use Assertions
-1. Argument checking in public methods
+##### When not to use Assertions
+###### 1. Argument checking in public methods
 Arguments in public methods may be provided by the user.
 
 So, if an assertion is used to check these arguments, the conditions may fail and result in AssertionError.
 
 Instead of using assertions, let it result in the appropriate runtime exceptions and handle these exceptions.
 
-2. To evaluate expressions that affect the program operation
+###### 2. To evaluate expressions that affect the program operation
 Do not call methods or evaluate exceptions that can later affect the program operation in assertion conditions.
 
 Let us take an example of a list weekdays which contains the names of all the days in a week.
@@ -9573,7 +9696,7 @@ In this way, we can ensure that all the weekends are removed from the weekdays r
 
 
 
-Java Collections Framework
+### Java Collections Framework
 In this tutorial, we will learn about different interfaces of the Java collections framework.
 
 The Java collections framework provides a set of interfaces and classes to implement various data structures and algorithms.
@@ -9664,7 +9787,7 @@ In the later tutorials, we will learn about the collections framework (its inter
 
 
 
-Java Collection Interface
+### Java Collection Interface
 In this tutorial, we will learn about the Java Collection interface and its subinterfaces.
 
 The Collection interface is the root interface of the Java collections framework.
@@ -9709,7 +9832,7 @@ clear() - removes all the elements of the collection
 
 
 
-Java List
+### Java List
 In this tutorial, we will learn about the List interface in Java and its methods.
 
 In Java, the List interface is an ordered collection that allows us to store and access elements sequentially. It extends the Collection interface.
@@ -9755,7 +9878,7 @@ toArray() - converts a list into an array
 contains() - returns true if a list contains specified element
 Implementation of the List Interface
 
-1. Implementing the ArrayList Class
+#### 1. Implementing the ArrayList Class
 
 import java.util.List;
 import java.util.ArrayList;
@@ -9789,7 +9912,7 @@ Accessed Element: 3
 Removed Element: 2
 To learn more about ArrayList, visit Java ArrayList.
 
-2. Implementing the LinkedList Class
+#### 2. Implementing the LinkedList Class
 
 import java.util.List;
 import java.util.LinkedList;
@@ -9828,7 +9951,7 @@ Position of 3 is 1
 Removed Element: 2
 To learn more about LinkedList, visit Java LinkedList.
 
-Java List vs. Set
+##### Java List vs. Set
 Both the List interface and the Set interface inherits the Collection interface. However, there exists some difference between them.
 
 Lists can include duplicate elements. However, sets cannot have duplicate elements.
@@ -9842,7 +9965,7 @@ Now that we know what List is, we will see its implementations in ArrayList and 
 
 
 
-Java ArrayList
+### Java ArrayList
 In this tutorial, we will learn about the ArrayList class in Java. We will learn about different operations and methods of the arraylist with the help of examples.
 
 In Java, we use the ArrayList class to implement the functionality of resizable-arrays.
@@ -9873,7 +9996,8 @@ In the above program, we have used Integer not int. It is because we cannot use 
 
 Here, Integer is the corresponding wrapper class of int. To learn more, visit the Java wrapper class.
 
-Example: Create ArrayList in Java
+Example: 
+Create ArrayList in Java
 import java.util.ArrayList;
 
 class Main {
@@ -9904,7 +10028,7 @@ Add elements
 Access elements
 Change elements
 Remove elements
-1. Add Elements to an ArrayList
+##### 1. Add Elements to an ArrayList
 To add a single element to the arraylist, we use the add() method of the ArrayList class. For example,
 
 import java.util.ArrayList;
@@ -9935,7 +10059,7 @@ How to add an element at a specified position in an ArrayList?
 How to add all elements of a set to an arraylist?
 
 
-2. Access ArrayList Elements
+##### 2. Access ArrayList Elements
 To access an element from the arraylist, we use the get() method of the ArrayList class. For example,
 
 import java.util.ArrayList;
@@ -9966,7 +10090,7 @@ To learn more, visit the Java ArrayList get().
 
 We can also access elements of the ArrayList using the iterator() method. To learn more, visit Java ArrayList iterator().
 
-3. Change ArrayList Elements
+##### 3. Change ArrayList Elements
 To change elements of the arraylist, we use the set() method of the ArrayList class. For example,
 
 import java.util.ArrayList;
@@ -9999,7 +10123,7 @@ Here, the set() method changes the element at index 2 to JavaScript.
 
 To learn more, visit the Java ArrayList set().
 
-4. Remove ArrayList Elements
+#### 4. Remove ArrayList Elements
 To remove an element from the arraylist, we can use the remove() method of the ArrayList class. For example,
 
 import java.util.ArrayList;
@@ -10107,7 +10231,7 @@ How to create an arraylist using the List interface?
 
 
 
-Java Vector
+### Java Vector
 In this tutorial, we will learn about the Vector class and how to use it. We will also learn how it is different from the ArrayList class, and why we should use array lists instead.
 
 The Vector class is an implementation of the List interface that allows us to create resizable-arrays similar to the ArrayList class.
@@ -10257,7 +10381,7 @@ contains()	searches the vector for specified element and returns a boolean resul
 
 
 
-Java Stack Class
+### Java Stack Class
 In this tutorial, we will learn about the Java Stack class and its methods with the help of examples.
 
 The Java collections framework has a class named Stack that provides the functionality of the stack data structure.
@@ -10427,7 +10551,7 @@ Why use Deque over Stack?
 
 
 
-Java Queue Interface
+### Java Queue Interface
 In this tutorial, we will learn about the Java Queue interface and its methods.
 
 The Queue interface of the Java collections framework provides the functionality of the queue data structure. It extends the Collection interface.
@@ -10482,7 +10606,7 @@ peek() - Returns the head of the queue. Returns null if the queue is empty.
 remove() - Returns and removes the head of the queue. Throws an exception if the queue is empty.
 poll() - Returns and removes the head of the queue. Returns null if the queue is empty.
 Implementation of the Queue Interface
-1. Implementing the LinkedList Class
+##### 1. Implementing the LinkedList Class
 
 import java.util.Queue;
 import java.util.LinkedList;
@@ -10519,7 +10643,7 @@ Removed Element: 1
 Updated Queue: [2, 3]
 To learn more, visit Java LinkedList.
 
-2. Implementing the PriorityQueue Class
+##### 2. Implementing the PriorityQueue Class
 
 import java.util.Queue;
 import java.util.PriorityQueue;
@@ -10568,7 +10692,7 @@ In the next tutorials, we will learn about different subinterfaces of the Queue 
 
 
 
-Java PriorityQueue
+### Java PriorityQueue
 In this tutorial, we will learn about the PriorityQueue class of the Java collections framework with the help of examples.
 
 The PriorityQueue class provides the functionality of the heap data structure.
@@ -10781,7 +10905,7 @@ To learn more about the comparator, visit Java Comparator.
 
 
 
-Java Deque Interface
+### Java Deque Interface
 In this tutorial, we will learn about the Deque interface, how to use it, and its methods.
 
 The Deque interface of the Java collections framework provides the functionality of a double-ended queue. It extends the Queue interface.
@@ -10892,7 +11016,7 @@ To learn more, visit Java ArrayDeque.
 
 
 
-Java LinkedList
+### Java LinkedList
 In this tutorial, we will learn about the Java LinkedList in detail with the help of examples.
 
 The LinkedList class of the Java collections framework provides the functionality of the linked list data structure (doubly linkedlist).
@@ -10958,7 +11082,7 @@ Add elements
 Access elements
 Change elements
 Remove elements
-1. Add elements to a LinkedList
+#### 1. Add elements to a LinkedList
 We can use the add() method to add an element (node) at the end of the LinkedList. For example,
 
 import java.util.LinkedList;
@@ -10993,7 +11117,7 @@ Here, we have used the index number parameter. It is an optional parameter that 
 
 To learn more about adding elements to LinkedList, visit Java program to add elements to LinkedList.
 
-2. Access LinkedList elements
+#### 2. Access LinkedList elements
 The get() method of the LinkedList class is used to access an element from the LinkedList. For example,
 
 import java.util.LinkedList;
@@ -11023,7 +11147,7 @@ In the above example, we have used the get() method with parameter 1. Here, the 
 
 We can also access elements of the LinkedList using the iterator() and the listIterator() method. To learn more, visit the Java program to access elements of LinkedList.
 
-3. Change Elements of a LinkedList
+#### 3. Change Elements of a LinkedList
 The set() method of LinkedList class is used to change elements of the LinkedList. For example,
 
 import java.util.LinkedList;
@@ -11054,7 +11178,7 @@ In the above example, we have created a LinkedList named languages. Notice the l
 languages.set(3, "Kotlin");
 Here, the set() method changes the element at index 3 to Kotlin.
 
-4. Remove element from a LinkedList
+#### 4. Remove element from a LinkedList
 The remove() method of the LinkedList class is used to remove an element from the LinkedList. For example,
 
 import java.util.LinkedList;
@@ -11210,7 +11334,7 @@ Cow, Cat, Dog,
 LinkedList Vs. ArrayList
 Both the Java ArrayList and LinkedList implements the List interface of the Collections framework. However, there exists some difference between them.
 
-LinkedList	ArrayList
+###### LinkedList	ArrayList
 Implements List, Queue, and Deque interfaces.	Implements List interface.
 Stores 3 values (previous address, data, and next address) in a single position.	Stores a single value in a single position.
 Provides the doubly-linked list implementation.	Provides a resizable array implementation.
@@ -11237,7 +11361,7 @@ Here, if the LinkedList is created using one interface, then we cannot use metho
 
 
 
-Java ArrayDeque
+### Java ArrayDeque
 In this tutorial, we will learn about the ArrayDeque class and its methods with the help of examples. Also, we will learn to use array deque to implement a stack.
 
 In Java, we can use the ArrayDeque class to implement queue and deque data structures using arrays.
@@ -11266,7 +11390,7 @@ Methods of ArrayDeque
 The ArrayDeque class provides implementations for all the methods present in Queue and Deque interface.
 
 Insert Elements to Deque
-1. Add elements using add(), addFirst() and addLast()
+#### 1. Add elements using add(), addFirst() and addLast()
 
 add() - inserts the specified element at the end of the array deque
 addFirst() - inserts the specified element at the beginning of the array deque
@@ -11296,7 +11420,7 @@ Run Code
 Output
 
 ArrayDeque: [Cat, Dog, Horse]
-2. Insert elements using offer(), offerFirst() and offerLast()
+#### 2. Insert elements using offer(), offerFirst() and offerLast()
 
 offer() - inserts the specified element at the end of the array deque
 offerFirst() - inserts the specified element at the beginning of the array deque
@@ -11330,7 +11454,7 @@ Note: If the array deque is full
 the add() method will throw an exception
 the offer() method returns false
 Access ArrayDeque Elements
-1. Access elements using getFirst() and getLast()
+##### 1. Access elements using getFirst() and getLast()
 
 getFirst() - returns the first element of the array deque
 getLast() - returns the last element of the array deque
@@ -11363,7 +11487,7 @@ Output
 ArrayDeque: [Dog, Cat, Horse]
 First Element: Dog
 Last Element: Horse
-2. Access elements using peek(), peekFirst() and peekLast() method
+##### 2. Access elements using peek(), peekFirst() and peekLast() method
 
 peek() - returns the first element of the array deque
 peekFirst() - returns the first element of the array deque (equivalent to peek())
@@ -11403,7 +11527,7 @@ First Element: Dog
 Last Element: Horse
 Note: If the array deque is empty, peek(), peekFirst() and getLast() throws NoSuchElementException.
 
-Remove ArrayDeque Elements
+#### Remove ArrayDeque Elements
 1. Remove elements using the remove(), removeFirst(), removeLast() method
 
 remove() - returns and removes an element from the first element of the array deque
@@ -11618,7 +11742,7 @@ If you are implementing the queue or the deque data structure, an ArrayDeque is 
 
 
 
-Java BlockingQueue
+### Java BlockingQueue
 In this tutorial, we will learn about the Java BlockingQueue interface and its methods.
 
 The BlockingQueue interface of the Java Collections framework extends the Queue interface. It allows any operation to wait until it can be successfully performed.
@@ -11734,7 +11858,7 @@ Now, if the first thread runs slower, then the blocking queue can make the secon
 
 
 
-Java ArrayBlockingQueue
+### Java ArrayBlockingQueue
 In this tutorial, we will learn about the ArrayBlockingQueue class and its methods with the help of examples.
 
 The ArrayBlockingQueue class of the Java Collections framework provides the blocking queue implementation using an array.
@@ -11968,7 +12092,7 @@ Now, if the first thread is slower than the second thread, then the array blocki
 
 
 
-Java LinkedBlockingQueue
+### Java LinkedBlockingQueue
 In this tutorial, we will learn about the LinkedBLockingQueue class and its methods with the help of examples.
 
 The LinkedBlockingQueue class of the Java Collections framework provides the blocking queue implementation using a linked list.
@@ -12208,7 +12332,7 @@ Now, if the first thread is slower than the second thread, then the linked block
 
 
 
-Java Map Interface
+### Java Map Interface
 In this tutorial, we will learn about the Java Map interface and its methods.
 
 The Map interface of the Java collections framework provides the functionality of the map data structure.
@@ -12371,7 +12495,7 @@ To learn more about TreeMap, visit Java TreeMap.
 
 
 
-Java HashMap
+### Java HashMap
 In this tutorial, we will learn about the Java HashMap class and its various operations with the help of examples.
 
 The HashMap class of the Java collections framework provides the functionality of the hash table data structure.
@@ -12392,7 +12516,8 @@ In the above code, we have created a hashmap named numbers. Here, K represents t
 HashMap<String, Integer> numbers = new HashMap<>();
 Here, the type of keys is String and the type of values is Integer.
 
-Example 1: Create HashMap in Java
+Example 1: 
+Create HashMap in Java
 import java.util.HashMap;
 
 class Main {
@@ -12715,7 +12840,7 @@ If the optional parameters not used, then the default capacity will be 16 and th
 
 
 
-Java LinkedHashMap
+### Java LinkedHashMap
 In this tutorial, we will learn about the Java LinkedHashMap class and its operations with the help of examples.
 
 The LinkedHashMap class of the Java collections framework provides the hash table and linked list implementation of the Map interface.
@@ -12948,7 +13073,7 @@ The performance of LinkedHashMap is slower than HashMap.
 
 
 
-Java WeakHashMap
+### Java WeakHashMap
 In this tutorial, we will learn about Java WeakHashMap and its operations with the help of examples. We will also learn about the differences between WeakHashMap and HashMap
 
 The WeakHashMap class of the Java collections framework provides the feature of the hash table data structure..
@@ -13281,7 +13406,7 @@ To learn more, visit Java WeakHashMap (official Java documentation).
 
 
 
-Java EnumMap
+### Java EnumMap
 In this tutorial, we will learn about the Java EnumMap class and its operations with the help of examples.
 
 The EnumMap class of the Java collections framework provides a map implementation for elements of an enum.
@@ -13638,7 +13763,7 @@ Here, we show how the SortedMap interface works. If you want to know more about 
 
 
 
-Java NavigableMap Interface
+### Java NavigableMap Interface
 In this tutorial, we will learn about the Java NavigableMap interface and its methods with the help of a example.
 
 The NavigableMap interface of the Java collections framework provides the features to navigate among the map entries.
@@ -13774,7 +13899,7 @@ Now we know about the NavigableMap interface, we will learn about its implementa
 
 
 
-Java TreeMap
+### Java TreeMap
 In this tutorial, we will learn about the Java TreeMap class and its operations with the help of examples.
 
 The TreeMap class of the Java collections framework provides the tree data structure implementation.
@@ -14388,7 +14513,7 @@ To learn more about ConcurrentHashMap, visit Java ConcurrentHashMap.
 
 
 
-Java ConcurrentHashMap
+### Java ConcurrentHashMap
 In this tutorial, we will learn about the Java ConcurrentHashMap class and its operations with the help of examples.
 
 The ConcurrentHashMap class of the Java collections framework provides a thread-safe map. That is, multiple threads can access the map at once without affecting the consistency of entries in a map.
@@ -14744,7 +14869,7 @@ It provides its own synchronization.
 
 
 
-Java Set Interface
+### Java Set Interface
 In this tutorial, we will learn about the Set interface in Java and its methods.
 
 The Set interface of the Java Collections framework provides the features of the mathematical set in Java. It extends the Collection interface.
@@ -14900,7 +15025,7 @@ Now that we know what Set is, we will see its implementations in classes like En
 
 
 
-Java HashSet Class
+### Java HashSet Class
 In this tutorial, we will learn about the Java HashSet class. We will learn about different hash set methods and operations with the help of examples.
 
 The HashSet class of the Java Collections framework provides the functionalities of the hash table data structure.
@@ -15452,7 +15577,7 @@ The bit of a corresponding element is turned on if that element is present in th
 
 
 
-Java LinkedHashSet
+### Java LinkedHashSet
 In this tutorial, we will learn about the Java LinkedHashSet class and its methods with the help of examples.
 
 The LinkedHashSet class of the Java collections framework provides functionalities of both the hashtable and the linked list data structure.
@@ -15976,7 +16101,7 @@ Now that we know about the NavigableSet interface, we will learn about its imple
 
 
 
-Java TreeSet
+### Java TreeSet
 In this tutorial, we will learn about the Java TreeSet class and its various operations and methods with the help of examples.
 
 The TreeSet class of the Java collections framework provides the functionality of a tree data structure.
@@ -16497,7 +16622,7 @@ To learn more, visit Java Comparator (official Java documentation).
 
 
 
-Java Algorithms
+### Java Algorithms
 In this tutorial, we will learn about different algorithms provided by the Java collections framework with the help of examples.
 
 The Java collections framework provides various algorithms that can be used to manipulate elements stored in data structures.
@@ -16737,7 +16862,7 @@ Maximum Element: 3
 
 
 
-Java Iterator Interface
+### Java Iterator Interface
 In this tutorial, we will learn about the Java Iterator interface with the help of an example.
 
 The Iterator interface of the Java collections framework allows us to access elements of a collection. It has a subinterface ListIterator.
@@ -16818,7 +16943,7 @@ Now the method will print all the remaining elements of the array list.
 
 
 
-Java ListIterator Interface
+### Java ListIterator Interface
 In this tutorial, we will learn about the Java ListIterator interface with the help of an example.
 
 The ListIterator interface of the Java collections framework provides the functionality to access elements of a list.
@@ -16935,7 +17060,7 @@ Hence, the previous() method returns 3.
 
 
 
-Java I/O Streams
+### Java I/O Streams
 In this tutorial, we will learn about Java input/output streams and their types.
 
 In Java, streams are the sequence of data that are read from the source and written to the destination.
@@ -16991,7 +17116,7 @@ Java Writer Class
 
 
 
-Java InputStream Class
+### Java InputStream Class
 In this tutorial, we will learn about the Java InputStream class and its methods with the help of an example.
 
 The InputStream class of the java.io package is an abstract superclass that represents an input stream of bytes.
@@ -17098,7 +17223,7 @@ To learn more, visit Java InputStream (official Java documentation).
 
 
 
-Java OutputStream Class
+### Java OutputStream Class
 In this tutorial, we will learn about the Java OutputStream and its methods with the help of an example.
 
 The OutputStream class of the java.io package is an abstract superclass that represents an output stream of bytes.
@@ -17189,7 +17314,7 @@ To learn more, visit Java OutputStream (official Java documentation).
 
 
 
-Java FileInputStream Class
+### Java FileInputStream Class
 In this tutorial, we will learn about Java FileInputStream and its methods with the help of examples.
 
 The FileInputStream class of the java.io package can be used to read data (in bytes) from files.
@@ -17371,7 +17496,7 @@ To learn more, visit Java FileInputStream (official Java documentation).
 
 
 
-Java FileOutputStream Class
+### Java FileOutputStream Class
 In this tutorial, we will learn about Java FileOutputStream and its methods with the help of examples.
 
 The FileOutputStream class of the java.io package can be used to write data (in bytes) to the files.
@@ -17494,7 +17619,7 @@ To learn more, visit Java FileOutputStream (official Java documentation).
 
 
 
-Java ByteArrayInputStream Class
+### Java ByteArrayInputStream Class
 In this tutorial, we will learn about Java ByteArrayInputStream and its methods with the help of examples.
 
 The ByteArrayInputStream class of the java.io package can be used to read an array of input data (in bytes).
