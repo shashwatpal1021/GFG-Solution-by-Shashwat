@@ -1,4 +1,4 @@
-public 
+
 
 ### Java Class and Objects
 In this tutorial, you will learn about the concept of classes and objects in Java with the help of examples.
@@ -9,7 +9,7 @@ An object is any entity that has a state and behavior. For example, a bicycle is
 
 States: idle, first gear, etc
 Behaviors: braking, accelerating, etc.
-Before we learn about objects, let's first know about classes in Java.
+Before we learn about objects, let's' first know about classes in Java.
 
 #### Java Class
 A class is a blueprint for the object. Before we create an object, we first need to define the class.
@@ -4660,6 +4660,3 @@ c.getModifiers() - returns the access modifiers of the constructor in integer fo
 c.getParameterCount() - returns the number of parameters present in each constructor
 To learn about more methods of the Constructor class, visit Constructor class
 
-class Oops {
-    
-}
