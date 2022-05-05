@@ -1084,7 +1084,7 @@ We can also build our own infinite iterators. The following iterator will, theor
 
 class InfIter:
     """Infinite iterator to return all
-        odd numbers"""
+        odd numbers"""""""""
 
     def __iter__(self):
         self.num = 1
@@ -1112,7 +1112,7 @@ Be careful to include a terminating condition, when iterating over these types o
 
 The advantage of using iterators is that they save resources. Like shown above, we could get all the odd numbers without storing the entire number system in memory. We can have infinite items (theoretically) in finite memory.
 
-There's an easier way to create iterators in Python. To learn more visit: Python generators using yield.'
+There's' an easier way to create iterators in Python. To learn more visit: Python generators using yield.'
 
 
 
