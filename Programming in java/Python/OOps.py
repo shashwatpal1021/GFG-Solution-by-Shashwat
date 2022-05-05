@@ -1084,8 +1084,8 @@ We can also build our own infinite iterators. The following iterator will, theor
 
 class InfIter:
     """Infinite iterator to return all
-        odd numbers"""""""""
-
+        odd numbers""" '''
+'''
     def __iter__(self):
         self.num = 1
         return self
