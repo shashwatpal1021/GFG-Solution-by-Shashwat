@@ -1,4 +1,4 @@
-/*
+
 # Java 
 
 Java "Hello, World!" Program
@@ -1098,7 +1098,7 @@ When we want to write comments in multiple lines, we can use the multi-line comm
 /* This is an example of  multi-line comment.
  * The program prints "Hello, World!" to the standard output.
  */
-/*
+
 
 class HelloWorld {
     public static void main(String[] args) {    	
@@ -1115,11 +1115,11 @@ Here, we have used the multi-line comment:
 /* This is an example of multi-line comment.
 * The program prints "Hello, World!" to the standard output.
 */
-/*
+
 This type of comment is also known as Traditional Comment. In this type of comment, the Java compiler ignores everything from /* to */.
-/*
+
 Use Comments the Right Way
-One thing you should always consider that comments shouldn't be the substitute for a way to explain poorly written code in English. You should always write well structured and self explaining code. And, then use comments.
+One thing you should always consider that comments shouldn't' be the substitute for a way to explain poorly written code in English. You should always write well structured and self explaining code. And, then use comments.
 
 Some believe that code should be self-describing and comments should be rarely used. However, in my personal opinion, there is nothing wrong with using comments. We can use comments to explain complex algorithms, regex or scenarios where we have to choose one technique among different technique to solve problems.
 
@@ -1242,7 +1242,7 @@ In the above example, we have a variable named number. Here, the test expression
 Since the value of the number is 10, the test expression evaluates to true. Hence code inside the body of if is executed.
 
 
-Now, change the value of the number to a negative integer. Let's say -5.
+Now, change the value of the number to a negative integer. Let's' say -5.
 
 int number = -5;
 If we run the program with the new value of number, the output will be:
@@ -1525,7 +1525,7 @@ In the above example, we have created a switch-case statement. Here, the value o
 Hence, the code inside the default case is executed.
 
 default:
-  System.out.println("Unknown Size);
+  System.out.println("Unknown Size");
 Note: The Java switch statement only works with:
 
 #### Primitive data types: byte, short, char, and int
@@ -4094,12 +4094,12 @@ Here, we are using the concat() method to add another string World to the previo
 
 It looks like we are able to change the value of the previous string. However, this is not true.
 
-Let's see what has happened here,
+Let's' see what has happened here,
 
 JVM takes the first string "Hello! "
 creates a new string by adding "World" to the first string
 assign the new string "Hello! World" to the example variable
-the first string "Hello! " remains unchanged
+the first string "Hello!""remains unchanged
 Creating strings using the new keyword
 So far we have created strings like primitive types in Java.
 
@@ -4126,7 +4126,7 @@ class Main {
 }
 Run Code
 Create String using literals vs new keyword
-Now that we know how strings are created using string literals and the new keyword, let's see what is the major difference between them.
+Now that we know how strings are created using string literals and the new keyword, let's' see what is the major difference between them.
 
 In Java, the JVM maintains a string pool to store all of its strings inside the memory. The string pool helps in reusing the strings.
 
@@ -4136,7 +4136,7 @@ String example = "Java";
 Here, we are directly providing the value of the string (Java). Hence, the compiler first checks the string pool to see if the string already exists.
 
 If the string already exists, the new string is not created. Instead, the new reference, example points to the already existed string (Java).
-If the string doesn't exist, the new string (Java is created.
+If the string doesn't' exist, the new string (Java is created.
 ###### 2. While creating strings using the new keyword,
 
 String example = new String("Java");
@@ -4404,7 +4404,7 @@ In the above program, the instance variable and the parameter have the same name
 
 In such a situation, we use this keyword. For example,
 
-First, let's see an example without using this keyword:
+First, let's' see an example without using this keyword:
 
 class Main {
 
@@ -4424,7 +4424,7 @@ Output:
 obj.age = 0
 In the above example, we have passed 8 as a value to the constructor. However, we are getting 0 as an output. This is because the Java compiler gets confused because of the ambiguity in names between instance the variable and the parameter.
 
-Now, let's rewrite the above code using this keyword.
+Now, let's' rewrite the above code using this keyword.
 
 class Main {
 
@@ -4498,7 +4498,7 @@ to access value inside the getter method
 Using this in Constructor Overloading
 While working with constructor overloading, we might have to invoke one constructor from another constructor. In such a case, we cannot call the constructor explicitly. Instead, we have to use this keyword.
 
-Here, we use a different form of this keyword. That is, this(). Let's take an example,
+Here, we use a different form of this keyword. That is, this(). Let's' take an example,
 
 class Complex {
 
@@ -5606,7 +5606,7 @@ abstract class Language {
 To know about the non-abstract methods, visit Java methods. Here, we will learn about abstract methods.
 
 ##### Java Abstract Method
-A method that doesn't have its body is known as an abstract method. We use the same abstract keyword to create abstract methods. For example,
+A method that doesn't' have its body is known as an abstract method. We use the same abstract keyword to create abstract methods. For example,
 
 abstract void display();
 Here, display() is an abstract method. The body of display() is replaced by ;.
@@ -5916,7 +5916,7 @@ interface C extends A, B {
 }
 Advantages of Interface in Java
 
-Now that we know what interfaces are, let's learn about why interfaces are used in Java.
+Now that we know what interfaces are, let's' learn about why interfaces are used in Java.
 
 Similar to abstract classes, interfaces help us to achieve abstraction in Java.
 
@@ -5961,7 +5961,7 @@ public default void getSides() {
    // body of getSides()
 }
 Why default methods?
-Let's take a scenario to understand why default methods are introduced in Java.
+Let's' take a scenario to understand why default methods are introduced in Java.
 
 Suppose, we need to add a new method in an interface.
 
@@ -6054,7 +6054,7 @@ Note: With the release of Java 9, private methods are also supported in interfac
 We cannot create objects of an interface. Hence, private methods are used as helper methods that provide support to other methods in interfaces.
 
 Practical Example of Interface
-Let's see a more practical example of Java Interface.
+Let's' see a more practical example of Java Interface.
 
 // To use the sqrt function
 import java.lang.Math;
@@ -6326,7 +6326,7 @@ String second = "Programming";
 name = first + second;  // Output = Java Programming
 Here, we can see that the + operator is overloaded in Java to perform two operations: addition and concatenation.
 
-Note: In languages like C++, we can define operators to work differently for different operands. However, Java doesn't support user-defined operator overloading.
+Note: In languages like C++, we can define operators to work differently for different operands. However, Java doesn't' support user-defined operator overloading.
 
 Polymorphic Variables
 A variable is called polymorphic if it refers to different values under different conditions.
@@ -8399,7 +8399,7 @@ If a method does not handle exceptions, the type of exceptions that may occur wi
 The findFile() method specifies that an IOException can be thrown. The main() method calls this method and handles the exception if it is thrown.
 
 Throwing multiple exceptions
-Here's how we can throw multiple exceptions using the throws keyword.
+Here's' how we can throw multiple exceptions using the throws keyword.
 
 import java.io.*;
 class Main {
@@ -8466,7 +8466,7 @@ Exception in thread "main" java.lang.ArithmeticException: Trying to divide by 0
 exit status 1
 In this example, we are explicitly throwing an ArithmeticException.
 
-Note: ArithmeticException is an unchecked exception. It's usually not necessary to handle unchecked exceptions.
+Note: ArithmeticException is an unchecked exception. It's' usually not necessary to handle unchecked exceptions.
 
 Example 3: 
 Throwing checked exception
@@ -8899,7 +8899,7 @@ Main.java uses unchecked or unsafe operations
 because of the following statement.
 
 ArrayList wordList = new ArrayList<>();
-This is because we haven't defined the generic type of the array list. We can fix this warning by specifying generics inside angle brackets <>.
+This is because we haven't' defined the generic type of the array list. We can fix this warning by specifying generics inside angle brackets <>.
 
 ArrayList<String> wordList = new ArrayList<>();
 ##### 2. Type annotations
@@ -9002,7 +9002,7 @@ We use Javadoc @deprecated tag for documenting the deprecated element.
  * @deprecated
  * why it was deprecated
  */
-/*
+
 @Deprecated
 accessModifier returnType deprecatedMethodName() { ... }
 Example 1: 
@@ -9012,7 +9012,7 @@ class Main {
    * @deprecated
    * This method is deprecated and has been replaced by newMethod()
    */
-  /*
+  
   @Deprecated
   public static void deprecatedMethod() { 
     System.out.println("Deprecated method"); 
@@ -12729,7 +12729,7 @@ Here, the remove() method takes the key as its parameter. It then returns the va
 We can also remove the entry only under certain conditions. For example,
 
 remove(2, "C++");
-Here, the remove() method only removes the entry if the key 2 is associated with the value C++. Since 2 is not associated with C++, it doesn't remove the entry.
+Here, the remove() method only removes the entry if the key 2 is associated with the value C++. Since 2 is not associated with C++, it doesn't' remove the entry.
 
 To learn more, visit Java HashMap remove().
 
@@ -20735,7 +20735,7 @@ Note: For the block body, you can have a return statement if the body returns a 
 
 Example 3: Lambda Expression
 
-Let's write a Java program that returns the value of Pi using the lambda expression.
+Let's' write a Java program that returns the value of Pi using the lambda expression.
 
 As mentioned earlier, a lambda expression is not executed on its own. Rather, it forms the implementation of the abstract method defined by the functional interface.
 
@@ -21583,4 +21583,3 @@ Note: Primitive types are more efficient than corresponding objects. Hence, when
 
 
 
-*/
