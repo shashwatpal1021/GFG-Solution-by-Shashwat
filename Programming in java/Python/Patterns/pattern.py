@@ -241,6 +241,7 @@ def revenum(n):
 '''
 
 
+print()
 revenum(5)
 print()
 diamond(6)
