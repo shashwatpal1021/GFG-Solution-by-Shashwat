@@ -6,7 +6,15 @@ def rectangle(n):
         for j in range(n):
             print("*",end=" ")
         print()
+'''
 
+* * * * *
+* * * * *
+* * * * *
+* * * * *
+* * * * *
+
+'''
 
 def Hollow_rec(n):
     for i in range(n):
@@ -17,7 +25,15 @@ def Hollow_rec(n):
                 print("  ",end=" ")
         print()
 
+'''
 
+*  *  *  *  *
+*           *
+*           *
+*           *
+*  *  *  *  *
+
+'''
 
 def right_tir(n):
     for i in range(n):
@@ -26,6 +42,12 @@ def right_tir(n):
         print()
 
 
+'''
+*
+*  *
+*  *  *
+*  *  *  *
+'''
 
 def opposite_right_tri(n):
     for i in range(n):
@@ -33,6 +55,15 @@ def opposite_right_tri(n):
             print("* ",end=" ")
         print()
 
+'''
+
+*  *  *  *  *
+*  *  *  *
+*  *  *  
+*  *
+*
+
+'''
 
 def left_tri(n):
     for i in range(n,0,-1):
@@ -42,6 +73,13 @@ def left_tri(n):
             print("* ",end=" ")
         print()
 
+'''
+
+            *
+         *  *
+      *  *  *
+   *  *  *  *
+'''
 
 def serial_num(n):
     for i in range(n+1):
@@ -49,6 +87,13 @@ def serial_num(n):
             print(j,end=" ")
         print()
 
+'''
+
+1
+1 2
+1 2 3
+1 2 3 4
+'''
 
 def opposite_serial_num(n):
     for i in range(n):
@@ -56,7 +101,12 @@ def opposite_serial_num(n):
             print(j,end=" ")
         print()
 
-
+'''
+1 2 3 4
+1 2 3
+1 2
+1
+'''
 def snake_pattern(n):
     num=1
     for i in range(n):
@@ -64,7 +114,14 @@ def snake_pattern(n):
             print(num,end=" ")
             num+=1
         print()
+'''
 
+1
+2 3
+4 5 6
+7 8 9 10
+
+'''
 
 def binary_pattern(n):
     for i in range(n):
@@ -75,7 +132,14 @@ def binary_pattern(n):
                 print(1,end=" ")
         print()
 
+'''
 
+1
+0 1
+1 0 1
+0 1 0 1
+
+'''
 def rohmbus(n):
     for i in range(n):
         for j in range(n-i):
@@ -84,6 +148,16 @@ def rohmbus(n):
             print("* ",end=" ")
         print()
 
+'''
+
+
+               *  *  *  *  *
+            *  *  *  *  *
+         *  *  *  *  *
+      *  *  *  *  *
+   *  *  *  *  *
+
+'''
 def pyramid(n):
     for i in range(n):
         for j in range(n-i):
@@ -92,6 +166,14 @@ def pyramid(n):
             print(i,end=" ")
         print()
 
+'''
+
+    1
+   2 2
+  3 3 3
+ 4 4 4 4 
+
+'''
 
 def pyramid_two(n):
     for i in range(1,n+1):
@@ -102,7 +184,15 @@ def pyramid_two(n):
         for j in range(2,i+1):
             print(j,end=" ")
         print()
+'''
 
+        1
+      2 1 2
+    3 2 1 2 3
+  4 3 2 1 2 3 4
+5 4 3 2 1 2 3 4 5
+
+'''
 
 def diamond(n):
     for i in range(n):
@@ -118,7 +208,21 @@ def diamond(n):
             print("*",end=" ")
         print()
 
+'''
 
+     *
+    * *
+   * * *
+  * * * *
+ * * * * *
+* * * * * *
+ * * * * *
+  * * * *
+   * * *
+    * *
+     *
+
+'''
 
 def revenum(n):
     num=-1
@@ -128,19 +232,39 @@ def revenum(n):
             print(i,end=" ")
         print()
 
+'''
+5 5 5 5 5 
+4 4 4 4
+3 3 3
+2 2
+1
+'''
 
 
-#revenum(5)
-#diamond(6)
-#pyramid_two(5)
-#pyramid(5)
-#rohmbus(5)
-#binary_pattern(5)
-#snake_pattern(5)
-#opposite_serial_num(5)
-#serial_num(5)
-#left_tri(5)
-#opposite_right_tri(5)
-#right_tir(5)
-#Hollow_rec(5)
-#rectangle(5)
+revenum(5)
+print()
+diamond(6)
+print()
+pyramid_two(5)
+print()
+pyramid(5)
+print()
+rohmbus(5)
+print()
+binary_pattern(5)
+print()
+snake_pattern(5)
+print()
+opposite_serial_num(5)
+print()
+serial_num(5)
+print()
+left_tri(5)
+print()
+opposite_right_tri(5)
+print()
+right_tir(5)
+print()
+Hollow_rec(5)
+print()
+rectangle(5)
