@@ -239,33 +239,49 @@ def revenum(n):
 2 2
 1
 '''
+def num(n):
+    for i in range(n+1):
+        for j in range(n-i):
+            print(" ",end=" ")
+        for j in range(n-i,n+1):
+            print(j,end=" ")
+        print()
 
+'''
+          5 
+        4 5 
+      3 4 5 
+    2 3 4 5 
+  1 2 3 4 5 
+0 1 2 3 4 5 
 
-print()
-revenum(5)
-print()
-diamond(6)
-print()
-pyramid_two(5)
-print()
-pyramid(5)
-print()
-rohmbus(5)
-print()
-binary_pattern(5)
-print()
-snake_pattern(5)
-print()
-opposite_serial_num(5)
-print()
-serial_num(5)
-print()
-left_tri(5)
-print()
-opposite_right_tri(5)
-print()
-right_tir(5)
-print()
-Hollow_rec(5)
-print()
-rectangle(5)
+'''
+#num(5)
+# print()
+# revenum(5)
+# print()
+# diamond(6)
+# print()
+# pyramid_two(5)
+# print()
+# pyramid(5)
+# print()
+# rohmbus(5)
+# print()
+# binary_pattern(5)
+# print()
+# snake_pattern(5)
+# print()
+# opposite_serial_num(5)
+# print()
+# serial_num(5)
+# print()
+# left_tri(5)
+# print()
+# opposite_right_tri(5)
+# print()
+# right_tir(5)
+# print()
+# Hollow_rec(5)
+# print()
+# rectangle(5)

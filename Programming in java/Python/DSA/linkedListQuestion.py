@@ -56,6 +56,9 @@ class Linkedlist:
 
 
     # Deletion in a linkedList 
+    def deleteNode(self, node):
+        node.val = node.next.val
+        node.next = node.next.next
 
     def __init__(self):
         self.head = None
@@ -63,6 +66,7 @@ class Linkedlist:
         NewNode = Node(data_n)
         NewNode.next = self.head
         self.head = NewNode
+        # removal of key
     def RemoveNode(self, Removekey):
         Headvalue = self.head
         if (Headvalue is not None):
@@ -90,6 +94,15 @@ class Linkedlist:
             next_pointer = second_pointer.next
           if next_pointer is None:
               return "Middle node is %s" % str(current)
+    
+    # OR
+    def middleNode(self, head):
+        slow=head
+        fast=head
+        while fast and fast.next:
+            slow=slow.next
+            fast=fast.next.next
+        return slow
 
     # Delete Node in a Linked List
 
@@ -161,7 +174,22 @@ class Linkedlist:
 
         TC:O(list1+list2)
         SP:O(list1+list2)
-
+        # or
+    def mergeTwoLists(self, list1, list2):
+        res=[]
+        while list1:
+            res+=[list1.val]
+            list1=list1.next
+        while list2:
+            res+=[list2.val]
+            list2=list2.next
+        res=(sorted(res)[::-1])
+        self.head=None
+        for i in range(len(res)):
+            node=ListNode(res[i])
+            node.next=self.head
+            self.head=node
+        return self.head
     # Palindrome Linked List
 
     def isPalindrome(self, head):
@@ -266,7 +294,16 @@ class Linkedlist:
         SP:O(1)
 
     # Intersection of Two Linked Lists
+    def getIntersectionNode(self, headA, headB):
+    	A = set()
+		while headA:
+			A.add(headA)
+			headA = headA.next
+		while headB:
+			if headB in A: return headB
+			headB = headB.next
 
+            #or
     def getIntersectionNode(self,headA,headB):
         a = headA
         b = headB
@@ -279,3 +316,12 @@ class Linkedlist:
 
         TC:O(n)
         SP:O(1)
+
+# Convert Binary Number in a Linked List to Integer
+def getDecimalValue(self, head):
+        a = ''
+        while head is not None:
+            a += str(head.val)
+            head = head.next
+        
+        return int(a, 2)
