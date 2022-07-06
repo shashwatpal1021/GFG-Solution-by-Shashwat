@@ -1,6 +1,6 @@
 find the second largest element in an array.
 
-N:
+N:{
 #include <stdio.h>
 
 int getlargest(int a[],int n)
@@ -49,8 +49,10 @@ int main()
 	return 0;
     
 }
+}
 
 E:
+{
 #include <stdio.h>
 
 int secondlargest(int a[],int n)
@@ -88,10 +90,11 @@ int main()
 	return 0;
     
 }
-
+}
 
 check if an array is sorted by
 N:
+{
 import java.util.*;
 import java.io.*;
 import java.lang.*;
@@ -115,7 +118,9 @@ class GFG
        System.out.println(isSorted(arr, n));
     } 
 }
+}
 E:
+{
 import java.util.*;
 import java.io.*;
 import java.lang.*;
@@ -141,4 +146,5 @@ class GFG
 
        System.out.println(isSorted(arr, n));
     } 
+}
 }
