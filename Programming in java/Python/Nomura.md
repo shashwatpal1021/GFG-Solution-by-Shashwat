@@ -3092,3 +3092,328 @@ class Solution
 
 
 
+# 2D matrix 
+
+rotate a matrix anti clockwise by 90
+
+import java.util.*;
+import java.io.*;
+import java.lang.*;
+
+
+
+class GFG 
+{ 
+	static int n = 4;
+
+	static void rotate90(int mat[][])
+	{
+		int temp[][] = new int[n][n];
+
+		for(int i = 0; i < n; i++)
+			for(int j = 0; j < n; j++)
+				temp[n - j - 1][i] = mat[i][j];
+
+		for(int i = 0; i < n; i++)
+			for(int j = 0; j < n; j++)
+				mat[i][j] = temp[i][j];
+
+	}
+
+	public static void main(String args[]) 
+    {
+        int arr[][] = {{1, 2, 3, 4},
+    				   {5, 6, 7, 8},
+    				   {9, 10, 11, 12},
+    				   {13, 14, 15, 16}};
+
+    	rotate90(arr);
+
+		for(int i = 0; i < n; i++)
+		{
+			for(int j = 0; j < n; j++)
+			{
+				System.out.print(arr[i][j]+" ");
+			}
+
+			System.out.println();
+		}	
+    } 
+
+}
+E:import java.util.*;
+import java.io.*;
+import java.lang.*;
+
+
+
+class GFG 
+{ 
+	static int n = 4;
+
+	static void swap(int mat[][], int i, int j)
+	{
+			int temp = mat[i][j];
+			mat[i][j] = mat[j][i];
+			mat[j][i] = temp;
+	}
+	
+	static void swap2(int low, int high, int i, int mat[][])
+	{
+	    	int temp = mat[low][i];
+			mat[low][i] = mat[high][i];
+			mat[high][i] = temp;
+	}
+
+	static void rotate90(int mat[][])
+	{
+
+		for(int i = 0; i < n; i++)
+			for(int j = i + 1; j < n; j++)
+				swap(mat, i, j);
+				
+		for(int i = 0; i < n; i++)
+		{
+		    int low = 0, high = n - 1;
+		    
+		    while(low < high)
+		    {
+		        swap2(low, high, i, mat);
+		        
+		        low++;
+		        high--;
+		    }
+		}
+	}
+
+	public static void main(String args[]) 
+    {
+        int arr[][] = {{1, 2, 3, 4},
+    				   {5, 6, 7, 8},
+    				   {9, 10, 11, 12},
+    				   {13, 14, 15, 16}};
+
+    	rotate90(arr);
+
+    		for(int i = 0; i < n; i++)
+			{
+				for(int j = 0; j < n; j++)
+				{
+					System.out.print(arr[i][j]+" ");
+				}
+
+				System.out.println();
+			}	
+    } 
+
+}
+
+
+Spiral Traversal of Matrix"
+
+import java.util.*;
+import java.io.*;
+import java.lang.*;
+
+
+
+class GFG 
+{ 
+	
+
+	static void printSpiral(int mat[][], int R, int C)
+	{
+		int top = 0, left = 0, bottom = R - 1, right = C - 1;
+
+		while(top <= bottom && left <= right)
+		{
+			for(int i = left; i <= right; i++)
+				System.out.print(mat[top][i] + " ");
+
+			top++;
+
+			for(int i = top; i <= bottom; i++)
+				System.out.print(mat[i][right] + " ");
+			
+			right--;
+
+			if(top <= bottom){
+			for(int i = right; i >= left; i--)
+				System.out.print(mat[bottom][i] + " ");
+
+			bottom--;
+			}
+
+			if(left <= right){
+			for(int i = bottom; i >= top; i--)
+				System.out.print(mat[i][left] + " ");
+
+			left++;
+			}			
+		}
+	}
+
+	public static void main(String args[]) 
+    {
+        int arr[][] = {{1, 2, 3, 4},
+    				   {5, 6, 7, 8},
+    				   {9, 10, 11, 12},
+    				   {13, 14, 15, 16}};
+
+    	printSpiral(arr, 4, 4);
+
+		
+    } 
+
+}
+
+ two approaches to search an element in a row-wise and column-wise sorted matrix.
+
+ N:import java.util.*;
+import java.io.*;
+import java.lang.*;
+
+
+
+class GFG 
+{ 
+	
+	static int R = 4, C = 4;
+
+	static void search(int mat[][], int x)
+	{
+		for(int i = 0; i < R; i++)
+		{
+			for(int j = 0; j < C; j++)
+			{
+				if(mat[i][j] == x)
+				{
+					System.out.println("Found at (" + i + ", " + j + ")");
+					
+					return;
+				}
+			}
+		}
+
+		System.out.println("Not Found");
+	}
+
+	public static void main(String args[]) 
+    {
+        int arr[][] = {{10, 20, 30, 40},
+    				   {15, 25, 35, 45},
+    				   {27, 29, 35, 45},
+    				   {32, 33, 39, 50}};
+    	int x = 29;	   
+
+    	search(arr, x);
+
+		
+    } 
+
+}
+E:import java.util.*;
+import java.io.*;
+import java.lang.*;
+
+
+
+class GFG 
+{ 
+	
+	static int R = 4, C = 4;
+
+	static void search(int mat[][], int x)
+	{
+		int i  = 0, j = C - 1;
+
+		while(i < R && j >= 0)
+		{
+			if(mat[i][j] == x)
+			{
+				System.out.println("Found at (" + i + ", " + j + ")");
+				return;
+			}
+			else if(mat[i][j] > x)
+			{
+				j--;
+			}
+			else
+			{
+				i++;
+			}
+		}
+		System.out.println("Not Found");
+	}
+
+	public static void main(String args[]) 
+    {
+        int arr[][] = {{10, 20, 30, 40},
+    				   {15, 25, 35, 45},
+    				   {27, 29, 35, 45},
+    				   {32, 33, 39, 50}};
+    	int x = 29;	   
+
+    	search(arr, x);
+
+		
+    } 
+
+}
+
+Median of A Row Wise Sorted Matrix Java
+
+import java.util.Arrays;
+
+public class MedianInRowSorted
+{
+static public int matMed(int mat[][], int r ,int c)
+{
+	int min = mat[0][0], max = mat[0][c-1];
+	for (int i=1; i<r; i++)
+	{
+		if (mat[i][0] < min)
+			min = mat[i][0];
+
+		if (mat[i][c-1] > max)
+			max = mat[i][c-1];
+	}
+
+	int medPos = (r * c + 1) / 2;
+	while (min < max)
+	{
+		int mid = (min + max) / 2;
+		int midPos = 0;
+        int pos = 0;
+		for (int i = 0; i < r; ++i){
+			    pos = Arrays.binarySearch(mat[i],mid);
+                
+                if(pos < 0)
+                    pos = Math.abs(pos) - 1;
+                  
+                
+                else
+                {
+                    while(pos < mat[i].length && mat[i][pos] == mid)
+                        pos += 1;
+                }
+                  
+                midPos = midPos + pos;
+		}
+		if (midPos < medPos)
+			min = mid + 1;
+		else
+			max = mid;
+	}
+	return min;
+}
+
+public static void main(String[] args)
+{
+	int r = 3, c = 5;
+	int m[][]= { {5,10,20,30,40}, {1,2,3,4,6}, {11,13,15,17,19} };
+	System.out.println("Median is " + matMed(m, r, c)); 
+	
+}
+}
+
