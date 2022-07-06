@@ -3417,3 +3417,825 @@ public static void main(String[] args)
 }
 }
 
+# Hashing
+
+HashSet 
+// Java program to demonstrate 
+// working of HashSet 
+import java.util.*; 
+
+class Test 
+{ 
+    public static void main(String[]args) 
+    { 
+        HashSet<String> h = new HashSet<String>(); 
+
+        
+        h.add("gfg"); 
+        h.add("courses"); 
+        h.add("ide"); 
+
+      
+        System.out.println(h);
+        
+        
+        System.out.println(h.contains("ide"));
+        
+       
+        Iterator<String> i = h.iterator();
+        
+        while(i.hasNext())
+        {
+            System.out.print(i.next()+" ");
+        }
+        
+        
+    } 
+} 
+// Java program to demonstrate 
+// working of HashSet 
+import java.util.*; 
+
+class Test 
+{ 
+    public static void main(String[]args) 
+    { 
+        HashSet<String> h = new HashSet<String>(); 
+
+        
+        h.add("gfg"); 
+        h.add("courses"); 
+        h.add("ide"); 
+
+      
+        System.out.println(h.size());
+        
+        h.remove("ide");
+        System.out.println(h.size());
+        
+        for(String s: h)
+        {
+            System.out.print(s+" ");
+        }
+        
+        
+        
+        System.out.println("\n"+h.isEmpty());
+        
+    } 
+} 
+
+
+HashMap
+
+// Java program to illustrate 
+// Java.util.HashMap 
+
+import java.util.HashMap; 
+import java.util.Map;
+
+public class GFG { 
+    public static void main(String[] args) 
+    { 
+        // Create an empty hash map 
+        HashMap<String, Integer> m  = new HashMap<>(); 
+
+        // Add elements to the map 
+        m.put("gfg", 10); 
+        m.put("ide", 15); 
+        m.put("courses", 20); 
+
+        // Print size and content
+        System.out.println(m); 
+        System.out.println(m.size()); 
+        
+        // Iterating over HashMap 
+        for(Map.Entry<String, Integer>e : m.entrySet())
+            System.out.println(e.getKey() + " " + e.getValue());
+    } 
+} 
+
+
+// Java program to illustrate 
+// Java.util.HashMap 
+
+import java.util.HashMap; 
+import java.util.Map;
+
+public class GFG { 
+    public static void main(String[] args) 
+    { 
+        // Create an empty hash map 
+        HashMap<String, Integer> m 
+            = new HashMap<>(); 
+
+        // Add elements to the map 
+        m.put("gfg", 10); 
+        m.put("ide", 15); 
+        m.put("courses", 20); 
+
+        // Check for a key
+        if (m.containsKey("ide")) 
+            System.out.println("Yes");
+        else
+            System.out.println("No");
+        
+        // Remove key "ide"
+        // and returns the associated value 15
+        m.remove("ide");
+        System.out.println(m.size());
+    } 
+} 
+
+
+
+// Java program to illustrate 
+// Java.util.HashMap 
+
+import java.util.HashMap; 
+import java.util.Map;
+
+public class GFG { 
+    public static void main(String[] args) 
+    { 
+        // Create an empty hash map 
+        HashMap<String, Integer> m 
+            = new HashMap<>(); 
+
+        // Add elements to the map 
+        m.put("gfg", 10); 
+        m.put("ide", 15); 
+        m.put("courses", 20); 
+
+        // Check for a Value
+        if (m.containsValue(15)) 
+            System.out.println("Yes");
+        else
+            System.out.println("No");
+        
+        // Get value corresponding to passed key
+        // <"ide", 15>
+        System.out.println(m.get("ide"));
+        
+        // The given key is absent
+        System.out.println(m.get("practice"));
+        
+    } 
+} 
+
+
+count distincit element 
+
+
+import java.util.*;
+import java.io.*;
+import java.lang.*;
+
+class Distinct
+{
+    public static void main (String[] args) {
+        int arr[] = new int[]{15, 16, 27, 27, 28, 15};
+        int n = arr.length;
+        
+        System.out.println(countDistinct(arr, n));
+    }
+    
+    static int countDistinct(int arr[], int n)
+    {
+        Set<Integer> hs = new HashSet<Integer>();
+        for(int i = 0; i < n; i++)
+          hs.add(arr[i]);
+    
+       return hs.size();        
+    }
+}
+
+
+frequency of array elements
+import java.util.*;
+import java.io.*;
+import java.lang.*;
+
+class Distinct
+{
+    public static void main (String[] args) {
+        int arr[] = new int[]{15, 16, 27, 27, 28, 15};
+        int n = arr.length;
+        
+        countFreq(arr, n);
+    }
+    
+    static void countFreq(int arr[], int n)
+    {
+        Map<Integer, Integer> hmp = new HashMap<Integer, Integer>();
+        for(int i = 0; i < n; i++)
+        {
+            int key = arr[i];
+            if(hmp.containsKey(arr[i]) == true)
+              hmp.put(arr[i], hmp.get(arr[i]) + 1);
+            else
+              hmp.put(arr[i], 1);    
+        }
+    
+       for(Map.Entry<Integer, Integer> itr: hmp.entrySet())
+        System.out.println(itr.getKey() + " " + itr.getValue());
+    }
+}
+
+
+# strings
+
+Check if a String is Subsequence of Other
+
+iterative:
+/*package whatever //do not write package name here */
+
+import java.util.*;
+
+class GFG {
+    
+    static boolean isSubSeq(String s1, String s2, int n, int m){
+        int j = 0;
+        for(int i = 0; i < n && j < m; i++){
+            if(s1.charAt(i) == s2.charAt(j))
+            j++;
+        }
+        
+        return j == m;
+    }
+    
+	public static void main (String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n, m;
+		n = sc.nextInt();
+		m = sc.nextInt();
+		
+		String s1, s2;
+		s1 = sc.next();
+		s2 = sc.next();
+		
+		System.out.println(isSubSeq(s1, s2, n, m));
+		
+	}
+}
+
+
+recursive
+/*package whatever //do not write package name here */
+
+import java.util.*;
+
+class GFG {
+    
+    static boolean isSubSeq(String s1, String s2, int n, int m){
+        if( m == 0 )
+            return true;
+        
+        if( n == 0 )
+            return false;
+            
+        if ( s1.charAt(n-1) == s2.charAt(m-1) )
+            return isSubSeq(s1, s2, n-1, m-1);
+        
+        else
+            return isSubSeq(s1, s2, n-1, m);
+    }
+    
+	public static void main (String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n, m;
+		n = sc.nextInt();
+		m = sc.nextInt();
+		
+		String s1, s2;
+		s1 = sc.next();
+		s2 = sc.next();
+		
+		System.out.println(isSubSeq(s1, s2, n, m));
+		
+	}
+}
+
+
+ reverse words in a string.
+
+ import java.util.*;
+import java.io.*;
+import java.lang.*;
+  
+class GFG { 
+       
+    static void reverse(char str[],int low, int high){
+    while(low<=high){
+        //swap
+        char temp=str[low];
+        str[low]=str[high];
+        str[high]=temp;
+        //
+        low++;
+        high--;
+    }
+    }
+
+    static void reverseWords(char str[],int n){
+    int start=0;
+    for(int end=0;end<n;end++){
+        if(str[end]==' '){
+            reverse(str,start,end-1);
+            start=end+1;
+        }
+    }
+    reverse(str,start,n-1);
+    reverse(str,0,n-1);
+    }
+  
+    public static void main(String args[]) 
+    {   String s = "Welcome to Gfg";int n=s.length();
+        char[] str = s.toCharArray();
+        System.out.println("After reversing words in the string:");
+        reverseWords(str,n);
+        System.out.println(str);  
+    } 
+} 
+
+
+check if strings are rotations 
+import java.util.*;
+import java.io.*;
+import java.lang.*;
+  
+class GFG { 
+    
+    static boolean areRotations(String s1,String s2){
+    if(s1.length()!=s2.length())return false;
+    return ((s1+s1).indexOf(s2)>=0);
+    }
+
+
+  
+    public static void main(String args[]) 
+    {   String s1 = "ABCD";String s2="CDAB";
+        if(areRotations(s1,s2)){System.out.println("Strings are rotations of each other");}
+        else{System.out.println("Strings are not rotations of each other");}  
+    } 
+} 
+
+Anagram search
+
+N:
+import java.util.*;
+import java.io.*;
+import java.lang.*;
+  
+class GFG { 
+    static final int CHAR=256;
+    static boolean areAnagram(String pat, String txt,int i) 
+    { 
+        int[] count=new int[CHAR];
+    for(int j=0;j<pat.length();j++){
+        count[pat.charAt(j)]++;
+        count[txt.charAt(i+j)]--;
+    }
+    for(int j=0;j<CHAR;j++){
+        if(count[j]!=0)return false;
+    }
+    return true;
+    } 
+    
+    static boolean isPresent(String txt,String pat){
+    int n=txt.length();
+    int m=pat.length();
+    for(int i=0;i<=n-m;i++){
+        if(areAnagram(pat,txt,i))return true;
+    }
+    return false;
+    }
+    
+    public static void main(String args[]) 
+    { 
+        String txt = "geeksforgeeks"; 
+        String pat = "frog";  
+        if (isPresent(txt, pat)) 
+            System.out.println("Anagram search found"); 
+        else
+            System.out.println("Anagram search not found"); 
+    } 
+} 
+
+E:    
+import java.util.*;
+import java.io.*;
+import java.lang.*;
+  
+class GFG { 
+    static final int CHAR=256;
+    static boolean areSame(int CT[],int CP[]){
+    for(int i=0;i<CHAR;i++){
+        if(CT[i]!=CP[i])return false;
+    }
+    return true;
+    }
+    
+    static boolean isPresent(String txt,String pat){
+    int[] CT=new int[CHAR];int[] CP=new int[CHAR];
+    for(int i=0;i<pat.length();i++){
+        CT[txt.charAt(i)]++;
+        CP[pat.charAt(i)]++;
+    }
+    for(int i=pat.length();i<txt.length();i++){
+        if(areSame(CT,CP))return true;
+        CT[txt.charAt(i)]++;
+        CT[txt.charAt(i-pat.length())]--;
+    }
+    return false;
+    }
+    
+    public static void main(String args[]) 
+    { 
+        String txt = "geeksforgeeks"; 
+        String pat = "frog";  
+        if (isPresent(txt, pat)) 
+            System.out.println("Anagram search found"); 
+        else
+            System.out.println("Anagram search not found"); 
+    } 
+} 
+
+
+# stacks
+
+
+
+parenthesis ({, }, (, ), [ and ]), we need to check if this string is balanced or not.
+
+import java.io.*;
+import java.util.*;
+
+class GFG {
+    
+    public static boolean matching(char a,char b){
+        return (( a=='(' && b==')' )||( a=='[' && b==']' )||( a=='{' && b=='}' ));
+    }
+    
+    public static boolean isBalanced(String str){
+          
+        Deque<Character> s=new ArrayDeque<>(); 
+        
+        for (int i = 0; i < str.length(); i++)  
+        { 
+            if (str.charAt(i) == '(' || str.charAt(i) == '[' || str.charAt(i) == '{')  
+            {  
+                s.add(str.charAt(i)); 
+            } 
+            else{
+            if (s.isEmpty()==true) 
+                return false;
+            else if(matching(s.peek(),str.charAt(i))==false)
+                return false;
+            else
+                s.pop();
+            }
+        }    
+        return (s.isEmpty()==true); 
+    }
+    
+	public static void main (String[] args) {
+	
+	    String str = "{()}[]"; 
+    
+        if (isBalanced(str)) 
+            System.out.print("Balanced"); 
+        else
+            System.out.print("Not Balanced");
+	  
+	}
+	
+}
+
+
+ find the NextGreater(position-wise closest and on the right side) of every array elements.
+
+
+ N:
+ import java.io.*;
+import java.util.*;
+
+class GFG {
+    
+    public static void printGreater(int arr[],int n){
+    
+        for(int i=0;i<n;i++){
+            int j;
+            for(j=i+1;j<n;j++){
+                if(arr[j]>arr[i]){
+                    System.out.print(arr[j]+" ");
+                    break;
+                }
+            }
+            if(j==n)
+                System.out.print(-1+" ");
+        }
+    }
+	public static void main (String[] args) {
+	
+	    int[] arr=new int[]{5,15,10,8,6,12,9,18};
+        
+        printGreater(arr,arr.length);   
+	  
+	}
+	
+}
+E:
+import java.io.*;
+import java.util.*;
+
+class GFG {
+    
+    public static ArrayList<Integer> nextGreater(int arr[],int n){
+        ArrayList<Integer> v=new ArrayList<>();
+        Stack <Integer> s=new Stack<>();
+        s.add(arr[n-1]);v.add(-1);
+        for(int i=n-2;i>=0;i--){
+            while(s.isEmpty()==false && s.peek()<=arr[i])
+                s.pop();
+            int ng=s.isEmpty()?-1:s.peek();
+            v.add(ng);
+            s.add(arr[i]);
+        }
+        Collections.reverse(v);
+        return v;
+    }
+	public static void main (String[] args) {
+	
+	    int[] arr=new int[]{5,15,10,8,6,12,9,18};
+        
+        for(int x: nextGreater(arr,arr.length)){
+            System.out.print(x + " ");   
+        }  
+	  
+	}
+	
+}
+
+
+# queue  
+
+implementation of queue ds uusing array
+
+import java.util.*;
+import java.io.*;
+import java.lang.*;
+
+class Queue { 
+	int front, rear, size; 
+	int capacity; 
+	int array[]; 
+
+	public Queue(int capacity) 
+	{ 
+		this.capacity = capacity; 
+		front = this.size = 0; 
+		rear = capacity - 1; 
+		array = new int[this.capacity]; 
+	} 
+
+	
+	boolean isFull(Queue queue) 
+	{ 
+		return (queue.size == queue.capacity); 
+	} 
+
+	
+	boolean isEmpty(Queue queue) 
+	{ 
+		return (queue.size == 0); 
+	} 
+
+	
+	void enqueue(int item) 
+	{ 
+		if (isFull(this)) 
+			return; 
+		this.rear = (this.rear + 1) 
+					% this.capacity; 
+		this.array[this.rear] = item; 
+		this.size = this.size + 1; 
+		System.out.println(item 
+						+ " enqueued to queue"); 
+	} 
+
+	
+	int dequeue() 
+	{ 
+		if (isEmpty(this)) 
+			return Integer.MIN_VALUE; 
+
+		int item = this.array[this.front]; 
+		this.front = (this.front + 1) 
+					% this.capacity; 
+		this.size = this.size - 1; 
+		return item; 
+	} 
+
+	
+	int front() 
+	{ 
+		if (isEmpty(this)) 
+			return Integer.MIN_VALUE; 
+
+		return this.array[this.front]; 
+	} 
+
+	
+	int rear() 
+	{ 
+		if (isEmpty(this)) 
+			return Integer.MIN_VALUE; 
+
+		return this.array[this.rear]; 
+	} 
+} 
+
+ 
+public class Test { 
+	public static void main(String[] args) 
+	{ 
+		Queue queue = new Queue(1000); 
+
+		queue.enqueue(10); 
+		queue.enqueue(20); 
+		queue.enqueue(30); 
+		queue.enqueue(40); 
+
+		System.out.println(queue.dequeue() 
+						+ " dequeued from queue\n"); 
+
+		System.out.println("Front item is "
+						+ queue.front()); 
+
+		System.out.println("Rear item is "
+						+ queue.rear()); 
+	} 
+} 
+
+Implementation of a queue using a LinkedList.
+
+
+import java.util.*;
+import java.io.*;
+import java.lang.*;
+class Node { 
+	int key; 
+	Node next; 
+
+	 
+	public Node(int key) 
+	{ 
+		this.key = key; 
+		this.next = null; 
+	} 
+} 
+
+
+class Queue { 
+	Node front, rear; 
+
+	public Queue() 
+	{ 
+		this.front = this.rear = null; 
+	} 
+
+	
+	void enqueue(int key) 
+	{ 
+
+		
+		Node temp = new Node(key); 
+
+		
+		if (this.rear == null) { 
+			this.front = this.rear = temp; 
+			return; 
+		} 
+
+		
+		this.rear.next = temp; 
+		this.rear = temp; 
+	} 
+
+	 
+	void dequeue() 
+	{ 
+		
+	if (this.front == null) 
+			return; 
+
+		
+		Node temp = this.front; 
+		this.front = this.front.next; 
+
+		
+		if (this.front == null) 
+			this.rear = null; 
+	} 
+} 
+
+ 
+public class Test { 
+	public static void main(String[] args) 
+	{ 
+		Queue q = new Queue(); 
+		q.enqueue(10); 
+		q.enqueue(20); 
+		q.dequeue(); 
+		q.dequeue(); 
+		q.enqueue(30); 
+		q.enqueue(40); 
+		q.enqueue(50); 
+		q.dequeue(); 
+		System.out.println("Queue Front : " + q.front.key); 
+		System.out.println("Queue Rear : " + q.rear.key); 
+	} 
+} 
+
+implementation of the stack using a queue.
+
+import java.util.*; 
+
+class GfG { 
+
+	static class Stack { 
+		 
+		static Queue<Integer> q1 = new LinkedList<Integer>(); 
+		static Queue<Integer> q2 = new LinkedList<Integer>(); 
+
+		
+		static int curr_size; 
+
+		Stack() 
+		{ 
+			curr_size = 0; 
+		} 
+
+		static void push(int x) 
+		{ 
+			curr_size++; 
+
+			
+			q2.add(x); 
+
+			
+			while (!q1.isEmpty()) { 
+				q2.add(q1.peek()); 
+				q1.remove(); 
+			} 
+
+		 
+			Queue<Integer> q = q1; 
+			q1 = q2; 
+			q2 = q; 
+		} 
+
+		static void pop() 
+		{ 
+
+			
+			if (q1.isEmpty()) 
+				return; 
+			q1.remove(); 
+			curr_size--; 
+		} 
+
+		static int top() 
+		{ 
+			if (q1.isEmpty()) 
+				return -1; 
+			return q1.peek(); 
+		} 
+
+		static int size() 
+		{ 
+			return curr_size; 
+		} 
+	} 
+
+	
+	public static void main(String[] args) 
+	{ 
+		Stack s = new Stack(); 
+		s.push(10); 
+        s.push(5); 
+        s.push(15); 
+        s.push(20);
+
+		System.out.println("current size: " + s.size()); 
+		System.out.println(s.top()); 
+		s.pop(); 
+		System.out.println(s.top()); 
+		s.pop(); 
+		System.out.println(s.top()); 
+
+		System.out.println("current size: " + s.size()); 
+	} 
+} 
+
